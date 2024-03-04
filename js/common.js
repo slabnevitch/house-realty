@@ -70,16 +70,3 @@
 
 // запуск основной функции
 // einput.init();
-// console.log(document.querySelector('.skot'))
-// document.querySelector('.skot').addEventListener('click', (e) => {
-// 	// var cleanText = cutTegs(document.getElementById('input-box').innerHTML);
-
-// 	// console.log(cleanText.replace(/\s+/g, ' ').trim());
-// 	console.log(document.getElementById('input-box').textContent.replace(/\s+/g, ' ').trim());
-// });
-// function cutTegs(str) {
-//  var regex = /(\<(\/?[^>]+)>)/g,
-//      result = str.replace(regex, "");
-
-//      return result;
-// }
