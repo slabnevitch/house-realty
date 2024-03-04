@@ -1,0 +1,137 @@
+/*--------------------ui----------------------*/
+.btn{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  height: rem(48);
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: $accent;
+  padding: rem(5) rem(24);
+  // font-size: rem(13);
+  // text-transform: uppercase;
+  border-radius: rem(10);
+  border: 1px solid transparent;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: background-color .1s ease;
+  
+  &-fw{
+   width: 100%;
+  }
+  @media (any-hover: hover) { //только для устройств с ховером
+  		cursor: pointer;	
+	  &:hover,&:active{
+	   border-color: $accent;
+	   background-color: transparent;
+	   color: $accent;
+	  }
+  	}
+
+  &-dark{
+  	background-color: $gray-dark;
+  	color: #fff;
+  }
+  &-empty{
+  	background-color: transparent;
+  	color: $accent;
+  	border-color: $accent;
+
+  	@media (any-hover: hover) { //только для устройств с ховером
+	  &:hover,&:active{
+	   border-color: transparent;
+	   background-color: $accent;
+	   color: #fff;
+	  }
+  	}
+  }
+  &-mini{
+  	height: rem(36);
+  	border-radius: rem(100);
+  	background-color: $gray;
+  	color: $text;
+  	border-color: transparent;
+
+  	@media (any-hover: hover) { //только для устройств с ховером
+	  &:hover,&:active{
+	   border-color: transparent;
+	   background-color: $gray-dark;
+	   color: #fff;
+	  }
+  	}
+  }
+
+   
+}
+.link{
+	color: $accent;
+	text-decoration: none;
+	transition:olor .2s ease;
+	@media (any-hover: hover) { //только для устройств с ховером
+			&:hover{
+				color: $text;
+			}
+		}
+}
+
+// .toggle-mnu{
+// 	position: fixed;
+// 	right: rem(30);
+// 	top: rem(15);
+//   display: block;
+//   width: rem(28);
+//   height: rem(28);
+//   margin-top: rem(14);
+//   padding: 0;
+//   background-color: transparent;
+//   border: none;
+
+//   span:after, span:before{
+
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     top: rem(9);
+//   } 
+
+//   span:after{
+
+//     top: rem(18);
+//   }
+
+//   span{
+
+//     position: relative;
+//     display: block;
+//   } 
+
+//   span, span:after, span:before{
+
+//     width: 100%;
+//     height: rem(2);
+//     background-color: #000;
+//     transition: all 0.3s;
+//     backface-visibility: hidden;
+//     border-radius: rem(2);
+//   }
+
+
+//   &.on span{
+
+//     background-color: transparent;
+//   } 
+
+//   &.on span:before{
+
+//     transform: rotate(45deg) translate(rem(-1), 0);
+//   } 
+
+//   &.on span:after{
+
+//     transform: rotate(-45deg) translate(rem(6), rem(-7));
+//   } 
+// } 
+
+/*--------------------END ui----------------------*/ 

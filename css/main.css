@@ -1,0 +1,1702 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@400,500&display=swap");
+@font-face {
+  font-family: "raleway-v22-latin_cyrillic-600";
+  font-display: swap;
+  src: url("../fonts/raleway-v22-latin_cyrillic-600.woff2") format("woff2"), url("../fonts/raleway-v22-latin_cyrillic-600.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "raleway-v22-latin_cyrillic-900";
+  font-display: swap;
+  src: url("../fonts/raleway-v22-latin_cyrillic-900.woff2") format("woff2"), url("../fonts/raleway-v22-latin_cyrillic-900.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "raleway-v22-latin_cyrillic-regular";
+  font-display: swap;
+  src: url("../fonts/raleway-v22-latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/raleway-v22-latin_cyrillic-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+.Anxious Face With Sweat {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Astonished Face {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Baby Medium Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Baby Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Baby Medium Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -87px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Baby Medium Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Baby {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Beaming Face With Smiling Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Cat Face {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Cat With Tears Of Joy {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Cat With Wry Smile {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Clown Face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Cold Face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Confounded Face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Confused Face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Cowboy Hat Face {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Crying Cat {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Crying Face {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Disappointed Face {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Disguised Face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Dizzy Face {
+  background-image: url(../img/sprite.png);
+  background-position: -145px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Downcast Face With Sweat {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Drooling Face {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Exploding Head {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Expressionless Face {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face Blowing A Kiss {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face Exhaling {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face In Clouds {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face Savoring Food {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face Screaming In Fear {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face Vomiting {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Hand Over Mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -174px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Head Bandage {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Medical Mask {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Monocle {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Open Mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Raised Eyebrow {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Rolling Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Spiral Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Steam From Nose {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Symbols On Mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Tears Of Joy {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Thermometer {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face With Tongue {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Face Without Mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -203px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Fearful Face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Flushed Face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Frowning Face With Open Mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Frowning Face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Ghost {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Goblin {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Grimacing Face {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Grinning Cat With Smiling Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Grinning Cat {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Grinning Face With Big Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Grinning Face With Smiling Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Grinning Face With Sweat {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Grinning Face {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Grinning Squinting Face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Hand With Fingers Splayed Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -232px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Hand With Fingers Splayed Medium Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Hand With Fingers Splayed Medium Skin Tone-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Hand With Fingers Splayed Medium Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Hand With Fingers Splayed {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Hot Face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Hugging Face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Hushed Face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Kiss Mark {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Kissing Cat {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Kissing Face With Closed Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Kissing Face With Smiling Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Kissing Face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Loudly Crying Face {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Lying Face {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Money Mouth Face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Nauseated Face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Nerd Face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Neutral Face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Ogre {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Partying Face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Pensive Face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Persevering Face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Pile Of Poo {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Pleading Face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Pouting Cat {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Pouting Face {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Raised Back Of Hand Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Raised Back Of Hand Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Raised Back Of Hand Medium Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Raised Back Of Hand Medium Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Raised Back Of Hand Medium Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Raised Back Of Hand {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Relieved Face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Rolling On The Floor Laughing {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Sad But Relieved Face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Shushing Face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Skull And Crossbones {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Skull {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Sleeping Face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Sleepy Face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Slightly Frowning Face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Slightly Smiling Face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smiling Cat With Heart Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smiling Face With Halo {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smiling Face With Heart Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smiling Face With Hearts {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smiling Face With Horns {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smiling Face With Smiling Eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smiling Face With Sunglasses {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smiling Face With Tear {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smiling Face {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Smirking Face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Sneezing Face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Squinting Face With Tongue {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Star Struck {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Thinking Face {
+  background-image: url(../img/sprite.png);
+  background-position: -319px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Tired Face {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Tooth {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Unamused Face {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Upside Down Face {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Waving Hand Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Waving Hand Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Waving Hand Medium Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Waving Hand Medium Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Waving Hand Medium Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Waving Hand {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Weary Cat {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Weary Face {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Winking Face With Tongue {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Winking Face {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Frowning Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Frowning Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Frowning Medium Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Frowning Medium Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Frowning Medium Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Frowning {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing No Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing No Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing No Medium Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing No Medium Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing No Medium Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing No {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing Ok Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing Ok Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing Ok Medium Dark Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing Ok Medium Light Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing Ok Medium Skin Tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Gesturing Ok {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woman Getting Haircut {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.Woozy Face {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.Worried Face {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -348px;
+  width: 24px;
+  height: 24px;
+}
+
+.Yawning Face {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -348px;
+  width: 24px;
+  height: 24px;
+}
+
+.Zany Face {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -348px;
+  width: 24px;
+  height: 24px;
+}
+
+.Zipper Mouth Face {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -348px;
+  width: 24px;
+  height: 24px;
+}
+
+.alien-monster {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.alien {
+  background-image: url(../img/sprite.png);
+  background-position: -29px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.angry-face-with-horns {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.angry-face {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.anguished-face {
+  background-image: url(../img/sprite.png);
+  background-position: -58px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+/*--tiny-slider--*/
+/*--end tiny-slider--*/
+/*--tiny-slider--*/
+/*--end tiny-slider--*/
+/*--FormHandler-*/
+/*--end FormHandler--*/
+/*--spoilers-*/
+p:last-of-type {
+  margin-bottom: 2.5rem;
+}
+
+form {
+  display: block;
+  position: relative;
+  min-height: 7.5rem;
+}
+
+#btn {
+  float: left;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  color: lightgray;
+  cursor: pointer;
+}
+#btn svg {
+  fill: currentColor;
+  display: inherit;
+  width: 1rem;
+  height: 1rem;
+  margin-left: 0.2rem;
+  transition: color 0.5s ease-in, transform 0.5s linear;
+  -webkit-transition: color 0.5s ease-in, transform 0.5s linear;
+  transform: rotate(0) translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: transform;
+}
+#btn:hover {
+  color: #b9b9b9;
+}
+#btn.active svg {
+  color: #6f6fd1;
+  transform: rotate(720deg) translateZ(0);
+}
+
+#input-box {
+  max-height: 1.5rem;
+  height: 1.5rem;
+  cursor: text;
+  position: relative;
+  overflow: hidden;
+  padding: 0 0.5rem;
+  line-height: 1.5rem;
+  background-color: #f9f9f9;
+  font-weight: 400;
+}
+#input-box #input-box-field {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  white-space: nowrap;
+  overflow-x: scroll;
+  min-height: 2.5rem;
+  resize: none;
+  text-overflow: ellipsis;
+  user-select: text;
+  -webkit-touch-callout: text;
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  -o-user-select: text;
+}
+#input-box #input-box-field:focus {
+  outline: 0;
+}
+#input-box #input-box-field:not(:empty) ~ #input-box-placeholder {
+  display: none;
+}
+#input-box #input-box-field:empty {
+  caret-color: lightgray;
+}
+#input-box #input-box-field br, #input-box #input-box-field p, #input-box #input-box-field div {
+  display: none;
+}
+#input-box #input-box-field .emoji {
+  cursor: text;
+  vertical-align: middle;
+  display: inline;
+  max-width: 24px;
+  min-width: 24px;
+  max-height: 24px;
+  min-height: 24px;
+}
+#input-box #input-box-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0.5rem;
+  right: 0.5rem;
+  pointer-events: none;
+  color: lightgray;
+}
+#input-box #input-box-placeholder::before {
+  content: attr(data-ph);
+}
+
+#emoji-box {
+  width: 100%;
+  margin-top: 0.5rem;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+  will-change: opacity, visibility;
+}
+#emoji-box.show {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+#emoji-box::before {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0.5rem 0.75rem 0.5rem;
+  border-color: transparent transparent #f9f9f9 transparent;
+  content: "";
+  top: -0.45rem;
+  left: 0.25rem;
+}
+#emoji-box div {
+  user-select: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  background-color: #f9f9f9;
+  padding: 0 0.75rem;
+  width: 100%;
+  height: 4.5rem;
+  overflow-y: scroll;
+  line-height: 0.25rem;
+}
+#emoji-box div::before, #emoji-box div::after {
+  height: 0.75rem;
+  left: 0;
+  right: 0;
+  top: 0;
+  content: "";
+  position: sticky;
+  position: -webkit-sticky;
+  display: inherit;
+  background: linear-gradient(to bottom, #f9f9f9, transparent);
+  z-index: 2;
+}
+#emoji-box div::after {
+  top: auto;
+  bottom: -1px;
+  background: linear-gradient(to bottom, transparent, #f9f9f9);
+}
+#emoji-box div::-webkit-scrollbar {
+  background: transparent;
+  width: 0.5rem;
+}
+#emoji-box div::-webkit-scrollbar-button {
+  display: none;
+}
+#emoji-box div::-webkit-scrollbar-track-piece {
+  background-color: #ececec;
+}
+#emoji-box div::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  transition: background-color 0.1s linear;
+  -webkit-transition: background-color 0.15s ease-in-out;
+}
+#emoji-box div::-webkit-scrollbar-thumb:active {
+  background-color: #6f6fd1;
+}
+#emoji-box div .emoji {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  background-clip: content-box;
+  transition: opacity 0.1s linear, background-color 0.1s ease-in, border-color 0.1s ease-in;
+  cursor: pointer;
+  opacity: 0.9;
+}
+#emoji-box div .emoji:hover {
+  opacity: 1;
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+}
+
+.emoji {
+  display: inline-block;
+}
+
+/*--------------------adjustment----------------------*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family: "raleway-v22-latin_cyrillic-regular", sans-serif;
+  font-weight: normal;
+  font-size: 1rem;
+  min-width: 20rem;
+  position: relative;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  color: #000;
+}
+.lock body {
+  overflow: hidden;
+  -ms-touch-action: none;
+  touch-action: none;
+  overflow-behavior: none;
+}
+
+.alien-monster {
+  background-image: url(../img/sprite.png);
+  background-position: 0px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  vertical-align: top;
+}
+
+ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+p {
+  margin: 0;
+}
+
+input input[type=text],
+input[type=email],
+input[type=tel],
+textarea {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.input,
+input {
+  border-radius: 0;
+  outline: none;
+  display: block;
+  width: 100%;
+  border: 0 none;
+}
+
+textarea {
+  resize: none;
+  padding: 0 0;
+}
+
+[class*=__wrapper] {
+  margin: 0 auto;
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  max-width: 83.125rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.ibg {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  padding-bottom: 52.25%;
+}
+
+.ibg img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+._prod-img {
+  position: relative;
+  padding-bottom: 80%;
+}
+._prod-img img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+._fit {
+  padding-bottom: 80%;
+  position: relative;
+}
+
+._fit ._fit-img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  object-fit: cover;
+  object-position: center center;
+}
+
+@supports ((-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px))) or (--webkit-backdrop-filter: blur(10px)) {
+  .bd-filter-fallback {
+    background-color: rgba(255, 255, 255, 0.72);
+    -webkit-backdrop-filter: blur(31px);
+    backdrop-filter: blur(31px);
+  }
+}
+
+.form {
+  background-color: #F1F1F5;
+}
+
+.form__label {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+.form__label:not(:last-child) {
+  margin-bottom: 0.9375rem;
+}
+
+.form__key {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form__input {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  height: 2.75rem;
+  padding-left: 0.5625rem;
+  padding-right: 0.5625rem;
+  border: 1px solid transparent;
+  background: #fff;
+  border-radius: 0.625rem;
+  color: #000;
+}
+.form__input::-webkit-input-placeholder {
+  color: #697586;
+  opacity: 1;
+}
+.form__input::-moz-placeholder {
+  color: #697586;
+  opacity: 1;
+}
+.form__input:-moz-placeholder {
+  color: #697586;
+  opacity: 1;
+}
+.form__input:-ms-input-placeholder {
+  color: #697586;
+  opacity: 1;
+}
+.form__error .form__input {
+  border-color: #ED2525;
+}
+
+.form__error-message {
+  color: #ED2525;
+}
+
+.form__custom-policy {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: start;
+  align-items: flex-start;
+}
+
+.form__custom {
+  position: relative;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  margin-right: 1.25rem;
+}
+
+.form__check {
+  position: absolute;
+  box-sizing: border-box;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  display: block;
+  left: 50%;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+.form__check:checked + .form__custom-chek:before {
+  display: block;
+}
+
+.form__custom-chek {
+  display: block;
+  position: relative;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #000;
+  border-radius: 0.125rem;
+}
+@media (any-hover: hover) {
+  .form__custom-chek:hover {
+    cursor: pointer;
+  }
+}
+.form__custom-chek:before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  display: none;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.125rem;
+  background-color: #000;
+  content: "";
+}
+
+.form__area {
+  width: 100%;
+  height: 6.25rem;
+  padding: 1.25rem;
+  resize: none;
+  border: none;
+  background: #fff;
+  padding-left: 1.25rem;
+  color: #222222;
+}
+
+/*--------------------END adjustment----------------------*/
+/*--------------------ui----------------------*/
+.btn {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 3rem;
+  border: none;
+  color: #fff;
+  text-decoration: none;
+  background-color: #3A8BF3;
+  padding: 0.3125rem 1.5rem;
+  border-radius: 0.625rem;
+  border: 1px solid transparent;
+  text-align: center;
+  position: relative;
+  outline: none;
+  transition: background-color 0.1s ease;
+}
+.btn-fw {
+  width: 100%;
+}
+@media (any-hover: hover) {
+  .btn {
+    cursor: pointer;
+  }
+  .btn:hover, .btn:active {
+    border-color: #3A8BF3;
+    background-color: transparent;
+    color: #3A8BF3;
+  }
+}
+.btn-dark {
+  background-color: #697586;
+  color: #fff;
+}
+.btn-empty {
+  background-color: transparent;
+  color: #3A8BF3;
+  border-color: #3A8BF3;
+}
+@media (any-hover: hover) {
+  .btn-empty:hover, .btn-empty:active {
+    border-color: transparent;
+    background-color: #3A8BF3;
+    color: #fff;
+  }
+}
+.btn-mini {
+  height: 2.25rem;
+  border-radius: 6.25rem;
+  background-color: #F1F1F5;
+  color: #000;
+  border-color: transparent;
+}
+@media (any-hover: hover) {
+  .btn-mini:hover, .btn-mini:active {
+    border-color: transparent;
+    background-color: #697586;
+    color: #fff;
+  }
+}
+
+.link {
+  color: #3A8BF3;
+  text-decoration: none;
+  transition: olor 0.2s ease;
+}
+@media (any-hover: hover) {
+  .link:hover {
+    color: #000;
+  }
+}
+
+/*--------------------END ui----------------------*/
+/*--------------------footer----------------------*/
+/*--------------------END footer----------------------*/
+/*--------------------header----------------------*/
+/*--------------------END header----------------------*/
+/*# sourceMappingURL=maps/main.css.map */

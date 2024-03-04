@@ -1,0 +1,92 @@
+.form {
+	background-color: $gray;
+}
+.form__label {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: rem(14);
+
+	&:not(:last-child){
+		margin-bottom: rem(15);
+	}
+}
+.form__key{
+	display: block;
+	margin-bottom: rem(8);
+}
+.form__input {
+	flex: 0 0 100%;
+	height: rem(44);
+	padding-left: rem(9);
+	padding-right: rem(9);
+	border: 1px solid transparent;
+	// padding-right: 55px;
+	background: #fff ;
+	border-radius: rem(10);
+	@include placecolor($gray-dark);
+	color: $text;
+
+	.form__error &{
+		border-color: $red;
+	}
+
+}
+.form__error-message {
+	color: $red;
+
+}
+.form__custom-policy {
+	display: flex;
+	align-items: flex-start;
+
+}
+.form__custom {
+	position: relative;
+	flex-shrink: 0;
+	margin-right: rem(20);
+}
+.form__check {
+	@include checkbox;
+	&:checked + .form__custom-chek {
+		&:before{
+			display: block;
+		}
+	}
+}
+.form__custom-chek {
+	display: block;
+	position: relative;
+	width: rem(16);
+	height: rem(16);
+	border: 1px solid #000;
+	border-radius: rem(2);
+
+	@media (any-hover: hover) { //только для устройств с ховером
+				&:hover{
+				cursor: pointer;
+			}
+		}
+	&:before{
+		@include absolute-center-old;
+		display: none;
+		width: rem(8);
+		height: rem(8);
+		border-radius: rem(2);
+		background-color: #000;
+		content: '';
+	}
+}
+.form__area{
+	width: 100%;
+	height: rem(100);
+	padding:rem(20);
+    resize: none;
+	border: none;
+	background: #fff;
+	padding-left: rem(20);
+	color: #222222;
+}
+.form__policy {
+
+}
