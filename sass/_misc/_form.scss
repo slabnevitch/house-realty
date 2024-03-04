@@ -34,7 +34,10 @@
 }
 .form__error-message {
 	color: $red;
-
+	display: none;
+	.form__error &{
+		display: block;
+	}
 }
 .form__custom-policy {
 	display: flex;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@400,500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 @font-face {
   font-family: "raleway-v22-latin_cyrillic-600";
   font-display: swap;
@@ -1353,15 +1353,16 @@ html {
 html, body {
   margin: 0;
   padding: 0;
-  min-height: 100%;
+  height: 100%;
 }
 
 body {
-  font-family: "raleway-v22-latin_cyrillic-regular", sans-serif;
-  font-weight: normal;
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
   font-size: 1rem;
   min-width: 20rem;
   position: relative;
+  line-height: 0.8;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
   color: #000;
@@ -1373,11 +1374,16 @@ body {
   overflow-behavior: none;
 }
 
-.alien-monster {
-  background-image: url(../img/sprite.png);
-  background-position: 0px 0px;
-  width: 24px;
-  height: 24px;
+.wrapper {
+  overflow: hidden;
+}
+@supports (overflow: clip) {
+  .wrapper {
+    overflow: clip;
+  }
+}
+.wrapper > * {
+  min-width: 0;
 }
 
 a {
@@ -1546,6 +1552,10 @@ textarea {
 
 .form__error-message {
   color: #ED2525;
+  display: none;
+}
+.form__error .form__error-message {
+  display: block;
 }
 
 .form__custom-policy {
@@ -1692,6 +1702,18 @@ textarea {
   .link:hover {
     color: #000;
   }
+}
+
+h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.1666666667;
+  font-weight: 500;
 }
 
 /*--------------------END ui----------------------*/

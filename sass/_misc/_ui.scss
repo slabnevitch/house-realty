@@ -75,6 +75,16 @@
 			}
 		}
 }
+h1{
+	font-size: rem(40);
+	line-height: math.div(48,40);
+	text-transform: uppercase;
+}
+h2{
+	font-size: rem(24);
+	line-height: math.div(28,24);
+	font-weight: 500;
+}
 
 // .toggle-mnu{
 // 	position: fixed;
