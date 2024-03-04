@@ -1,0 +1,48 @@
+/*--------------------main-sidebar----------------------*/
+.page-main__sidebar{
+	flex: 0 0 rem(420);
+	display: flex;
+	flex-direction: column;
+	row-gap: rem(20);
+}
+.sidebar-form{
+	flex-shrink: 0;
+}
+.main-page__variants{
+	position: relative;
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	font-weight: 500;
+	padding: rem(15);
+	color: #fff;
+	border-radius: rem(20);
+
+	&:before{
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(#000, .3);
+		z-index: 1;
+	}
+
+}
+.main-page__variants-val{
+	position: relative;
+	margin-bottom: rem(20);
+	font-size: rem(52);
+	line-height: calc(56/52);
+	z-index: 2;
+}
+.main-page__variants-descr{
+	position: relative;
+	font-size: rem(20);
+	line-height: calc(24/20);
+	z-index: 2;
+}
+/*--------------------END main-sidebar----------------------*/ 

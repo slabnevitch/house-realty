@@ -1,0 +1,23 @@
+form(action="#" class="form sidebar-form")
+	h2.form__title Войти
+	label.form__label
+		span.form__key Email
+		span.form__error-message Обязательное поле
+		input(autocomplete="off" type="text" name="" class="form__input" placeholder="Введите email")
+
+	label.form__label.form__label--password
+		button(type="button").eye-ico
+			+icon('eye')
+			+icon('eye-off')
+		span.form__key Пароль
+		span.form__error-message Обязательное поле
+		input(autocomplete="off" type="password" name="" class="form__input" placeholder="Введите пароль")
+
+	label.form__label
+		a(href="#").link Забыли пароль?
+
+	.form__bottom
+		.form__line
+			button.btn(type="button") Войти	
+		.form__line
+			a(href="#").link У меня нет аккауната. Зарегистрироваться

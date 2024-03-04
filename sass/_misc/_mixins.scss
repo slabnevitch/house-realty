@@ -34,6 +34,13 @@
 	padding: 0;
 	background-color: transparent;
 	border: none;
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+			&:hover{
+	
+			}
+		}
 }
 
 @mixin dots-family{

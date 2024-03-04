@@ -19,7 +19,7 @@ body{
 	font-size: rem($baseFontSize);
 	min-width: rem($minWidth);
 	position: relative;
-	line-height: math.div(16,20);
+	line-height: math.div(20,16);
 	-webkit-font-smoothing: antialiased;
 	overflow-x: hidden;
 	color: $text;
@@ -210,8 +210,9 @@ padding-bottom: 52.25%;
 	}
 }
 ._fit{
-	padding-bottom: 80%;
+	// padding-bottom: 80%;
 	position: relative;
+	overflow: hidden;
 }
 ._fit ._fit-img{//_fit - class for object-fit
 	width: 100%;
@@ -219,6 +220,7 @@ padding-bottom: 52.25%;
 	position: absolute;
 	left: 0;
 	right: 0;
+	top: 0;
 	object-fit: cover; 
 	object-position: center center;
 }
