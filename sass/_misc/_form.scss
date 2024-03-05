@@ -12,7 +12,6 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
-	font-size: rem(14);
 
 	
 
@@ -24,6 +23,7 @@
 	display: block;
 	margin-bottom: rem(8);
 	color: $gray-dark;
+	font-size: rem(14);
 }
 .form__input {
 	flex: 0 0 100%;
@@ -36,6 +36,7 @@
 	border-radius: rem(10);
 	@include placecolor($gray-dark);
 	color: $text;
+	font-size: rem(14);
 
 	.form__error &{
 		border-color: $red;
@@ -62,36 +63,44 @@
 	flex-shrink: 0;
 	margin-right: rem(20);
 }
+.form__checks {
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(12);
+	margin-bottom: rem(24);
+}
 .form__check {
-	@include checkbox;
-	&:checked + .form__custom-chek {
-		&:before{
-			display: block;
+	position: relative;
+	input[type="radio"]{
+		@include checkbox;
+		&:checked + .form__check-value {
+			background: $accent;
+			color: #fff;
 		}
+
 	}
 }
-.form__custom-chek {
+.form__check-value {
 	display: block;
 	position: relative;
-	width: rem(16);
-	height: rem(16);
-	border: 1px solid #000;
-	border-radius: rem(2);
+	padding: rem(5) rem(16);
+	height: rem(32);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #fff;
+	border-radius: rem(5);
+	font-size: rem(14);
+	transition: all .3s;
+
 
 	@media (any-hover: hover) { //только для устройств с ховером
-				&:hover{
-				cursor: pointer;
+			cursor: pointer;
+			&:hover{
+				background: $accent;
+				color: #fff;
 			}
 		}
-	&:before{
-		@include absolute-center-old;
-		display: none;
-		width: rem(8);
-		height: rem(8);
-		border-radius: rem(2);
-		background-color: #000;
-		content: '';
-	}
 }
 .form__area{
 	width: 100%;
@@ -114,10 +123,32 @@
 	position: absolute;
 	bottom: rem(12);
 	right: rem(20);
+
 	.icon{
 		@include absolute-center;
 		font-size: rem(14);
 	}
+
+	&.unblind{
+		.icon-eye{
+			display: block;
+
+		}
+		.icon-eye-off{
+				display: none;
+
+		}
+	}
+
+	.icon-eye{
+		display: none;
+	}
+	.icon-eye-off{
+		color: $gray-dark;
+
+	}
+
+
 }
 .form__bottom{
 	text-align: center;
@@ -125,5 +156,20 @@
 .form__line{
 	&:not(:last-child){
 		margin-bottom: rem(15);
+	}
+}
+.form__text{
+	color: $gray-dark;
+	font-size: rem(14);
+
+	a{
+		text-decoration: none;
+
+		@media (any-hover: hover) { //только для устройств с ховером
+				&:hover{
+					color: $text;
+		
+				}
+			}
 	}
 }

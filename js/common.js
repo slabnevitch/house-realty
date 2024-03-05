@@ -66,7 +66,36 @@
 
 // });
 
+(function() {
+	// ibg class
+	if('objectFit' in document.documentElement.style === false){
+	  Array.prototype.forEach.call(document.querySelectorAll('._fit'), function(el){
 
+	    var image = el.querySelector('img');
+	    el.style.backgroundImage = 'url("'+image.src+'")';
+	    el.classList.add('ibg');
+	    el.classList.remove('_fit');
+		 });
+	}
+	// End ibg class
+
+	document.addEventListener('DOMContentLoaded', function() {
+		console.log('DOMContentLoaded!');
+		// password show
+		if(document.querySelector('.eye-ico') !== null){
+			[].forEach.call(document.querySelectorAll('.eye-ico'), function(el) {
+				el.onclick = function(e) {
+					var passInput = this.closest('label').querySelector('.form__input');
+					this.classList.toggle('unblind');
+					passInput.getAttribute('type') === 'password' ?
+					passInput.setAttribute('type','text') :
+					passInput.setAttribute('type','password');
+				}
+			});
+		}
+		// END password show
+	});
+})();
 
 // запуск основной функции
 // einput.init();

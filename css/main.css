@@ -20,6 +20,78 @@
   font-weight: 400;
   font-style: normal;
 }
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  fill: currentColor;
+}
+
+.icon-arrow-left {
+  font-size: 1.6rem;
+  width: 1em;
+}
+
+.icon-btn-go {
+  font-size: 2.2rem;
+  width: 0.5454545455em;
+}
+
+.icon-chevron-right {
+  font-size: 1.2rem;
+  width: 0.5em;
+}
+
+.icon-chevron-rught {
+  font-size: 1.2rem;
+  width: 0.5em;
+}
+
+.icon-close {
+  font-size: 1.4rem;
+  width: 1em;
+}
+
+.icon-eye {
+  font-size: 1.6rem;
+  width: 1.375em;
+}
+
+.icon-eye-off {
+  font-size: 1.8rem;
+  width: 1.2222222222em;
+}
+
+.icon-plus-circle {
+  font-size: 2.2rem;
+  width: 1em;
+}
+
+.icon-search {
+  font-size: 2rem;
+  width: 1em;
+}
+
+.icon-send {
+  font-size: 2.4rem;
+  width: 1em;
+}
+
+.icon-user {
+  font-size: 1.8rem;
+  width: 0.8888888889em;
+}
+
+.icon-watsapp {
+  font-size: 2.1rem;
+  width: 1em;
+}
+
+.icon-x-big {
+  font-size: 2.2rem;
+  width: 1em;
+}
+
 .Anxious Face With Sweat {
   background-image: url(../img/sprite.png);
   background-position: -58px -29px;
@@ -1494,6 +1566,21 @@ textarea {
   }
 }
 
+.tabs__buttons {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.tab-content,
+.tabs__buttons li {
+  list-style-type: none;
+}
+
+.tab {
+  text-decoration: none;
+  display: block;
+}
+
 .form {
   padding: 2rem 2.5rem 1.25rem 2.5rem;
   background-color: #F1F1F5;
@@ -1513,7 +1600,6 @@ textarea {
   flex-wrap: wrap;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  font-size: 0.875rem;
 }
 .form__label:not(:last-child) {
   margin-bottom: 0.9375rem;
@@ -1523,6 +1609,7 @@ textarea {
   display: block;
   margin-bottom: 0.5rem;
   color: #697586;
+  font-size: 0.875rem;
 }
 
 .form__input {
@@ -1535,6 +1622,7 @@ textarea {
   background: #fff;
   border-radius: 0.625rem;
   color: #000;
+  font-size: 0.875rem;
 }
 .form__input::-webkit-input-placeholder {
   color: #697586;
@@ -1581,7 +1669,19 @@ textarea {
   margin-right: 1.25rem;
 }
 
+.form__checks {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
 .form__check {
+  position: relative;
+}
+.form__check input[type=radio] {
   position: absolute;
   box-sizing: border-box;
   width: 0.0625rem;
@@ -1593,36 +1693,35 @@ textarea {
   padding: 0;
   opacity: 0;
 }
-.form__check:checked + .form__custom-chek:before {
-  display: block;
+.form__check input[type=radio]:checked + .form__check-value {
+  background: #3A8BF3;
+  color: #fff;
 }
 
-.form__custom-chek {
+.form__check-value {
   display: block;
   position: relative;
-  width: 1rem;
-  height: 1rem;
-  border: 1px solid #000;
-  border-radius: 0.125rem;
+  padding: 0.3125rem 1rem;
+  height: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  font-size: 0.875rem;
+  transition: all 0.3s;
 }
 @media (any-hover: hover) {
-  .form__custom-chek:hover {
+  .form__check-value {
     cursor: pointer;
   }
-}
-.form__custom-chek:before {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  position: absolute;
-  display: none;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 0.125rem;
-  background-color: #000;
-  content: "";
+  .form__check-value:hover {
+    background: #3A8BF3;
+    color: #fff;
+  }
 }
 
 .form__area {
@@ -1663,6 +1762,18 @@ textarea {
   transform: translate(-50%, -50%);
   font-size: 0.875rem;
 }
+.eye-ico.unblind .icon-eye {
+  display: block;
+}
+.eye-ico.unblind .icon-eye-off {
+  display: none;
+}
+.eye-ico .icon-eye {
+  display: none;
+}
+.eye-ico .icon-eye-off {
+  color: #697586;
+}
 
 .form__bottom {
   text-align: center;
@@ -1672,13 +1783,26 @@ textarea {
   margin-bottom: 0.9375rem;
 }
 
+.form__text {
+  color: #697586;
+  font-size: 0.875rem;
+}
+.form__text a {
+  text-decoration: none;
+}
+@media (any-hover: hover) {
+  .form__text a:hover {
+    color: #000;
+  }
+}
+
 /*--------------------END adjustment----------------------*/
 /*--------------------ui----------------------*/
 .page {
   padding: 1.875rem 0;
 }
 .page-main {
-  height: 100%;
+  height: 100vh;
 }
 
 .btn {
@@ -1695,6 +1819,7 @@ textarea {
   background-color: #3A8BF3;
   padding: 0.3125rem 1.5rem;
   font-size: 1rem;
+  font-family: "Raleway", sans-serif;
   border-radius: 0.625rem;
   border: 1px solid transparent;
   text-align: center;
@@ -1831,6 +1956,37 @@ h2 {
   font-size: 1.25rem;
   line-height: 1.2;
   z-index: 2;
+}
+
+.sidebar-form__buttons {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+.sidebar-form__buttons:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #E1E5ED;
+}
+
+.sidebar-form__tab-item {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.sidebar-form__tab {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0.8125rem;
+  color: #697586;
+  border-bottom: 0.125rem solid transparent;
+}
+.sidebar-form__tab.active {
+  color: #000;
+  border-bottom-color: #3A8BF3;
 }
 
 /*--------------------END main-sidebar----------------------*/

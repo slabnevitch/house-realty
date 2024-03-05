@@ -1,0 +1,109 @@
+form(action="#" class="form sidebar-form")
+	._tabs
+		ul.tabs__buttons.sidebar-form__buttons
+			li.sidebar-form__tab-item
+				a.tab.sidebar-form__tab.active(href='#') Я покупатель
+			li.sidebar-form__tab-item
+				a.tab.sidebar-form__tab(href='#') Я продавец
+
+		ul.tabs__container
+			li.tab-content.active
+				label.form__label
+					span.form__key Фамилия Имя Отчество
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="Семашко Захар Владимирович")
+
+				label.form__label
+					span.form__key Email
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru")
+
+				label.form__label
+					span.form__key Город
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="Сочи")
+
+				label.form__label
+					span.form__key Телефон
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56")
+
+				label.form__label.form__label--password
+					button(type="button").eye-ico.unblind
+						+icon('eye')
+						+icon('eye-off')
+					span.form__key Пароль
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="5UimdK5dd")
+
+				label.form__label.form__label--password
+					button(type="button").eye-ico
+						+icon('eye')
+						+icon('eye-off')
+					span.form__key Повторить пароль
+					span.form__error-message
+					input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd")
+
+				.form__bottom
+					.form__line
+						button.btn(type="submit") Зарегистрироваться	
+					.form__line
+						p.form__text Нажимая на кнопку, вы соглашаетесь 
+							br
+							| на обработку ваших персональных данных
+					.form__line
+						a(href="#").link Уже есть аккаунт
+			
+			li.tab-content.hidden
+				- var roles = ['Продавец', 'Агент', 'Застройщик', 'Агенство недвижимости', 'Инвестор'];
+				.form__checks
+					each role, ind in roles
+						label.form__check
+							input(type="radio" name="salesman-role" checked=ind==1 ? true : false)
+							.form__check-value= role
+				label.form__label
+					span.form__key Фамилия Имя Отчество
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="Семашко Захар Владимирович")
+
+				label.form__label
+					span.form__key Email
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru")
+
+				label.form__label
+					span.form__key Телефон
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56")
+
+				label.form__label
+					span.form__key Город
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="Сочи")
+
+
+				label.form__label.form__label--password
+					button(type="button").eye-ico.unblind
+						+icon('eye')
+						+icon('eye-off')
+					span.form__key Пароль
+					span.form__error-message
+					input(autocomplete="off" type="text" name="" class="form__input" value="5UimdK5dd")
+
+				label.form__label.form__label--password
+					button(type="button").eye-ico
+						+icon('eye')
+						+icon('eye-off')
+					span.form__key Повторить пароль
+					span.form__error-message
+					input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd")
+
+				.form__bottom
+					.form__line
+						button.btn(type="submit") Зарегистрироваться	
+					.form__line
+						p.form__text Нажимая на кнопку, вы соглашаетесь 
+							br
+							| #[a(href="#") на обработку ваших персональных данных]
+					.form__line
+						a(href="#").link Уже есть аккаунт

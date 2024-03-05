@@ -45,4 +45,35 @@
 	line-height: calc(24/20);
 	z-index: 2;
 }
+.sidebar-form__buttons{
+	margin-bottom: rem(24);
+	position: relative;
+
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $line;
+	}
+
+}
+.sidebar-form__tab-item{
+	flex: 0 0 50%;
+
+}
+.sidebar-form__tab{
+	position: relative;
+	z-index: 1;
+	padding-bottom: rem(13);
+	color: $gray-dark;
+	border-bottom: rem(2) solid transparent;
+
+	&.active{
+		color: $text;
+		border-bottom-color: $accent;
+	}
+}
 /*--------------------END main-sidebar----------------------*/ 
