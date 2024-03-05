@@ -50,7 +50,7 @@ form(action="#" class="form sidebar-form")
 					.form__line
 						p.form__text Нажимая на кнопку, вы соглашаетесь 
 							br
-							| на обработку ваших персональных данных
+							| #[button(type="button" data-micromodal-open="privacy-modal") на обработку ваших персональных данных]
 					.form__line
 						a(href="#").link Уже есть аккаунт
 			
@@ -82,6 +82,6 @@ form(action="#" class="form sidebar-form")
 					.form__line
 						p.form__text Нажимая на кнопку, вы соглашаетесь 
 							br
-							| #[a(href="#") на обработку ваших персональных данных]
+							| #[button(type="button" data-micromodal-open="privacy-modal") на обработку ваших персональных данных]
 					.form__line
 						a(href="#").link Уже есть аккаунт

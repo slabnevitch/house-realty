@@ -4,7 +4,8 @@ mixin privacy-modal()
 			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title' data-simplebar)
 				button.modal__close(aria-label='Close modal' data-micromodal-close)
 				main.modal__content
-					| Настоящий документ «Политика конфиденциальности» (далее по тексту – «Политика») представляет собой правила использования /указать владельца сайта/ (далее – «мы» и/или «Администрация») данных интернет-пользователей (далее «вы» и/или «Пользователь»), собираемых с использованием сайта / указать URL сайта/ (далее – «сайт»).
+					.modal-privacy__title Политика конфиденциальности
+					p Настоящий документ «Политика конфиденциальности» (далее по тексту – «Политика») представляет собой правила использования /указать владельца сайта/ (далее – «мы» и/или «Администрация») данных интернет-пользователей (далее «вы» и/или «Пользователь»), собираемых с использованием сайта / указать URL сайта/ (далее – «сайт»).
 					p 1. Обрабатываемые данные
 					p 1.1. Мы не осуществляем сбор ваших персональных данных с использованием сайта.
 					p 1.2. Все данные, собираемые на сайте, предоставляются и принимаются в обезличенной форме (далее – «Обезличенные данные»).
@@ -14,3 +15,23 @@ mixin privacy-modal()
 					p 1.5 Администрация вправе устанавливать требования к составу Обезличенных данных Пользователя, которые собираются использованием сайта.
 					p 1.6. Администрация вправе устанавливать требования к составу Обезличенных данных 
 
+mixin reg-regard-modal()
+	#reg-regard-modal.modal.modal-reg-regard.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title' data-simplebar)
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Спасибо за регистрацию!
+					p.modal__text Мы свяжемся с вами в ближайшее время и предоставим доступ на сервис
+					.modal__bottom
+						button.btn(type="button" aria-label='Close modal' data-micromodal-close) Понятно
+mixin email-modal()
+	#email-modal.modal.modal-email.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title' data-simplebar)
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Подтвердите электронную почту
+					p.modal__text На указанную вами электронную почту было отправлено письмо. Передийте по ссылке в письме, чтобы начать просмотр
+					.modal__bottom
+						button.btn(type="button" aria-label='Close modal' data-micromodal-close) Понятно

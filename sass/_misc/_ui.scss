@@ -85,7 +85,7 @@
 		}
 }
 h1{
-	font-size: rem(40);
+	@include adaptive-value-rem('font-size', 40, 24, $maxWidth, $minWidth, 1);
 	line-height: math.div(48,40);
 	text-transform: uppercase;
 }
@@ -93,6 +93,12 @@ h2{
 	font-size: rem(24);
 	line-height: math.div(28,24);
 	font-weight: 500;
+}
+
+.simplebar-scrollbar{
+	width: 2px;
+	left: auto;
+	background-color: $accent;
 }
 
 // .toggle-mnu{

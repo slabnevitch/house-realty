@@ -1,13 +1,14 @@
-if page == 'enter'
-	include form-enter
-else if page == 'buyer'
-	include form-buyer
-else if page == 'agency'
-	include form-agency
-else if page == 'access-1'
-	include form-access-1
-else if page == 'access-2'
-	include form-access-2
+.page-main__forms(data-da="page-main__content,991,1")
+	if page == 'enter'
+		include form-enter
+	else if page == 'buyer'
+		include form-buyer
+	else if page == 'agency'
+		include form-agency
+	else if page == 'access-1'
+		include form-access-1
+	else if page == 'access-2'
+		include form-access-2
 
 .main-page__variants._fit
 	img._fit-img(src="img/main-page/2.jpg" alt="alt")

@@ -2337,11 +2337,22 @@ h1 {
   line-height: 1.2;
   text-transform: uppercase;
 }
+@media (max-width: 81.25em) {
+  h1 {
+    font-size: clamp( 1.5rem , 1.3rem  +  1vw , 2.5rem );
+  }
+}
 
 h2 {
   font-size: 1.5rem;
   line-height: 1.1666666667;
   font-weight: 500;
+}
+
+.simplebar-scrollbar {
+  width: 2px;
+  left: auto;
+  background-color: #3A8BF3;
 }
 
 /*--------------------END ui----------------------*/
@@ -2443,6 +2454,87 @@ h2 {
 }
 
 /*--------------------END main-sidebar----------------------*/
+/*--------------------modals----------------------*/
+.modal {
+  font-family: "Raleway", sans-serif;
+}
+.modal h2 {
+  margin-bottom: 1.875rem;
+}
+
+@media (any-hover: hover) {
+  .modal__close {
+    cursor: pointer;
+  }
+}
+
+.modal__close:before {
+  color: #697586;
+}
+
+.modal__content {
+  margin: 0;
+  color: #000;
+}
+
+.modal__text {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 25rem;
+}
+
+.modal__bottom {
+  margin-top: 3.125rem;
+}
+
+.modal__container {
+  width: 100%;
+  max-width: 40rem;
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  padding-left: 5.3125rem;
+  padding-right: 5.3125rem;
+  border-radius: 1.25rem;
+  text-align: center;
+}
+@media (max-width: 81.25em) {
+  .modal__container {
+    padding-top: clamp( 1.875rem , 1.5rem  +  1.875vw , 3.75rem );
+  }
+}
+@media (max-width: 81.25em) {
+  .modal__container {
+    padding-bottom: clamp( 1.875rem , 1.5rem  +  1.875vw , 3.75rem );
+  }
+}
+@media (max-width: 81.25em) {
+  .modal__container {
+    padding-left: clamp( 1.875rem , 1.1875rem  +  3.4375vw , 5.3125rem );
+  }
+}
+@media (max-width: 81.25em) {
+  .modal__container {
+    padding-right: clamp( 1.875rem , 1.1875rem  +  3.4375vw , 5.3125rem );
+  }
+}
+
+.modal-privacy .modal__container {
+  max-width: 56.25rem;
+  text-align: left;
+}
+.modal-privacy .modal__content p:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+.modal-privacy__title {
+  margin-bottom: 1.25rem;
+  text-align: center;
+  color: #3A8BF3;
+  font-weight: 500;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+/*--------------------END modals----------------------*/
 /*--------------------page-main----------------------*/
 .page-main__wrapper {
   display: -ms-flexbox;
