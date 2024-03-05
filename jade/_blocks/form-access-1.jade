@@ -1,0 +1,18 @@
+form(action="#" class="form sidebar-form sidebar-form--access")
+	h2.form__title Восстановление доступа
+
+	.form__line
+		p.form__text.form__text--dark Введите адрес электронной почты, 
+			br
+			| которую вы указывали при регистрации
+	
+	label.form__label
+		span.form__key Email
+		span.form__error-message Обязательное поле
+		input(autocomplete="off" type="text" name="" class="form__input" placeholder="Введите email")
+
+	.form__bottom
+		.form__line
+			button.btn(type="submit") Восстановить пароль
+		.form__line
+			a(href="#").link У меня нет аккауната. Зарегистрироваться

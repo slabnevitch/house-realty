@@ -19,6 +19,7 @@ html(lang='ru')
 	body
 		include _mixins
 		include _vars
+		include ../_blocks/modals
 
 		//- html for use slideOut.js--------------------
 		//- include _body-html-for-slideout 
@@ -27,6 +28,7 @@ html(lang='ru')
 		//- include _footer-to-bottom
 		
 		//- при использовании _body-html-for-slideout или _footer-to-bottom  -- закомментировать:
+		//- #wrapper-for-scroll-fix
 		include ../_sections/header
 		block content
 		include ../_sections/footer

@@ -50,7 +50,7 @@ form(action="#" class="form sidebar-form")
 					.form__line
 						p.form__text Нажимая на кнопку, вы соглашаетесь 
 							br
-							| #[button(type="button" data-micromodal-open="privacy-modal") на обработку ваших персональных данных]
+							| на обработку ваших персональных данных
 					.form__line
 						a(href="#").link Уже есть аккаунт
 			
@@ -59,17 +59,12 @@ form(action="#" class="form sidebar-form")
 				.form__checks
 					each role, ind in roles
 						label.form__check
-							input(type="radio" name="salesman-role" checked=ind==1 ? true : false)
+							input(type="radio" name="salesman-role" checked=ind==3 ? true : false)
 							.form__check-value= role
 				label.form__label
-					span.form__key Фамилия Имя Отчество
+					span.form__key Название компании
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="Семашко Захар Владимирович")
-
-				label.form__label
-					span.form__key Email
-					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru")
+					input(autocomplete="off" type="text" name="" class="form__input" value="ОАО «Строймир»")
 
 				label.form__label
 					span.form__key Телефон
@@ -77,26 +72,9 @@ form(action="#" class="form sidebar-form")
 					input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56")
 
 				label.form__label
-					span.form__key Город
+					span.form__key Email
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="Сочи")
-
-
-				label.form__label.form__label--password
-					button(type="button").eye-ico.unblind
-						+icon('eye')
-						+icon('eye-off')
-					span.form__key Пароль
-					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="5UimdK5dd")
-
-				label.form__label.form__label--password
-					button(type="button").eye-ico
-						+icon('eye')
-						+icon('eye-off')
-					span.form__key Повторить пароль
-					span.form__error-message
-					input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd")
+					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru")
 
 				.form__bottom
 					.form__line
@@ -104,6 +82,6 @@ form(action="#" class="form sidebar-form")
 					.form__line
 						p.form__text Нажимая на кнопку, вы соглашаетесь 
 							br
-							| #[button(type="button" data-micromodal-open="privacy-modal") на обработку ваших персональных данных]
+							| #[a(href="#") на обработку ваших персональных данных]
 					.form__line
 						a(href="#").link Уже есть аккаунт

@@ -1,0 +1,31 @@
+form(action="#" class="form sidebar-form")
+	h2.form__title Восстановление доступа
+
+	.form__line
+		p.form__text.form__text--dark Вам на почту была отправлена ссылка 
+			br
+			| для восстановления пароля, перейдите 
+			br
+			| по ссылке и введите новый пароль
+	
+	label.form__label.form__label--password
+		button(type="button").eye-ico.unblind
+			+icon('eye')
+			+icon('eye-off')
+		span.form__key Новый пароль
+		span.form__error-message
+		input(autocomplete="off" type="text" name="" class="form__input" value="5UimdK5dd")
+
+	label.form__label.form__label--password
+		button(type="button").eye-ico
+			+icon('eye')
+			+icon('eye-off')
+		span.form__key Повторить пароль
+		span.form__error-message
+		input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd")
+
+	.form__bottom
+		.form__line
+			button.btn(type="submit") Войти
+		.form__line
+			a(href="#").link У меня нет аккауната. Зарегистрироваться

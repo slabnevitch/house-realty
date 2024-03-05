@@ -7,6 +7,12 @@
 }
 .sidebar-form{
 	flex-shrink: 0;
+
+	&--access{
+		.form__bottom{
+			padding-top: rem(30);
+		}
+	}
 }
 .main-page__variants{
 	position: relative;

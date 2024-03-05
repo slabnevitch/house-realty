@@ -28,9 +28,20 @@
         </div>
         <aside class="page-main__sidebar">
           <form action="#" class="form sidebar-form">
-            <h2 class="form__title">Войти</h2>
-            <label class="form__label"><span class="form__key">Email</span><span class="form__error-message">Обязательное поле</span>
-              <input autocomplete="off" type="text" name="" placeholder="Введите email" class="form__input">
+            <h2 class="form__title">Восстановление доступа</h2>
+            <div class="form__line">
+              <p class="form__text form__text--dark">Вам на почту была отправлена ссылка <br>для восстановления пароля, перейдите <br>по ссылке и введите новый пароль</p>
+            </div>
+            <label class="form__label form__label--password">
+              <button type="button" class="eye-ico unblind">
+                    <svg class="icon icon-eye ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#eye"></use>
+                    </svg>
+                    <svg class="icon icon-eye-off ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-off"></use>
+                    </svg>
+              </button><span class="form__key">Новый пароль</span><span class="form__error-message"></span>
+              <input autocomplete="off" type="text" name="" value="5UimdK5dd" class="form__input">
             </label>
             <label class="form__label form__label--password">
               <button type="button" class="eye-ico">
@@ -40,13 +51,12 @@
                     <svg class="icon icon-eye-off ">
                       <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-off"></use>
                     </svg>
-              </button><span class="form__key">Пароль</span><span class="form__error-message">Обязательное поле</span>
-              <input autocomplete="off" type="password" name="" placeholder="Введите пароль" class="form__input">
+              </button><span class="form__key">Повторить пароль</span><span class="form__error-message"></span>
+              <input autocomplete="off" type="password" name="" value="5UimdK5dd" class="form__input">
             </label>
-            <label class="form__label"><a href="#" class="link">Забыли пароль?</a></label>
             <div class="form__bottom">
               <div class="form__line">
-                <button type="submit" class="btn">Войти	</button>
+                <button type="submit" class="btn">Войти</button>
               </div>
               <div class="form__line"><a href="#" class="link">У меня нет аккауната. Зарегистрироваться</a></div>
             </div>

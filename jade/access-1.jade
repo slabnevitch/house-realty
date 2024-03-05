@@ -1,8 +1,8 @@
 extends _misc/main
 
 block title
-	| регистрация Покупатель
-	- var page = 'buyer';
+	| Вход
+	- var page = 'access-1';
 	
 block content
 	.page.page-main.page-enter
@@ -25,8 +25,6 @@ block content
 			
 			aside.page-main__sidebar
 				include _blocks/main-sidebar
-
-	+privacy-modal
 block page-scripts
 	//- SERVIVE FUNCTIONS==================
 
@@ -113,7 +111,7 @@ block page-scripts
 	//- script(src="js/libs/accordion/vanilla-accordion.js")
 		
 	//- tabs--------------------------
-	script(src="js/libs/tabs/tabs-pure.js")
+	//- script(src="js/libs/tabs/tabs-pure.js")
 
 	//- tabs-accordion-combine--------------------------
 	//- script(src="js/libs/tabs-accordion-combine/tabs-accordion.js")

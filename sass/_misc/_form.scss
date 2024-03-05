@@ -159,9 +159,25 @@
 	}
 }
 .form__text{
+	text-align: center;
 	color: $gray-dark;
 	font-size: rem(14);
 
+	&--dark{
+		color: $text;
+	}
+	button{
+		@include but-null();
+		color: $gray-dark;
+		font-size: rem(14);
+
+		@media (any-hover: hover) { //только для устройств с ховером
+				&:hover{
+					color: $text;
+		
+				}
+			}
+	}
 	a{
 		text-decoration: none;
 
