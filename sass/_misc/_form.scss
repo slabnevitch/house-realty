@@ -42,6 +42,7 @@
 	@include placecolor($gray-dark);
 	color: $text;
 	font-size: rem(14);
+	border: 1px solid $line;
 
 	.form__error &{
 		border-color: $red;

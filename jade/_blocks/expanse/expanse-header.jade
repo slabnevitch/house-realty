@@ -1,17 +1,16 @@
-.expanse__header.header-expanse
+header.expanse__header.header-expanse
 	.header-expanse__content
 		.header-expanse__search
 			button.btn(type="button") Сочи
-			form(action="#" class="form expanse-form")
-				label.form-label
-					input(autocomplete="off" type="text" name="" class="form__input" placeholder="Поиск по чату")
-				button(type="submit")
+			form(action="#" class="expanse-form")
+				input(autocomplete="off" type="text" name="" class="form__input" placeholder="Поиск по чату")
+				button(type="submit").header-expanse__submit
 					+icon('search')
-		.header-expanse__actions
+		.header-expanse__contacts
 			a(href="mailto:house@gmail.ru").header-expanse__email house@gmail.ru
 			.header-expanse__wats
 				+icon('watsapp')
 	
-	.header-expanse__bar
+	.header-expanse__actions
 		a(href="#").btn.btn-empty Рейтинг продавцов
 		a(href="#").btn Профиль

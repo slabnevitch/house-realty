@@ -19,23 +19,21 @@
               <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Чат</a></li>
             </ul>
       </aside>
-      <div class="expanse__content">
-        <div class="expanse__header header-expanse">
+      <main class="expanse__content">
+        <header class="expanse__header header-expanse">
           <div class="header-expanse__content">
             <div class="header-expanse__search">
               <button type="button" class="btn">Сочи</button>
-              <form action="#" class="form expanse-form">
-                <label class="form-label">
-                  <input autocomplete="off" type="text" name="" placeholder="Поиск по чату" class="form__input">
-                </label>
-                <button type="submit">
+              <form action="#" class="expanse-form">
+                <input autocomplete="off" type="text" name="" placeholder="Поиск по чату" class="form__input">
+                <button type="submit" class="header-expanse__submit">
                       <svg class="icon icon-search ">
                         <use xlink:href="img/icons-svg/symbol/sprite.svg#search"></use>
                       </svg>
                 </button>
               </form>
             </div>
-            <div class="header-expanse__actions"><a href="mailto:house@gmail.ru" class="header-expanse__email">house@gmail.ru</a>
+            <div class="header-expanse__contacts"><a href="mailto:house@gmail.ru" class="header-expanse__email">house@gmail.ru</a>
               <div class="header-expanse__wats">
                     <svg class="icon icon-watsapp ">
                       <use xlink:href="img/icons-svg/symbol/sprite.svg#watsapp"></use>
@@ -43,12 +41,22 @@
               </div>
             </div>
           </div>
-          <div class="header-expanse__bar"><a href="#" class="btn btn-empty">Рейтинг продавцов</a><a href="#" class="btn">Профиль</a></div>
-        </div>
+          <div class="header-expanse__actions"><a href="#" class="btn btn-empty">Рейтинг продавцов</a><a href="#" class="btn">Профиль</a></div>
+        </header>
         <div class="expanse__container">
-          <h1>Center propagandy</h1>
+          <div class="expanse__main">
+            <div class="expanse__field">
+              <h1>Center propagandy</h1>
+            </div>
+            <div class="expanse__chat">
+              <h1>Chat</h1>
+            </div>
+          </div>
+          <aside class="expanse__sidebar sidebar-expanse">
+            <h1>sidevar</h1>
+          </aside>
         </div>
-      </div>
+      </main>
     </div>
     
     

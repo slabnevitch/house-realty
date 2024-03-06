@@ -10,12 +10,34 @@
 
 }
 .expanse__content{
-	height: 100%;
+	// height: 100%;
 	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
 }
 .expanse__container{
 	display: flex;
-	height: 100%;
+	// flex-direction: column;
+	flex: 1 1 auto;
+	// height: 100%;
+}
+.expanse__main{
+
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+}
+.expanse__field{
+	flex: 1 1 auto;
+	overflow-y: auto;
+	background-color: #fff;
+	box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+}
+.expanse__chat{
+	flex: 0 0 auto;
+}
+.expanse__sidebar{
+	flex: 0 0 rem(382);
 }
 
 /*--------------------END expanse-template----------------------*/ 
