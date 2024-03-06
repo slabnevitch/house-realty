@@ -1,4 +1,8 @@
 .page-main__forms(data-da="page-main__content,991,1")
+	if page == "enter"
+		.page-main__form-display
+			button.btn(type="button") Войти 
+	
 	if page == 'enter'
 		include form-enter
 	else if page == 'buyer'

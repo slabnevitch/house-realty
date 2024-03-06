@@ -2,6 +2,11 @@
 	padding: rem(32) rem(40) rem(20) rem(40);
 	background-color: $gray;
 	border-radius: rem(20);
+
+	@include max-screen($sm){
+		
+		padding: rem(26) rem(20) rem(20) rem(20);
+	}
 }
 .form__title {
 	margin-bottom: rem(24);

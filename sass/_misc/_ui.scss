@@ -3,8 +3,75 @@
 	padding: rem(30) 0;
 
 	&-main{
-		height: 100vh;
 
+		@include min-screen($md){
+			
+			height: 100vh;
+		}
+
+	}
+	&-enter{
+
+		.page-main__forms{
+			.sidebar-form{
+				@include max-screen($sm){
+					display: none;
+				}
+
+			}
+
+			&.active{
+					.page-main__form-display{
+						display: none;
+					}
+				.sidebar-form{
+					@include max-screen($sm){
+						display: block;
+					}
+
+				}
+			}
+		}
+
+	}
+	&-buyer,
+	&-agency{
+		.page-main__visual{
+			@include max-screen($xs){
+				aspect-ratio: auto;
+				padding: 0;
+			}
+
+			.logo{
+				@include max-screen($xs){
+					margin-bottom: rem(20);
+				}
+			}
+		}
+		.page-main__hero,
+		.page-main__title{
+			@include max-screen($xs){
+				display: none;
+				
+			}
+		}
+
+		.page-main__coverage,
+		.main-page__variants{
+			@include max-screen($xs){
+				display: none;
+			}
+		}
+		.page-main__wrapper{
+			@include max-screen($xs){
+				gap: 0;
+			}
+		}
+		.page-main__content{
+			@include max-screen($xs){
+				gap: 0;
+			}
+		}
 	}
 }
 .btn{

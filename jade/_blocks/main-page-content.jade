@@ -1,13 +1,15 @@
-.page.page-main.page-enter
+div(class="page page-main page-"+page)
 	.page-main__wrapper
 		.page-main__content
-			.page-main__visual._fit
+			.page-main__visual
 				.logo
 					img(src="img/logo.svg" alt="alt")
 				h1.page-main__title Недвижимость 
 					br
 					| по доступной цене
-				img._fit-img(src="img/main-page/3.jpg" alt="alt")
+				
+				.page-main__hero._fit
+					img._fit-img(src="img/main-page/3.jpg" alt="alt")
 			
 			.page-main__coverage.coverage-page-main
 				.coverage-page-main__img._fit

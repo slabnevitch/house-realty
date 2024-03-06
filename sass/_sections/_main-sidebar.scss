@@ -1,12 +1,19 @@
 /*--------------------main-sidebar----------------------*/
+.page-main__forms{
+	flex-shrink: 0;
+
+}
 .page-main__sidebar{
-	flex: 0 0 rem(420);
 	display: flex;
 	flex-direction: column;
 	row-gap: rem(20);
+
+	@include min-screen($md){
+		flex: 0 0 rem(420);
+		
+	}
 }
 .sidebar-form{
-	flex-shrink: 0;
 
 	&--access{
 		.form__bottom{
@@ -33,8 +40,13 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: rgba(#000, .3);
+		background-color: rgba(#000, .4);
 		z-index: 1;
+	}
+
+	@include max-screen($md){
+		flex: 0 0 auto;
+		aspect-ratio: 335/300;
 	}
 
 }
@@ -50,6 +62,7 @@
 	font-size: rem(20);
 	line-height: calc(24/20);
 	z-index: 2;
+	text-align: center;
 }
 .sidebar-form__buttons{
 	margin-bottom: rem(24);
@@ -80,6 +93,13 @@
 	&.active{
 		color: $text;
 		border-bottom-color: $accent;
+	}
+}
+.page-main__form-display{
+	text-align: center;	
+
+	@include min-screen($sm){
+		display: none;
 	}
 }
 /*--------------------END main-sidebar----------------------*/ 

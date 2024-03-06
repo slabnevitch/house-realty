@@ -95,6 +95,15 @@
 		}
 		// END password show
 
+
+		// enter-form toggle
+		if(document.querySelector('.page-main__form-display') !== null){
+			document.querySelector('.page-main__form-display .btn').onclick = function() {
+				this.closest('.page-main__forms').classList.add('active');
+			}
+		}
+		// END enter-form toggle
+		
 		// micromodal
 		if(document.querySelector('.modal') !== null){
 			MicroModal.init({

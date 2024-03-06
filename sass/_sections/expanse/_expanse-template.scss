@@ -1,0 +1,21 @@
+/*--------------------expanse-template----------------------*/
+.expanse{
+	height: 100%;
+	padding: rem(20) 0;
+	display: flex;
+
+}
+.expanse-nav{
+	flex: 0 0 rem(300);
+
+}
+.expanse__content{
+	height: 100%;
+	flex: 1 1 auto;
+}
+.expanse__container{
+	display: flex;
+	height: 100%;
+}
+
+/*--------------------END expanse-template----------------------*/ 
