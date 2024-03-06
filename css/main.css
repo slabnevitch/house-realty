@@ -2051,6 +2051,7 @@ textarea {
   border-radius: 0.625rem;
   color: #000;
   font-size: 0.875rem;
+  font-family: "Raleway", sans-serif;
   border: 1px solid #E1E5ED;
 }
 .form__input::-webkit-input-placeholder {
@@ -2750,6 +2751,97 @@ h2 {
 }
 
 /*--------------------END page-main----------------------*/
+/*--------------------chat-messages----------------------*/
+.chat-messages {
+  height: 100%;
+}
+
+.chat-message {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 1.25rem;
+  margin-bottom: 1.5rem;
+}
+
+.chat-message__img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #F1F1F5;
+}
+.chat-message__img img, .chat-message__img span {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.chat-message__img span {
+  font-size: 0.875rem;
+}
+
+.chat-message__top {
+  margin-bottom: 0.625rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+
+.chat-message__name {
+  font-weight: 500;
+}
+
+.chat-message__time {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 0.625rem;
+  font-size: 0.875rem;
+  color: #697586;
+}
+
+.chat-messages__line {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.chat-messages__line:before, .chat-messages__line:after {
+  content: "";
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 0.0625rem;
+  background-color: #E1E5ED;
+}
+
+.chat-messages__mark {
+  padding-left: 4.1875rem;
+  padding-right: 4.1875rem;
+  background-color: #fff;
+  font-size: 0.875rem;
+  color: #697586;
+}
+@media (max-width: 81.25em) {
+  .chat-messages__mark {
+    padding-left: clamp( 0.9375rem , 0.2875rem  +  3.25vw , 4.1875rem );
+  }
+}
+@media (max-width: 81.25em) {
+  .chat-messages__mark {
+    padding-right: clamp( 0.9375rem , 0.2875rem  +  3.25vw , 4.1875rem );
+  }
+}
+
+/*--------------------END chat-messages----------------------*/
 /*--------------------expanse-header----------------------*/
 .expanse__header {
   position: relative;
@@ -2766,6 +2858,7 @@ h2 {
   background-color: #fff;
   border-radius: 30px 30px 0px 0px;
   box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+  overflow: hidden;
 }
 
 .header-expanse__content {
@@ -2950,7 +3043,7 @@ h2 {
 /*--------------------END expanse-sidebar----------------------*/
 /*--------------------expanse-template----------------------*/
 .expanse {
-  height: 100%;
+  height: 100vh;
   padding: 1.25rem 0;
   display: -ms-flexbox;
   display: flex;
@@ -2975,6 +3068,7 @@ h2 {
   display: flex;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  height: calc(100% - 5rem);
 }
 
 .expanse__main {
@@ -2989,6 +3083,7 @@ h2 {
 .expanse__field {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
+  padding-left: 1.875rem;
   overflow-y: auto;
   background-color: #fff;
   box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);

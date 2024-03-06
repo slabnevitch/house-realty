@@ -1,0 +1,66 @@
+/*--------------------chat-messages----------------------*/
+.chat-messages {
+	height: 100%;
+}
+.chat-messages__block {}
+.chat-message {
+	display: flex;
+	column-gap: rem(20);
+	margin-bottom: rem(24);
+}
+.chat-message__img {
+	position: relative;
+	width: 40px;
+	height: 40px;
+	flex-shrink: 0;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: $gray;
+	img, span{
+		@include absolute-center;
+	}
+	span{
+		font-size: rem(14);
+	}
+}
+.chat-message__body {}
+.chat-message__top {
+	margin-bottom: rem(10);
+	display: flex;
+	align-items: center;
+	column-gap: rem(20);
+}
+.chat-message__name {
+	font-weight: 500;	
+}
+.chat-message__time {
+	display: flex;
+	column-gap: rem(10);
+	font-size: rem(14);
+	color: $gray-dark;
+
+}
+.chat-message__date {
+}
+.chat-messages__line {
+	display: flex;
+	align-items: center;
+	margin-bottom: rem(24);
+
+	&:before,
+	&:after{
+		content: '';
+		flex: 1 1 auto;
+		height: rem(1);
+		background-color: $line;
+	}
+}
+
+.chat-messages__mark {
+	@include adaptive-value-rem('padding-left', 67, 15, $maxWidth, $minWidth, 1);
+	@include adaptive-value-rem('padding-right', 67, 15, $maxWidth, $minWidth, 1);
+	background-color: #fff;
+	font-size: rem(14);
+	color: $gray-dark;
+}
+/*--------------------END chat-messages----------------------*/ 
