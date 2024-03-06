@@ -1,0 +1,22 @@
+.emoji-block
+	._tabs.emoji-block__tabs
+		ul.tabs__buttons
+			li.tabs__item
+				a.tab.active(href='#') Эмодзи
+			li.tabs__item
+				a.tab(href='#') Стикеры
+
+		- var emjs = ['anxious-face-with-sweat', 'astonished-face', 'baby-medium-dark-skin-tone'];
+		ul.tabs__container#emoji-box(data-simplebar)
+			li.tab-content.active
+				.emoji-list
+					each item in emjs
+						span(class="emoji "+item)
+
+			li.tab-content.hidden
+
+	.emoji-block__navs
+		- var navs = ['frame', 'teacher', 'crown', 'heart', 'house'];
+		each item, ind in navs
+			button(class=ind==0?"emoji-block__nav active":"emoji-block__nav" type="button")
+				+icon(item)

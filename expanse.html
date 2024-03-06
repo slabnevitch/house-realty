@@ -212,11 +212,64 @@
               </div>
             </div>
             <div class="expanse__chat">
-              <h1>Chat</h1>
+              <form action="#" class="chat-form">
+                <label class="chat-form__label">
+                  <input type="file" name="chat-file" class="file-input">
+                  <div class="chat-form__file-add">
+                        <svg class="icon icon-plus-circle ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#plus-circle"></use>
+                        </svg>
+                  </div>
+                </label>
+                <div id="input-box" contenteditable="false" class="chat-box">
+                  <div id="input-box-field" tabindex="-1" autocomplete="off" spellcheck="true" _moz_resizing="false" contenteditable="" class="chat-box__field"></div>
+                </div>
+              </form>
             </div>
           </div>
           <aside class="expanse__sidebar sidebar-expanse">
-            <h1>sidevar</h1>
+            <div class="emoji-block">
+              <div class="_tabs emoji-block__tabs">
+                <ul class="tabs__buttons">
+                  <li class="tabs__item"><a href="#" class="tab active">Эмодзи</a></li>
+                  <li class="tabs__item"><a href="#" class="tab">Стикеры</a></li>
+                </ul>
+                <ul id="emoji-box" data-simplebar class="tabs__container">
+                  <li class="tab-content active">
+                    <div class="emoji-list"><span class="emoji anxious-face-with-sweat"></span><span class="emoji astonished-face"></span><span class="emoji baby-medium-dark-skin-tone"></span>
+                    </div>
+                  </li>
+                  <li class="tab-content hidden"></li>
+                </ul>
+              </div>
+              <div class="emoji-block__navs">
+                <button type="button" class="emoji-block__nav active">
+                      <svg class="icon icon-frame ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#frame"></use>
+                      </svg>
+                </button>
+                <button type="button" class="emoji-block__nav">
+                      <svg class="icon icon-teacher ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#teacher"></use>
+                      </svg>
+                </button>
+                <button type="button" class="emoji-block__nav">
+                      <svg class="icon icon-crown ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#crown"></use>
+                      </svg>
+                </button>
+                <button type="button" class="emoji-block__nav">
+                      <svg class="icon icon-heart ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#heart"></use>
+                      </svg>
+                </button>
+                <button type="button" class="emoji-block__nav">
+                      <svg class="icon icon-house ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#house"></use>
+                      </svg>
+                </button>
+              </div>
+            </div>
           </aside>
         </div>
       </main>
@@ -229,6 +282,7 @@
     <script type="text/javascript" src="js/libs/svg4everybody/svg4everybody.min.js" async onload="svg4everybody();"></script>
     
     
+    <script src="js/libs/tabs/tabs-pure.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

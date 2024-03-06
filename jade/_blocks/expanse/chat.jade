@@ -1,0 +1,10 @@
+.expanse__chat
+	form(action="#" class="chat-form")
+		label.chat-form__label
+			input( type="file" name="chat-file" class="file-input" )
+			.chat-form__file-add
+				+icon('plus-circle')
+		
+		.chat-box#input-box(contenteditable='false')
+			.chat-box__field#input-box-field(tabindex='-1', autocomplete='off', spellcheck='true', _moz_resizing='false', contenteditable='')
+			//- #input-box-placeholder(data-ph='Type something...', contenteditable='false')

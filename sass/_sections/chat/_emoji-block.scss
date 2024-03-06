@@ -1,0 +1,62 @@
+/*--------------------emoji-block----------------------*/
+.emoji-block {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	
+	._tabs {
+		display: flex;
+		flex-direction: column;
+	}
+	.tabs__buttons {
+		flex: 0 0 auto;
+	}
+	.tabs__container {
+		overflow-y: auto;
+		flex: 1 1 auto;
+	}
+	// .tab-content {
+	// 	height: 100%;
+	// }
+}
+.emoji-block__tabs {
+	flex: 1 1 auto;
+}
+.tabs__item {}
+.tab {}
+.active {}
+.emoji-list {}
+.emoji {}
+.anxious-face-with-sweat {}
+.astonished-face {}
+.baby-medium-dark-skin-tone {}
+.hidden {}
+.emoji-block__navs {
+	margin-left: rem(-40);
+	margin-right: rem(-40);
+	flex: 0 0 auto;
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+}
+.emoji-block__nav {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: rem(60);
+	@include but-null();
+	background-color: #fff;
+
+	&.active{
+		background-color: transparent;
+	}
+	.icon{
+		font-size: rem(24);
+	}
+}
+.icon {}
+.icon-frame {}
+.icon-teacher {}
+.icon-crown {}
+.icon-heart {}
+.icon-house {}
+/*--------------------END emoji-block----------------------*/ 

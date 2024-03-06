@@ -236,6 +236,22 @@ padding-bottom: 52.25%;
 .tabs__buttons{
 	display: flex;
 }
+.tabs__item{
+	flex: 0 0 50%;
+
+}
+.tab{
+	position: relative;
+	z-index: 1;
+	padding-bottom: rem(13);
+	color: $gray-dark;
+	border-bottom: rem(2) solid transparent;
+
+	&.active{
+		color: $text;
+		border-bottom-color: $accent;
+	}
+}
 .tabs__container{
 }
 .tab-content,
@@ -246,7 +262,20 @@ padding-bottom: 52.25%;
 	text-decoration: none;
 	display: block;
 }
+.tabs__buttons{
+	
+	position: relative;
 
+	&:after{
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 2px;
+		background-color: $line;
+	}	
+}
 // показ спойлеров на определенном разрешении. Включать только при установленном аттрибуте data-breakpoint="" у .accordion
 // .accordion:not(.combine){
 // 	.accordion__content.hidden{
