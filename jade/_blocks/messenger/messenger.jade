@@ -1,7 +1,7 @@
 .messenger
 	.messenger__header
 		form(action="#").messenger__filter.filter-messenger
-		- var roles = ['Продавец', 'Агент', 'Застройщик', 'Агенство недвижимости', 'Инвестор'];
+		- var roles = ['Все', 'Продавец', 'Агент', 'Застройщик', 'Агенство недвижимости', 'Инвестор'];
 		
 		//- Общий блок слайдера
 		.tiny-carousel
@@ -9,13 +9,13 @@
 			//- в js добавить параметр controlsContainer: '.tiny-carousel__nav'
 			.tiny-carousel__nav
 				button(type="button" class="tns-prev")
-					+icon('chev-left')
+					+icon('chevron-rught')
 				button(type="button" class="tns-next")
-					+icon('chev-right')
+					+icon('chevron-rught')
 			
 			//- Собственно, слайдер
 			.tiny-sldr
 				for role,i in roles
 					label.filter-messenger__item
-						input(autocomplete="off" type="checkbox" name="role" class="filter-messenger__input")
+						input(autocomplete="off" type="checkbox" name="role" class="filter-messenger__input" checked=i==0?true:false)
 						span.btn.btn-mini.filter-messenger__value= role

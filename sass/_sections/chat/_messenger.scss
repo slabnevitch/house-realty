@@ -1,0 +1,86 @@
+/*--------------------messenger----------------------*/
+.messenger {
+	// height: 100%;	
+	display: flex;
+	flex-direction: column;
+	flex: 0 0 rem(382);
+	max-width: rem(382);
+}
+.messenger__header {
+	flex: 0 0 auto;
+	position: relative;
+	margin-bottom: rem(30);
+}
+.messenger__filter {}
+.filter-messenger {}
+.tiny-carousel {
+	padding-right: rem(15);
+	padding-left: rem(15);
+}
+.tiny-carousel__nav {
+	display: flex;
+	justify-content: space-between;
+}
+.tns-prev,
+.tns-next {
+	@include but-null();
+	position: absolute;
+	top: 50%;
+	margin-top: rem(-8);
+	z-index: 2;
+	width: rem(30);
+	height: rem(30);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	background-color: #fff;
+	box-shadow: 3px -2px 10px 0px rgba(182, 190, 201, 0.2),-3px 2px 10px 0px rgba(182, 190, 201, 0.2);
+
+	&[disabled]{
+		display: none;
+	}
+
+	.icon {
+		font-size: rem(10);
+		color: $accent;
+	}
+
+}
+.tns-prev{
+	.icon{
+		transform: rotate(-180deg);
+	}
+}
+.tns-next{
+	right: 0;
+}
+.tiny-sldr {}
+.filter-messenger__item {
+	position: relative;
+	user-select: none;
+}
+.filter-messenger__input {
+	@include checkbox();
+	&:checked + .filter-messenger__value{
+		background-color: $accent;
+		color: #fff;
+	}
+}
+.btn {}
+.btn-mini {}
+.filter-messenger__value {
+	height: rem(30);
+	padding-left: rem(20);
+	padding-right: rem(20);
+	background-color: $gray;
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+			&:hover{
+				background-color: $accent;
+				color: #fff;
+			}
+		}
+}
+/*--------------------END messenger----------------------*/ 

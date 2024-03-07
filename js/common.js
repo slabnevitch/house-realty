@@ -142,23 +142,7 @@
 
 	// baguetteBox
 		if(document.querySelector('.gallery') !== null){
-			baguetteBox.run('.gallery', {
-				 captions: function(element) {
-			        return'<button type="button" class="photo-remove">'+
-                            '<svg class="icon icon-remove ">'+
-                              '<use xlink:href="img/icons-svg/symbol/sprite.svg#remove"></use>'+
-                            '</svg>'+
-                      '</button>';
-			    }
-				
-			});
-		}
-
-		if(document.querySelector('.certificates__gallery') !== null){
-			baguetteBox.run('.certificates__gallery');
-		}
-		if(document.querySelector('.certificates__list') !== null){
-			baguetteBox.run('.certificates__list');
+			baguetteBox.run('.gallery');
 		}
 	// END baguetteBox
 

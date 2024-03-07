@@ -14,9 +14,9 @@ mixin message(img, name, text, button=false, imgs=false)
 			.chat-message__text= text
 			
 			if imgs
-				.chat-message__images
+				.chat-message__images.gallery
 					- for (var i=0; i < 4; i++)
-						.chat-message__image._fit
+						a(href="img/chat/gallery-lg.jpg").chat-message__image._fit
 							img._fit-img(src="img/chat/imgs/"+(i+1)+".jpg" alt="alt")
 			if button
 				.chat-message__footer
