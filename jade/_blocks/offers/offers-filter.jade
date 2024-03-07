@@ -1,0 +1,19 @@
+form(action="#" class="offers-filter")
+	- var prices = ['Все', 'до 5 млн ₽', 'до 10 млн ₽', 'до 20 млн ₽'];
+	- var types = ['Все', 'Дом', 'Квартира', 'Жилой комплекс', 'Участок'];
+
+	.offers-filter__group
+		.offers-filter__title Цена
+		.offers-filter__items
+			each price, ind in prices
+				label.offers-filter__item
+					input(type="radio" name="offer-price" class="offers-filter__input" checked=ind==0?true:false)
+					.btn.offers-filter__name= price
+
+	.offers-filter__group
+		.offers-filter__title Тип дома
+		.offers-filter__items
+			each type, ind in types
+				label.offers-filter__item
+					input(type="radio" name="offer-type" class="offers-filter__input" checked=ind==0?true:false)
+					.btn.offers-filter__name= type

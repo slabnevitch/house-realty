@@ -1,0 +1,38 @@
+/*--------------------offers-filter----------------------*/
+.offers-filter {}
+.offers-filter__group {
+	&:not(:last-child){
+		margin-bottom: rem(30);
+	}
+
+}
+.offers-filter__items{
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(10)
+}
+.offers-filter__title {
+	margin-bottom: rem(14);
+	font-weight: 500;
+}
+.offers-filter__item {
+
+}
+.offers-filter__input {
+	@include checkbox();
+	&:checked + .offers-filter__name{
+		background-color: $accent;
+		color: #fff;
+	}
+}
+.btn {}
+.offers-filter__name {
+	height: rem(32);
+	padding-left: rem(16);
+	padding-right: rem(16);
+	background-color: #fff;
+	color: $text;
+	border-radius: rem(5);
+	font-size: rem(14);
+}
+/*--------------------END offers-filter----------------------*/ 

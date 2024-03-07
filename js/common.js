@@ -139,13 +139,42 @@
 			});		
 		}
 	// END micromodal
+	
+	// добавление смайлов в чат
+		if(document.querySelector('#input-box') != null){
+			einput.init({
+				typefocus: false
+			});
+		}
+	// END добавление смайлов в чат
+
+	// baguetteBox
+		if(document.querySelector('.gallery') !== null){
+			baguetteBox.run('.gallery', {
+				 captions: function(element) {
+			        return'<button type="button" class="photo-remove">'+
+                            '<svg class="icon icon-remove ">'+
+                              '<use xlink:href="img/icons-svg/symbol/sprite.svg#remove"></use>'+
+                            '</svg>'+
+                      '</button>';
+			    }
+				
+			});
+		}
+
+		if(document.querySelector('.certificates__gallery') !== null){
+			baguetteBox.run('.certificates__gallery');
+		}
+		if(document.querySelector('.certificates__list') !== null){
+			baguetteBox.run('.certificates__list');
+		}
+	// END baguetteBox
+
 	});
 })();
 
-// запуск основной функции
-// einput.init();
-// console.log(document.querySelector('.skot'))
-// document.querySelector('.skot').addEventListener('click', (e) => {
+// console.log(document.querySelector('.maskot'))
+// document.querySelector('.maskot').addEventListener('click', (e) => {
 // 	// var cleanText = cutTegs(document.getElementById('input-box').innerHTML);
 
 // 	// console.log(cleanText.replace(/\s+/g, ' ').trim());

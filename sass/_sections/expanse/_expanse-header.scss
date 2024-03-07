@@ -64,6 +64,11 @@
 	text-decoration: none;
 	color: $text;
 	white-space: nowrap;
+
+	@include max-screen(em($maxWidth - 100)){
+		max-width: rem(120);
+		@include dots-family();
+	}
 }
 .header-expanse__wats {
 	position: relative;

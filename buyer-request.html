@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>pf[bl]
+    <title>Покупатель - запрос
     </title>
     <meta name="description" content="">
     <link rel="icon" href="img/favicon.png">
@@ -13,11 +13,11 @@
     <div class="expanse">
       <aside class="expanse__nav">
         <div class="expanse-sidebar__logo"><img src="img/logo.svg" alt="alt"></div>
-            <ul class="expanse-menu__list">
-              <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Запрос</a></li>
-              <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Предложения</a></li>
-              <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Чат</a></li>
-            </ul>
+        <ul class="expanse-menu">
+          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link active">Запрос</a></li>
+          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Предложения</a></li>
+          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Чат</a></li>
+        </ul>
       </aside>
       <main class="expanse__content">
         <header class="expanse__header header-expanse">
@@ -33,13 +33,10 @@
                 </button>
               </form>
             </div>
-            <div class="header-expanse__contacts"><a href="mailto:house@gmail.ru" class="header-expanse__email">house@gmail.ru</a>
-              <div class="header-expanse__wats">
+            <div class="header-expanse__contacts"><a href="mailto:house@gmail.ru" class="header-expanse__email">house@gmail.ru</a><a href="#" class="header-expanse__wats">
                     <svg class="icon icon-watsapp ">
                       <use xlink:href="img/icons-svg/symbol/sprite.svg#watsapp"></use>
-                    </svg>
-              </div>
-            </div>
+                    </svg></a></div>
           </div>
           <div class="header-expanse__actions"><a href="#" class="btn btn-empty">Рейтинг продавцов</a><a href="#" class="btn">Профиль</a></div>
         </header>
@@ -59,7 +56,7 @@
                           <div class="chat-message__time">08:15</div>
                         </div>
                       </div>
-                      <div class="chat-message__body">Жильё в г. Сочи, в зелёной зоне с видом на море. На территории дома хочется, чтобы был собственный бассейн, В апартаментах — большая</div>
+                      <div class="chat-message__text">Жильё в г. Сочи, в зелёной зоне с видом на море. На территории дома хочется, чтобы был собственный бассейн, В апартаментах — большая</div>
                     </div>
                   </div>
                   <div class="chat-messages__line">
@@ -222,8 +219,12 @@
                   </div>
                 </label>
                 <div id="input-box" contenteditable="false" class="chat-box">
-                  <div id="input-box-field" tabindex="-1" autocomplete="off" spellcheck="true" _moz_resizing="false" contenteditable="" class="chat-box__field"></div>
                 </div>
+                <button type="button" class="chat-form__send">
+                      <svg class="icon icon-send ">
+                        <use xlink:href="img/icons-svg/symbol/sprite.svg#send"></use>
+                      </svg>
+                </button>
               </form>
             </div>
           </div>
@@ -286,6 +287,7 @@
     
     
     <script src="js/libs/tabs/tabs-pure.js"></script>
+    <script src="js/libs/einput/einput.js"></script>
     <script src="js/common.js"></script>
   </body>
 </html>

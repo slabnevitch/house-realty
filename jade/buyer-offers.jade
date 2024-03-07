@@ -1,17 +1,14 @@
 extends _misc/main-expanse
 
 block title
-	| pf[bl]
-	- var page = 'expanse';
+	| Покупатель - предложения
+	- var page = 2;
 
 block expanse-center
-	include _blocks/expanse/messages
-
-block chat
-	include _blocks/expanse/chat
+	include _blocks/offers/offers-messages
 
 block expanse-right
-	include _blocks/expanse/emoji
+	include _blocks/offers/offers-filter
 	
 block page-scripts
 	//- SERVIVE FUNCTIONS==================

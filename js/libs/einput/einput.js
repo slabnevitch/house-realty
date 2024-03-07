@@ -169,7 +169,7 @@
       autofocus:    true,                // наличие атрибута autofocus
       typefocus:    true,                // автофокус в строку при печатании
       pastecheck:   true,                // форматирование при вставке контента в строку
-      tabindex:     "-1",                // значение атрибута tabindex
+      tabindex:     "1",                // значение атрибута tabindex
       maxlength:    1000,                // максимальная длина контента в строке
       callback:     function(text) {     // функция, выполяемая после отправки сообщения
         console.log(text);
@@ -226,7 +226,7 @@
       var l = this.textContent.length;
 
       // ...
-      if (l > settings.maxlength) (key === 8 || key === 46 || key === 39 || key === 37) ? null : prevent(e);
+      // if (l > settings.maxlength) (key === 8 || key === 46 || key === 39 || key === 37) ? null : prevent(e);
 
       if (key === 13) { // переопредление действия клавиши Enter
 
@@ -268,11 +268,13 @@
 
     // добавление событий для панели
     var panel = einput.els.panel;
-      console.log(panel)
+      // console.log(panel)
 
     panel.addEventListener("click", function(e) {
-      console.log('click')
-      if (e.target.classList.contains("emoji")) einput.insert(e);
+      // console.log(document.activeElement)
+      if(document.activeElement === document.querySelector('#input-box-field')){
+        if (e.target.classList.contains("emoji")) einput.insert(e);
+      }
     });
     panel.addEventListener("mousedown", prevent);
   };
@@ -282,7 +284,7 @@
 }(document);
 
 // добавление события, обрабатывающего отображение или скрытие панели смайлов
-document.getElementById("btn").addEventListener("click", function(e) {
-  this.classList.toggle("active");
-  einput.els.panelBox.classList.toggle("show");
-});
+// document.getElementById("btn").addEventListener("click", function(e) {
+//   this.classList.toggle("active");
+//   einput.els.panelBox.classList.toggle("show");
+// });

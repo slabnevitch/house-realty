@@ -7,6 +7,7 @@
 	display: flex;
 	column-gap: rem(20);
 	margin-bottom: rem(24);
+	padding-right: rem(20);
 }
 .chat-message__img {
 	position: relative;
@@ -62,5 +63,19 @@
 	background-color: #fff;
 	font-size: rem(14);
 	color: $gray-dark;
+}
+.chat-message__images{
+	padding-top: 10px;
+	display: flex;
+	gap: rem(10);
+}
+.chat-message__image{
+	flex: 0 0 prc(154,1156);
+	aspect-ratio: 160/140;
+	border-radius: rem(10);
+	overflow: hidden;
+}
+.chat-message__footer{
+	padding-top: rem(10);
 }
 /*--------------------END chat-messages----------------------*/ 

@@ -1,5 +1,8 @@
 aside.expanse__nav
 	.expanse-sidebar__logo
 		img(src="img/logo.svg" alt="alt")
-
-	+menu('expanse-menu', ['Запрос', 'Предложения', 'Чат'])
+	- var menu = ['Запрос', 'Предложения', 'Чат'];
+	ul.expanse-menu
+		each item, ind in menu
+			li.expanse-menu__item
+				a(href="#" class=ind+1==page ? "expanse-menu__link active" : "expanse-menu__link")= item
