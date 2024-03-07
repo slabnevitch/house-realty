@@ -115,29 +115,89 @@
 				awaitCloseAnimation: true,
 				// disableScroll: true,
 				onShow: function(modal, trigger, event){
-
-					// console.log(trigger)
-					// console.log(event)
-					// console.log(modal)	
-					
 					// при disableScroll: true для компенсации ширины скроллбара (фикс "прыгания" страницы влево)
 					if(document.querySelector('#wrapper-for-scroll-fix') != null){
 						document.querySelector('#wrapper-for-scroll-fix').classList.add('modal-open');
 
 					}
-
 				},
 				onClose: function(modal) {
 					// console.info(`${modal.id} is hidden`);
 					// при disableScroll: true для компенсации ширины скроллбара (фикс "прыгания" страницы влево)
 					if(document.querySelector('#wrapper-for-scroll-fix') != null){
 						document.querySelector('#wrapper-for-scroll-fix').classList.remove('modal-open');
-
 					}
-
 				}
 			});		
 		}
 	// END micromodal
+	
+	// добавление смайлов в чат
+		if(document.querySelector('#input-box') != null){
+			einput.init({
+				typefocus: false
+			});
+		}
+	// END добавление смайлов в чат
+
+	// baguetteBox
+		if(document.querySelector('.gallery') !== null){
+			baguetteBox.run('.gallery');
+		}
+	// END baguetteBox
+
+	// messenger filter slider
+		if(document.querySelector('.messenger__header .tiny-carousel') !== null){//для tiny-slider с кастомными кнопками навигации
+					
+		var slider = tns({
+						container: '.messenger__header .tiny-sldr',
+						mode: 'carousel', //'gallery' - для фэйд-анимации отдельных слайдов
+						autoWidth: true,
+						loop: false,
+						// slideBy: 1, // кол-во слайдов, перематывающихся за 1 клик. Не работает с mode: 'gallery'
+						// autoplay: true,
+						// controls: false, // отключение кнопок "вперед/назад"
+						controlsContainer: '.messenger__header .tiny-carousel__nav', // внутри .block-header__nav должны быть 2 заранее отстилизованные кнопки
+						// navContainer: "#customize-thumbnails",//конткйнер для навигации миниатюрами
+						// navAsThumbnails: true, //включение навигации миниатюрами
+						nav: false, //отключение bullets
+						// navPosition: 'bottom',//положение bullets
+						mouseDrag: true,
+						gutter: 10, //добавляет padding, а не margin! Нужна обертка вокруг содержимого каждого слайда!
+						
+						// responsive: { // mobile first!
+						// 	375: {
+
+						//       // items: 1.1
+						// 	},
+						// 	640: {
+						//       // edgePadding: 20,
+						//       // gutter: 20,
+						//       // items: 2
+						// 	},
+						// 	700: {
+						//       // gutter: 30
+						// 	},
+						// 	900: {
+						//       // items: 3
+						// 	}
+						// }
+			});
+		}
+	// END messenger filter slider
 	});
 })();
+
+// console.log(document.querySelector('.maskot'))
+// document.querySelector('.maskot').addEventListener('click', (e) => {
+// 	// var cleanText = cutTegs(document.getElementById('input-box').innerHTML);
+
+// 	// console.log(cleanText.replace(/\s+/g, ' ').trim());
+// 	console.log(document.getElementById('input-box').textContent.replace(/\s+/g, ' ').trim());
+// });
+// function cutTegs(str) {
+//  var regex = /(\<(\/?[^>]+)>)/g,
+//      result = str.replace(regex, "");
+
+//      return result;
+// }

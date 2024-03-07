@@ -53,6 +53,11 @@
   width: 1em;
 }
 
+.icon-crown {
+  font-size: 2rem;
+  width: 1em;
+}
+
 .icon-eye {
   font-size: 1.6rem;
   width: 1.375em;
@@ -61,6 +66,21 @@
 .icon-eye-off {
   font-size: 1.8rem;
   width: 1.2222222222em;
+}
+
+.icon-frame {
+  font-size: 2.2rem;
+  width: 0.6363636364em;
+}
+
+.icon-heart {
+  font-size: 2rem;
+  width: 1em;
+}
+
+.icon-house {
+  font-size: 2.4rem;
+  width: 0.9166666667em;
 }
 
 .icon-plus-circle {
@@ -78,6 +98,11 @@
   width: 1em;
 }
 
+.icon-teacher {
+  font-size: 2.2rem;
+  width: 0.8636363636em;
+}
+
 .icon-user {
   font-size: 1.8rem;
   width: 0.8888888889em;
@@ -91,1091 +116,6 @@
 .icon-x-big {
   font-size: 2.2rem;
   width: 1em;
-}
-
-.Anxious Face With Sweat {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Astonished Face {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Baby Medium Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Baby Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Baby Medium Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -87px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Baby Medium Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Baby {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Beaming Face With Smiling Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Cat Face {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Cat With Tears Of Joy {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Cat With Wry Smile {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Clown Face {
-  background-image: url(../img/sprite.png);
-  background-position: -116px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Cold Face {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Confounded Face {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Confused Face {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Cowboy Hat Face {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Crying Cat {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Crying Face {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Disappointed Face {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Disguised Face {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Dizzy Face {
-  background-image: url(../img/sprite.png);
-  background-position: -145px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Downcast Face With Sweat {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Drooling Face {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Exploding Head {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Expressionless Face {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face Blowing A Kiss {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face Exhaling {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face In Clouds {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face Savoring Food {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face Screaming In Fear {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face Vomiting {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Hand Over Mouth {
-  background-image: url(../img/sprite.png);
-  background-position: -174px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Head Bandage {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Medical Mask {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Monocle {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Open Mouth {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Raised Eyebrow {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Rolling Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Spiral Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Steam From Nose {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Symbols On Mouth {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Tears Of Joy {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Thermometer {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face With Tongue {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Face Without Mouth {
-  background-image: url(../img/sprite.png);
-  background-position: -203px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Fearful Face {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Flushed Face {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Frowning Face With Open Mouth {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Frowning Face {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Ghost {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Goblin {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Grimacing Face {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Grinning Cat With Smiling Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Grinning Cat {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Grinning Face With Big Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Grinning Face With Smiling Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Grinning Face With Sweat {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Grinning Face {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Grinning Squinting Face {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Hand With Fingers Splayed Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -232px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Hand With Fingers Splayed Medium Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Hand With Fingers Splayed Medium Skin Tone-1 {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Hand With Fingers Splayed Medium Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Hand With Fingers Splayed {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Hot Face {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Hugging Face {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Hushed Face {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Kiss Mark {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Kissing Cat {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Kissing Face With Closed Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Kissing Face With Smiling Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Kissing Face {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Loudly Crying Face {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Lying Face {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Money Mouth Face {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Mouth {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Nauseated Face {
-  background-image: url(../img/sprite.png);
-  background-position: -261px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Nerd Face {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Neutral Face {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Ogre {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Partying Face {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Pensive Face {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Persevering Face {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Pile Of Poo {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Pleading Face {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Pouting Cat {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Pouting Face {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Raised Back Of Hand Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Raised Back Of Hand Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Raised Back Of Hand Medium Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Raised Back Of Hand Medium Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Raised Back Of Hand Medium Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Raised Back Of Hand {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Relieved Face {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Rolling On The Floor Laughing {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Sad But Relieved Face {
-  background-image: url(../img/sprite.png);
-  background-position: -290px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Shushing Face {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Skull And Crossbones {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Skull {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Sleeping Face {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Sleepy Face {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Slightly Frowning Face {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Slightly Smiling Face {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smiling Cat With Heart Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smiling Face With Halo {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smiling Face With Heart Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smiling Face With Hearts {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smiling Face With Horns {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smiling Face With Smiling Eyes {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smiling Face With Sunglasses {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smiling Face With Tear {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smiling Face {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Smirking Face {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Sneezing Face {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Squinting Face With Tongue {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Star Struck {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Thinking Face {
-  background-image: url(../img/sprite.png);
-  background-position: -319px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Tired Face {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Tooth {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Unamused Face {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Upside Down Face {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Waving Hand Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Waving Hand Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Waving Hand Medium Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Waving Hand Medium Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Waving Hand Medium Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Waving Hand {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Weary Cat {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Weary Face {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Winking Face With Tongue {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Winking Face {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Frowning Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -116px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Frowning Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -145px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Frowning Medium Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -174px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Frowning Medium Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -203px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Frowning Medium Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -232px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Frowning {
-  background-image: url(../img/sprite.png);
-  background-position: -261px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing No Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -290px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing No Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -319px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing No Medium Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -348px 0px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing No Medium Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -29px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing No Medium Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -58px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing No {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -87px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing Ok Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -116px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing Ok Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -145px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing Ok Medium Dark Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -174px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing Ok Medium Light Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -203px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing Ok Medium Skin Tone {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -232px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Gesturing Ok {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -261px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woman Getting Haircut {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -290px;
-  width: 24px;
-  height: 24px;
-}
-
-.Woozy Face {
-  background-image: url(../img/sprite.png);
-  background-position: -348px -319px;
-  width: 24px;
-  height: 24px;
-}
-
-.Worried Face {
-  background-image: url(../img/sprite.png);
-  background-position: 0px -348px;
-  width: 24px;
-  height: 24px;
-}
-
-.Yawning Face {
-  background-image: url(../img/sprite.png);
-  background-position: -29px -348px;
-  width: 24px;
-  height: 24px;
-}
-
-.Zany Face {
-  background-image: url(../img/sprite.png);
-  background-position: -58px -348px;
-  width: 24px;
-  height: 24px;
-}
-
-.Zipper Mouth Face {
-  background-image: url(../img/sprite.png);
-  background-position: -87px -348px;
-  width: 24px;
-  height: 24px;
 }
 
 .alien-monster {
@@ -1209,6 +149,1091 @@
 .anguished-face {
   background-image: url(../img/sprite.png);
   background-position: -58px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.anxious-face-with-sweat {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.astonished-face {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.baby-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.baby-medium-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.baby-medium-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -87px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.baby-medium-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.baby {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.beaming-face-with-smiling-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.cat-face {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.cat-with-tears-of-joy {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.cat-with-wry-smile {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.clown-face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.cold-face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.confounded-face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.confused-face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.cowboy-hat-face {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.crying-cat {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.crying-face {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.disappointed-face {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.disguised-face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.dizzy-face {
+  background-image: url(../img/sprite.png);
+  background-position: -145px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.downcast-face-with-sweat {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.drooling-face {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.exploding-head {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.expressionless-face {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-blowing-a-kiss {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-exhaling {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-in-clouds {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-savoring-food {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-screaming-in-fear {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-vomiting {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-hand-over-mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -174px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-head-bandage {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-medical-mask {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-monocle {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-open-mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-raised-eyebrow {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-rolling-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-spiral-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-steam-from-nose {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-symbols-on-mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-tears-of-joy {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-thermometer {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-with-tongue {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.face-without-mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -203px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.fearful-face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.flushed-face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.frowning-face-with-open-mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.frowning-face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.ghost {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.goblin {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.grimacing-face {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.grinning-cat-with-smiling-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.grinning-cat {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.grinning-face-with-big-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.grinning-face-with-smiling-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.grinning-face-with-sweat {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.grinning-face {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.grinning-squinting-face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.hand-with-fingers-splayed-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -232px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.hand-with-fingers-splayed-medium-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.hand-with-fingers-splayed-medium-skin-tone-1 {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.hand-with-fingers-splayed-medium-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.hand-with-fingers-splayed {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.hot-face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.hugging-face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.hushed-face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.kiss-mark {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.kissing-cat {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.kissing-face-with-closed-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.kissing-face-with-smiling-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.kissing-face {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.loudly-crying-face {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.lying-face {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.money-mouth-face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.mouth {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.nauseated-face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.nerd-face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.neutral-face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.ogre {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.partying-face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.pensive-face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.persevering-face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.pile-of-poo {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.pleading-face {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.pouting-cat {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.pouting-face {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.raised-back-of-hand-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.raised-back-of-hand-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.raised-back-of-hand-medium-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.raised-back-of-hand-medium-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.raised-back-of-hand-medium-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.raised-back-of-hand {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.relieved-face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.rolling-on-the-floor-laughing {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.sad-but-relieved-face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.shushing-face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.skull-and-crossbones {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.skull {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.sleeping-face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.sleepy-face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.slightly-frowning-face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.slightly-smiling-face {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.smiling-cat-with-heart-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.smiling-face-with-halo {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.smiling-face-with-heart-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.smiling-face-with-hearts {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.smiling-face-with-horns {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.smiling-face-with-smiling-eyes {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.smiling-face-with-sunglasses {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.smiling-face-with-tear {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.smiling-face {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.smirking-face {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.sneezing-face {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.squinting-face-with-tongue {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.star-struck {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.thinking-face {
+  background-image: url(../img/sprite.png);
+  background-position: -319px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.tired-face {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.tooth {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.unamused-face {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.upside-down-face {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.waving-hand-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.waving-hand-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.waving-hand-medium-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.waving-hand-medium-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.waving-hand-medium-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.waving-hand {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.weary-cat {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.weary-face {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.winking-face-with-tongue {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.winking-face {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-frowning-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -116px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-frowning-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -145px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-frowning-medium-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -174px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-frowning-medium-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -203px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-frowning-medium-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -232px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-frowning {
+  background-image: url(../img/sprite.png);
+  background-position: -261px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-no-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -290px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-no-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -319px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-no-medium-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px 0px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-no-medium-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -29px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-no-medium-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -58px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-no {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -87px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-ok-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -116px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-ok-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -145px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-ok-medium-dark-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -174px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-ok-medium-light-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -203px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-ok-medium-skin-tone {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -232px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-gesturing-ok {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -261px;
+  width: 24px;
+  height: 24px;
+}
+
+.woman-getting-haircut {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -290px;
+  width: 24px;
+  height: 24px;
+}
+
+.woozy-face {
+  background-image: url(../img/sprite.png);
+  background-position: -348px -319px;
+  width: 24px;
+  height: 24px;
+}
+
+.worried-face {
+  background-image: url(../img/sprite.png);
+  background-position: 0px -348px;
+  width: 24px;
+  height: 24px;
+}
+
+.yawning-face {
+  background-image: url(../img/sprite.png);
+  background-position: -29px -348px;
+  width: 24px;
+  height: 24px;
+}
+
+.zany-face {
+  background-image: url(../img/sprite.png);
+  background-position: -58px -348px;
+  width: 24px;
+  height: 24px;
+}
+
+.zipper-mouth-face {
+  background-image: url(../img/sprite.png);
+  background-position: -87px -348px;
   width: 24px;
   height: 24px;
 }
@@ -1419,6 +1444,156 @@
 
 /*--end micromodal--*/
 /*--tiny-slider--*/
+.tns-outer {
+  padding: 0 !important;
+}
+
+.tns-outer [hidden] {
+  display: none !important;
+}
+
+.tns-outer [aria-controls], .tns-outer [data-action] {
+  cursor: pointer;
+}
+
+.tns-slider {
+  transition: all 0s;
+}
+
+.tns-slider > .tns-item {
+  box-sizing: border-box;
+}
+
+.tns-horizontal.tns-subpixel {
+  white-space: nowrap;
+}
+
+.tns-horizontal.tns-subpixel > .tns-item {
+  display: inline-block;
+  vertical-align: top;
+  white-space: normal;
+}
+
+.tns-horizontal.tns-no-subpixel:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tns-horizontal.tns-no-subpixel > .tns-item {
+  float: left;
+}
+
+.tns-horizontal.tns-carousel.tns-no-subpixel > .tns-item {
+  margin-right: -100%;
+}
+
+.tns-no-calc {
+  position: relative;
+  left: 0;
+}
+
+.tns-gallery {
+  position: relative;
+  left: 0;
+  min-height: 1px;
+}
+
+.tns-gallery > .tns-item {
+  position: absolute;
+  left: -100%;
+  transition: transform 0s, opacity 0s;
+}
+
+.tns-gallery > .tns-slide-active {
+  position: relative;
+  left: auto !important;
+}
+
+.tns-gallery > .tns-moving {
+  transition: all 0.25s;
+}
+
+.tns-autowidth {
+  display: inline-block;
+}
+
+.tns-lazy-img {
+  transition: opacity 0.6s;
+  opacity: 0.6;
+}
+
+.tns-lazy-img.tns-complete {
+  opacity: 1;
+}
+
+.tns-ah {
+  transition: height 0s;
+}
+
+.tns-ovh {
+  overflow: hidden;
+}
+
+.tns-visually-hidden {
+  position: absolute;
+  left: -10000em;
+}
+
+.tns-transparent {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.tns-fadeIn {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  z-index: 0;
+}
+
+.tns-normal, .tns-fadeOut {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: -1;
+}
+
+.tns-vpfix {
+  white-space: nowrap;
+}
+
+.tns-vpfix > div, .tns-vpfix > li {
+  display: inline-block;
+}
+
+.tns-t-subp2 {
+  margin: 0 auto;
+  width: 310px;
+  position: relative;
+  height: 10px;
+  overflow: hidden;
+}
+
+.tns-t-ct {
+  width: 2333.3333333%;
+  width: -moz-calc(100% * 70 / 3);
+  width: 2333.3333333333%;
+  position: absolute;
+  right: 0;
+}
+
+.tns-t-ct:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.tns-t-ct > div {
+  width: 1.4285714%;
+  width: -moz-calc(100% / 70);
+  width: 1.4285714286%;
+  height: 10px;
+  float: left;
+}
 /*--end tiny-slider--*/
 /*--simplebar-*/
 [data-simplebar] {
@@ -1643,68 +1818,293 @@
 }
 
 /*--end simplebar--*/
+/*--baguetteBox-*/
+/*!
+ * baguetteBox.js
+ * @author  feimosi
+ * @version 1.11.1
+ * @url https://github.com/feimosi/baguetteBox.js
+ */
+#baguetteBox-overlay {
+  display: none;
+  opacity: 0;
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000000;
+  background-color: #222;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: opacity 0.5s ease;
+}
+
+#baguetteBox-overlay.visible {
+  opacity: 1;
+}
+
+#baguetteBox-overlay .full-image {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+#baguetteBox-overlay .full-image figure {
+  display: inline;
+  margin: 0;
+  height: 100%;
+}
+
+#baguetteBox-overlay .full-image img {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+}
+
+#baguetteBox-overlay .full-image figcaption {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 1.8;
+  white-space: normal;
+  color: #ccc;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.6);
+  font-family: sans-serif;
+}
+
+#baguetteBox-overlay .full-image:before {
+  content: "";
+  display: inline-block;
+  height: 50%;
+  width: 1px;
+  margin-right: -1px;
+}
+
+#baguetteBox-slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  white-space: nowrap;
+  transition: left 0.4s ease, transform 0.4s ease;
+}
+
+#baguetteBox-slider.bounce-from-right {
+  animation: bounceFromRight 0.4s ease-out;
+}
+
+#baguetteBox-slider.bounce-from-left {
+  animation: bounceFromLeft 0.4s ease-out;
+}
+@keyframes bounceFromRight {
+  0%, 100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: -30px;
+  }
+}
+@keyframes bounceFromLeft {
+  0%, 100% {
+    margin-left: 0;
+  }
+  50% {
+    margin-left: 30px;
+  }
+}
+.baguetteBox-button#next-button, .baguetteBox-button#previous-button {
+  top: 50%;
+  top: calc(50% - 30px);
+  width: 44px;
+  height: 60px;
+}
+
+.baguetteBox-button {
+  position: absolute;
+  cursor: pointer;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 15%;
+  background-color: #323232;
+  background-color: rgba(50, 50, 50, 0.5);
+  color: #ddd;
+  font: 1.6em sans-serif;
+  transition: background-color 0.4s ease;
+}
+
+.baguetteBox-button:focus, .baguetteBox-button:hover {
+  background-color: rgba(50, 50, 50, 0.9);
+}
+
+.baguetteBox-button#next-button {
+  right: 2%;
+}
+
+.baguetteBox-button#previous-button {
+  left: 2%;
+}
+
+.baguetteBox-button#close-button {
+  top: 20px;
+  right: 2%;
+  right: calc(2% + 6px);
+  width: 30px;
+  height: 30px;
+}
+
+.baguetteBox-button svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.baguetteBox-spinner {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+}
+
+.baguetteBox-double-bounce1, .baguetteBox-double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  animation: bounce 2s infinite ease-in-out;
+}
+
+.baguetteBox-double-bounce2 {
+  animation-delay: -1s;
+}
+@keyframes bounce {
+  0%, 100% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+  }
+}
+/*--end baguetteBox--*/
 /*--tiny-slider--*/
 /*--end tiny-slider--*/
 /*--FormHandler-*/
 /*--end FormHandler--*/
 /*--spoilers-*/
-form {
-  display: block;
+/*--------------------expanse__chat----------------------*/
+.expanse__chat {
+  padding: 0.625rem 1.25rem;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 3.75rem;
+  border-radius: 0 0 0 1.875rem;
+  border-top: 1px solid #E1E5ED;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+}
+
+.chat-form {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  column-gap: 1.25rem;
+}
+
+.chat-form__label {
   position: relative;
-  min-height: 7.5rem;
 }
 
-#btn {
-  float: left;
+.file-input {
+  position: absolute;
+  box-sizing: border-box;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  display: block;
+  left: 50%;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+.file-input .icon {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.chat-form__file-add {
   width: 1.5rem;
-  height: 1.5rem;
-  background: transparent;
-  color: lightgray;
-  cursor: pointer;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  position: relative;
 }
-#btn svg {
-  fill: currentColor;
-  display: inherit;
-  width: 1rem;
-  height: 1rem;
-  margin-left: 0.2rem;
-  transition: color 0.5s ease-in, transform 0.5s linear;
-  -webkit-transition: color 0.5s ease-in, transform 0.5s linear;
-  transform: rotate(0) translateZ(0);
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  will-change: transform;
-}
-#btn:hover {
-  color: #b9b9b9;
-}
-#btn.active svg {
-  color: #6f6fd1;
-  transform: rotate(720deg) translateZ(0);
+.chat-form__file-add .icon {
+  font-size: 1.25rem;
+  color: #697586;
 }
 
-#input-box {
-  max-height: 1.5rem;
-  height: 1.5rem;
+.chat-box {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.chat-form__send {
+  -ms-flex: 0 0 1.5rem;
+  flex: 0 0 1.5rem;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.chat-form__send .icon {
+  font-size: 1.25rem;
+}
+
+/*--------------------END expanse__chat----------------------*/
+.chat-box {
   cursor: text;
   position: relative;
   overflow: hidden;
-  padding: 0 0.5rem;
-  line-height: 1.5rem;
-  background-color: #f9f9f9;
   font-weight: 400;
 }
-#input-box #input-box-field {
-  display: inline-block;
-  position: absolute;
+.chat-box #input-box-field {
+  display: block;
   top: 0;
   left: 0.5rem;
   right: 0.5rem;
-  white-space: nowrap;
-  overflow-x: scroll;
-  min-height: 2.5rem;
   resize: none;
-  text-overflow: ellipsis;
   user-select: text;
   -webkit-touch-callout: text;
   -webkit-user-select: text;
@@ -1712,128 +2112,49 @@ form {
   -ms-user-select: text;
   -o-user-select: text;
 }
-#input-box #input-box-field:focus {
+.chat-box #input-box-field:focus {
   outline: 0;
 }
-#input-box #input-box-field:not(:empty) ~ #input-box-placeholder {
+.chat-box #input-box-field:not(:empty) ~ #input-box-placeholder {
   display: none;
 }
-#input-box #input-box-field:empty {
+.chat-box #input-box-field:empty {
   caret-color: lightgray;
 }
-#input-box #input-box-field br, #input-box #input-box-field p, #input-box #input-box-field div {
+.chat-box #input-box-field br, .chat-box #input-box-field p, .chat-box #input-box-field div {
   display: none;
 }
-#input-box #input-box-field .emoji {
+.chat-box #input-box-field .emoji {
   cursor: text;
   vertical-align: middle;
   display: inline;
-  max-width: 24px;
-  min-width: 24px;
-  max-height: 24px;
-  min-height: 24px;
-}
-#input-box #input-box-placeholder {
-  position: absolute;
-  top: 0;
-  left: 0.5rem;
-  right: 0.5rem;
-  pointer-events: none;
-  color: lightgray;
-}
-#input-box #input-box-placeholder::before {
-  content: attr(data-ph);
+  max-width: 1.5rem;
+  min-width: 1.5rem;
+  max-height: 1.5rem;
+  min-height: 1.5rem;
 }
 
 #emoji-box {
-  width: 100%;
-  margin-top: 0.5rem;
-  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-  -webkit-transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
-  will-change: opacity, visibility;
-}
-#emoji-box.show {
-  visibility: visible;
-  opacity: 1;
-  pointer-events: auto;
-}
-#emoji-box::before {
-  position: absolute;
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 0 0.5rem 0.75rem 0.5rem;
-  border-color: transparent transparent #f9f9f9 transparent;
-  content: "";
-  top: -0.45rem;
-  left: 0.25rem;
-}
-#emoji-box div {
   user-select: none;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  background-color: #f9f9f9;
-  padding: 0 0.75rem;
-  width: 100%;
-  height: 4.5rem;
-  overflow-y: scroll;
-  line-height: 0.25rem;
-}
-#emoji-box div::before, #emoji-box div::after {
-  height: 0.75rem;
-  left: 0;
-  right: 0;
-  top: 0;
-  content: "";
-  position: sticky;
-  position: -webkit-sticky;
-  display: inherit;
-  background: linear-gradient(to bottom, #f9f9f9, transparent);
-  z-index: 2;
-}
-#emoji-box div::after {
-  top: auto;
-  bottom: -1px;
-  background: linear-gradient(to bottom, transparent, #f9f9f9);
-}
-#emoji-box div::-webkit-scrollbar {
-  background: transparent;
-  width: 0.5rem;
-}
-#emoji-box div::-webkit-scrollbar-button {
-  display: none;
-}
-#emoji-box div::-webkit-scrollbar-track-piece {
-  background-color: #ececec;
-}
-#emoji-box div::-webkit-scrollbar-thumb {
-  background-color: #e0e0e0;
-  transition: background-color 0.1s linear;
-  -webkit-transition: background-color 0.15s ease-in-out;
-}
-#emoji-box div::-webkit-scrollbar-thumb:active {
-  background-color: #6f6fd1;
-}
-#emoji-box div .emoji {
-  width: 20px;
-  height: 20px;
-  border: 2px solid transparent;
-  background-clip: content-box;
-  transition: opacity 0.1s linear, background-color 0.1s ease-in, border-color 0.1s ease-in;
-  cursor: pointer;
-  opacity: 0.9;
-}
-#emoji-box div .emoji:hover {
-  opacity: 1;
-  background-color: #e0e0e0;
-  border-color: #e0e0e0;
 }
 
 .emoji {
   display: inline-block;
+  background-clip: content-box;
+  transition: opacity 0.1s linear, background-color 0.1s ease-in, border-color 0.1s ease-in;
+}
+.emoji-list .emoji {
+  cursor: pointer;
+}
+.emoji-list .emoji:hover {
+  opacity: 1;
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
 }
 
 /*--------------------adjustment----------------------*/
@@ -2000,6 +2321,23 @@ textarea {
   display: flex;
 }
 
+.tabs__item {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+}
+
+.tab {
+  position: relative;
+  z-index: 1;
+  padding-bottom: 0.8125rem;
+  color: #697586;
+  border-bottom: 0.125rem solid transparent;
+}
+.tab.active {
+  color: #000;
+  border-bottom-color: #3A8BF3;
+}
+
 .tab-content,
 .tabs__buttons li {
   list-style-type: none;
@@ -2008,6 +2346,19 @@ textarea {
 .tab {
   text-decoration: none;
   display: block;
+}
+
+.tabs__buttons {
+  position: relative;
+}
+.tabs__buttons:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #E1E5ED;
 }
 
 .form {
@@ -2052,6 +2403,8 @@ textarea {
   border-radius: 0.625rem;
   color: #000;
   font-size: 0.875rem;
+  font-family: "Raleway", sans-serif;
+  border: 1px solid #E1E5ED;
 }
 .form__input::-webkit-input-placeholder {
   color: #697586;
@@ -2292,6 +2645,76 @@ h2 {
   background-color: #3A8BF3;
 }
 
+.baguetteBox-button#previous-button,
+.baguetteBox-button#next-button {
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  background-color: #F1F1F5;
+  background-image: url(../img/icons-svg/btn-go.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+.baguetteBox-button#previous-button svg,
+.baguetteBox-button#next-button svg {
+  display: none;
+}
+
+.baguetteBox-button#next-button {
+  right: 18.2291666667%;
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.baguetteBox-button#previous-button {
+  left: 18.2291666667%;
+}
+
+#baguetteBox-overlay .full-image {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+#baguetteBox-overlay .full-image figure {
+  height: auto;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 1.875rem;
+  max-height: 100%;
+  aspect-ratio: 900/700;
+  position: relative;
+}
+#baguetteBox-overlay .full-image figure img {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  object-fit: cover;
+  object-position: center center;
+}
+
+.baguetteBox-button#close-button {
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 10.9259259259%;
+  right: 19.1666666667%;
+  background-color: transparent;
+  background-image: url(../img/icons-svg/x-big.svg);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 1.25rem 1.25rem;
+}
+.baguetteBox-button#close-button svg {
+  display: none;
+}
+
 /*--------------------END ui----------------------*/
 /*--------------------footer----------------------*/
 /*--------------------END footer----------------------*/
@@ -2361,33 +2784,6 @@ h2 {
 
 .sidebar-form__buttons {
   margin-bottom: 1.5rem;
-  position: relative;
-}
-.sidebar-form__buttons:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #E1E5ED;
-}
-
-.sidebar-form__tab-item {
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-}
-
-.sidebar-form__tab {
-  position: relative;
-  z-index: 1;
-  padding-bottom: 0.8125rem;
-  color: #697586;
-  border-bottom: 0.125rem solid transparent;
-}
-.sidebar-form__tab.active {
-  color: #000;
-  border-bottom-color: #3A8BF3;
 }
 
 .page-main__form-display {
@@ -2524,6 +2920,596 @@ h2 {
 }
 
 /*--------------------END page-main----------------------*/
+/*--------------------chat-messages----------------------*/
+.chat-messages {
+  height: 100%;
+}
+
+.chat-message {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 1.25rem;
+  margin-bottom: 1.5rem;
+  padding-right: 1.25rem;
+}
+
+.chat-message__img {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #F1F1F5;
+}
+.chat-message__img img, .chat-message__img span {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.chat-message__img span {
+  font-size: 0.875rem;
+}
+
+.chat-message__top {
+  margin-bottom: 0.625rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  column-gap: 1.25rem;
+}
+
+.chat-message__name {
+  font-weight: 500;
+}
+
+.chat-message__time {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 0.625rem;
+  font-size: 0.875rem;
+  color: #697586;
+}
+
+.chat-messages__line {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.chat-messages__line:before, .chat-messages__line:after {
+  content: "";
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 0.0625rem;
+  background-color: #E1E5ED;
+}
+
+.chat-messages__mark {
+  padding-left: 4.1875rem;
+  padding-right: 4.1875rem;
+  background-color: #fff;
+  font-size: 0.875rem;
+  color: #697586;
+}
+
+.chat-message__images {
+  padding-top: 10px;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.625rem;
+}
+
+.chat-message__image {
+  -ms-flex: 0 0 13.321799308%;
+  flex: 0 0 13.321799308%;
+  aspect-ratio: 160/140;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.chat-message__footer {
+  padding-top: 0.625rem;
+}
+
+/*--------------------END chat-messages----------------------*/
+/*--------------------emoji-block----------------------*/
+.emoji-block {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+.emoji-block ._tabs {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.emoji-block .tabs__buttons {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-right: 2.5rem;
+}
+.emoji-block .tabs__container {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: calc(100% - 4.375rem);
+  padding-top: 1.5rem;
+  padding-bottom: 1.75rem;
+}
+.emoji-block .tabs__container .simplebar-track {
+  right: 0.3125rem;
+}
+.emoji-block .tab-content {
+  padding-right: 2.5rem;
+}
+
+.emoji-block__tabs {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: 100%;
+  margin-right: -2.5rem;
+  overflow: hidden;
+}
+
+.emoji-list {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 0.875rem;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.emoji {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+}
+
+.emoji-block__navs {
+  margin-left: -2.5rem;
+  margin-right: -2.5rem;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.emoji-block__nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 3.75rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  background-color: #fff;
+}
+.emoji-block__nav.active {
+  background-color: transparent;
+}
+.emoji-block__nav .icon {
+  font-size: 1.5rem;
+}
+
+/*--------------------END emoji-block----------------------*/
+/*--------------------messenger----------------------*/
+.messenger {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex: 0 0 23.875rem;
+  flex: 0 0 23.875rem;
+  max-width: 23.875rem;
+}
+
+.messenger__header {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  position: relative;
+  margin-bottom: 1.875rem;
+}
+
+.tiny-carousel {
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
+}
+
+.tiny-carousel__nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.tns-prev,
+.tns-next {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -0.5rem;
+  z-index: 2;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #fff;
+  box-shadow: 3px -2px 10px 0px rgba(182, 190, 201, 0.2), -3px 2px 10px 0px rgba(182, 190, 201, 0.2);
+}
+.tns-prev[disabled],
+.tns-next[disabled] {
+  display: none;
+}
+.tns-prev .icon,
+.tns-next .icon {
+  font-size: 0.625rem;
+  color: #3A8BF3;
+}
+
+.tns-prev .icon {
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.tns-next {
+  right: 0;
+}
+
+.filter-messenger__item {
+  position: relative;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.filter-messenger__input {
+  position: absolute;
+  box-sizing: border-box;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  display: block;
+  left: 50%;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+.filter-messenger__input:checked + .filter-messenger__value {
+  background-color: #3A8BF3;
+  color: #fff;
+}
+
+.filter-messenger__value {
+  height: 1.875rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  background-color: #F1F1F5;
+}
+
+/*--------------------END messenger----------------------*/
+/*--------------------expanse-header----------------------*/
+.expanse__header {
+  position: relative;
+  z-index: 1;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  height: 5rem;
+  padding: 1.125rem 1.875rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  column-gap: 0.625rem;
+  background-color: #fff;
+  border-radius: 30px 30px 0px 0px;
+  box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+  overflow: hidden;
+}
+
+.header-expanse__content {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  column-gap: 0.625rem;
+}
+
+.header-expanse__search {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  column-gap: 2.5rem;
+}
+.header-expanse__search .btn {
+  height: 2.75rem;
+}
+
+.expanse-form {
+  position: relative;
+  width: 100%;
+  max-width: 25rem;
+  display: -ms-flexbox;
+  display: flex;
+}
+.expanse-form .form__input {
+  height: 2.75rem;
+}
+
+.header-expanse__submit {
+  position: absolute;
+  top: 50%;
+  right: 1.1875rem;
+  margin-top: -0.75rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.header-expanse__submit .icon {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  position: absolute;
+  font-size: 14px;
+}
+
+.header-expanse__contacts {
+  padding-right: 1.875rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  column-gap: 1.875rem;
+}
+
+.header-expanse__email {
+  font-weight: 500;
+  text-decoration: none;
+  color: #000;
+  white-space: nowrap;
+}
+
+.header-expanse__wats {
+  position: relative;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: rgb(72, 201, 95);
+}
+
+.icon-watsapp {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 1.3125rem;
+  color: #fff;
+}
+
+.header-expanse__actions {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
+  column-gap: 1rem;
+}
+
+/*--------------------END expanse-header----------------------*/
+/*--------------------expanse-sidebar-left----------------------*/
+.expanse__nav {
+  padding: 0.75rem 2rem;
+}
+
+.expanse-sidebar__logo {
+  max-width: 5.0625rem;
+  margin-bottom: 2.5rem;
+}
+.expanse-sidebar__logo img {
+  max-width: 100%;
+}
+
+.expanse-menu__item {
+  list-style-type: none;
+}
+.expanse-menu__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.expanse-menu__link {
+  position: relative;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 3rem;
+  padding: 0.3125rem 1.5rem;
+  background-color: #F1F1F5;
+  text-decoration: none;
+  color: #000;
+  border-radius: 0.625rem;
+}
+.expanse-menu__link.active {
+  margin-left: 0.375rem;
+  background-color: #3A8BF3;
+  color: #fff;
+}
+.expanse-menu__link.active:before {
+  display: block;
+}
+.expanse-menu__link:before {
+  content: "";
+  display: none;
+  position: absolute;
+  left: -0.375rem;
+  top: 50%;
+  margin-top: -1rem;
+  height: 2rem;
+  width: 0.125rem;
+  vertical-align: middle;
+  background-color: #3A8BF3;
+  border-radius: 2px 5px 5px 2px;
+}
+
+/*--------------------END expanse-sidebar-left----------------------*/
+/*--------------------expanse-sidebar----------------------*/
+/*--------------------END expanse-sidebar----------------------*/
+/*--------------------expanse-template----------------------*/
+.expanse {
+  height: 100vh;
+  padding: 1.25rem 0;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.expanse-nav {
+  -ms-flex: 0 0 18.75rem;
+  flex: 0 0 18.75rem;
+}
+
+.expanse__content {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.expanse__container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  height: calc(100% - 5rem);
+}
+
+.expanse__main {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.expanse__field {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  padding-left: 1.875rem;
+  overflow-y: auto;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+}
+
+.expanse__chat {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+
+.expanse__sidebar {
+  -ms-flex: 0 0 23.875rem;
+  flex: 0 0 23.875rem;
+  padding: 1.875rem 2.5rem 0 2.5rem;
+  background-color: #F8F9FC;
+}
+
+/*--------------------END expanse-template----------------------*/
+/*--------------------offers-filter----------------------*/
+.offers-filter__group:not(:last-child) {
+  margin-bottom: 1.875rem;
+}
+
+.offers-filter__items {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.offers-filter__title {
+  margin-bottom: 0.875rem;
+  font-weight: 500;
+}
+
+.offers-filter__input {
+  position: absolute;
+  box-sizing: border-box;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  display: block;
+  left: 50%;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+.offers-filter__input:checked + .offers-filter__name {
+  background-color: #3A8BF3;
+  color: #fff;
+}
+
+.offers-filter__name {
+  height: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #fff;
+  color: #000;
+  border-radius: 0.3125rem;
+  font-size: 0.875rem;
+}
+
+/*--------------------END offers-filter----------------------*/
+@media only screen and (max-width: 113.75em) {
+  .header-expanse__email {
+    max-width: 7.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 @media (max-width: 81.25em) {
   h1 {
     font-size: clamp( 1.5rem , 1.3rem  +  1vw , 2.5rem );
@@ -2545,6 +3531,18 @@ h2 {
   }
   .page-main__visual {
     padding-top: clamp( 1.875rem , 1.475rem  +  2vw , 3.875rem );
+  }
+  .chat-messages__mark {
+    padding-left: clamp( 0.9375rem , 0.2875rem  +  3.25vw , 4.1875rem );
+  }
+  .chat-messages__mark {
+    padding-right: clamp( 0.9375rem , 0.2875rem  +  3.25vw , 4.1875rem );
+  }
+  .header-expanse__search {
+    column-gap: clamp( 0.3125rem , -0.125rem  +  2.1875vw , 2.5rem );
+  }
+  .header-expanse__contacts {
+    column-gap: clamp( 0.3125rem , 0rem  +  1.5625vw , 1.875rem );
   }
 }
 @media only screen and (max-width: 61.99875em) {
@@ -2644,6 +3642,12 @@ h2 {
   }
 }
 @media (any-hover: hover) {
+  .chat-form__file-add {
+    cursor: pointer;
+  }
+  .chat-form__send {
+    cursor: pointer;
+  }
   .form__check-value {
     cursor: pointer;
   }
@@ -2685,6 +3689,23 @@ h2 {
     color: #000;
   }
   .modal__close {
+    cursor: pointer;
+  }
+  .emoji-block__nav {
+    cursor: pointer;
+  }
+  .tns-prev,
+  .tns-next {
+    cursor: pointer;
+  }
+  .filter-messenger__value {
+    cursor: pointer;
+  }
+  .filter-messenger__value:hover {
+    background-color: #3A8BF3;
+    color: #fff;
+  }
+  .header-expanse__submit {
     cursor: pointer;
   }
 }

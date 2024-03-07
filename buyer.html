@@ -10,7 +10,6 @@
     <link rel="stylesheet" href="css/main.css">
   </head>
   <body>
-    <header class="header"></header>
     <div class="page page-main page-buyer">
       <div class="page-main__wrapper">
         <div class="page-main__content">
@@ -32,8 +31,8 @@
             <form action="#" class="form sidebar-form">
               <div class="_tabs">
                 <ul class="tabs__buttons sidebar-form__buttons">
-                  <li class="sidebar-form__tab-item"><a href="#" class="tab sidebar-form__tab active">Я покупатель</a></li>
-                  <li class="sidebar-form__tab-item"><a href="#" class="tab sidebar-form__tab">Я продавец</a></li>
+                  <li class="sidebar-form__tabs-item tabs__item"><a href="#" class="tab sidebar-form__tab active">Я покупатель</a></li>
+                  <li class="sidebar-form__tab-item tabs__item"><a href="#" class="tab sidebar-form__tab">Я продавец</a></li>
                 </ul>
                 <ul class="tabs__container">
                   <li class="tab-content active">
@@ -86,24 +85,19 @@
                   <li class="tab-content hidden">
                     <div class="form__checks">
                       <label class="form__check">
-                        <input type="radio" name="salesman-role">
-                        <div class="form__check-value">Продавец</div>
+                        <input type="radio" name="salesman-role"><span class="form__check-value">Продавец</span>
                       </label>
                       <label class="form__check">
-                        <input type="radio" name="salesman-role" checked>
-                        <div class="form__check-value">Агент</div>
+                        <input type="radio" name="salesman-role" checked><span class="form__check-value">Агент</span>
                       </label>
                       <label class="form__check">
-                        <input type="radio" name="salesman-role">
-                        <div class="form__check-value">Застройщик</div>
+                        <input type="radio" name="salesman-role"><span class="form__check-value">Застройщик</span>
                       </label>
                       <label class="form__check">
-                        <input type="radio" name="salesman-role">
-                        <div class="form__check-value">Агенство недвижимости</div>
+                        <input type="radio" name="salesman-role"><span class="form__check-value">Агенство недвижимости</span>
                       </label>
                       <label class="form__check">
-                        <input type="radio" name="salesman-role">
-                        <div class="form__check-value">Инвестор</div>
+                        <input type="radio" name="salesman-role"><span class="form__check-value">Инвестор</span>
                       </label>
                     </div>
                     <label class="form__label"><span class="form__key">Фамилия Имя Отчество</span><span class="form__error-message"></span>
@@ -210,7 +204,6 @@
             </div>
           </div>
         </div>
-    <footer class="footer"></footer>
     
     
     <script src="js/libs/dynamic-adaptive/da.min.js"></script>
