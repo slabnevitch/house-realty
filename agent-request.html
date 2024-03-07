@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Покупатель - чат
+    <title>Агент - запрос
     </title>
     <meta name="description" content="">
     <link rel="icon" href="img/favicon.png">
@@ -14,49 +14,13 @@
       <aside class="expanse__nav">
         <div class="expanse-sidebar__logo"><img src="img/logo.svg" alt="alt"></div>
         <ul class="expanse-menu">
-          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Запрос</a></li>
+          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link active">Запрос</a></li>
           <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Предложения</a></li>
-          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link active">Чат</a></li>
+          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Чат</a></li>
         </ul>
       </aside>
-      <div class="messenger">
-        <div class="messenger__header">
-          <form action="#" class="messenger__filter filter-messenger"></form>
-          <div class="tiny-carousel">
-            <div class="tiny-carousel__nav">
-              <button type="button" class="tns-prev">
-                    <svg class="icon icon-chev-left ">
-                      <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-left"></use>
-                    </svg>
-              </button>
-              <button type="button" class="tns-next">
-                    <svg class="icon icon-chev-right ">
-                      <use xlink:href="img/icons-svg/symbol/sprite.svg#chev-right"></use>
-                    </svg>
-              </button>
-            </div>
-            <div class="tiny-sldr">
-              <label class="filter-messenger__item">
-                <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Продавец</span>
-              </label>
-              <label class="filter-messenger__item">
-                <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Агент</span>
-              </label>
-              <label class="filter-messenger__item">
-                <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Застройщик</span>
-              </label>
-              <label class="filter-messenger__item">
-                <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Агенство недвижимости</span>
-              </label>
-              <label class="filter-messenger__item">
-                <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Инвестор</span>
-              </label>
-            </div>
-          </div>
-        </div>
-      </div>
       <main class="expanse__content">
-        <header class="expanse__header header-expanse header-expanse--messenger">
+        <header class="expanse__header header-expanse">
           <div class="header-expanse__content">
             <div class="header-expanse__search">
               <button type="button" class="btn">Сочи</button>
@@ -78,7 +42,120 @@
         </header>
         <div class="expanse__container">
           <div class="expanse__main">
-            <div class="expanse__field"></div>
+            <div class="expanse__field">
+              <div data-simplebar class="chat-messages">
+                <div class="chat-messages__block">
+                      <div class="chat-message">
+                        <div class="chat-message__img"><img src="img/chat/2.jpg" alt="alt">
+                        </div>
+                        <div class="chat-message__body">
+                          <div class="chat-message__top">
+                            <div class="chat-message__name">Марина Светикова</div>
+                            <div class="chat-message__time">
+                              <div class="chat-message__date">14.04.2023</div>
+                              <div class="chat-message__time">08:15</div>
+                            </div>
+                          </div>
+                          <div class="chat-message__text">Жильё в г. Сочи, в зелёной зоне с видом на море. На территории дома хочется, чтобы был собственный бассейн, В апартаментах — большая</div>
+                          <div class="chat-message__footer"><a href="#" class="btn btn-mini">обсудить</a></div>
+                        </div>
+                      </div>
+                  <div class="chat-messages__line">
+                    <div class="chat-messages__mark">14 апреля 2023</div>
+                  </div>
+                      <div class="chat-message">
+                        <div class="chat-message__img"><img src="img/chat/8.jpg" alt="alt">
+                        </div>
+                        <div class="chat-message__body">
+                          <div class="chat-message__top">
+                            <div class="chat-message__name">Евгений Орлов</div>
+                            <div class="chat-message__time">
+                              <div class="chat-message__date">14.04.2023</div>
+                              <div class="chat-message__time">08:15</div>
+                            </div>
+                          </div>
+                          <div class="chat-message__text">Жильё в г. Сочи, в зелёной зоне с видом на море. На территории дома хочется, чтобы был собственный бассейн, В апартаментах — большая</div>
+                          <div class="chat-message__footer"><a href="#" class="btn btn-mini">обсудить</a></div>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__img"><img src="img/chat/3.jpg" alt="alt">
+                        </div>
+                        <div class="chat-message__body">
+                          <div class="chat-message__top">
+                            <div class="chat-message__name">Марина Светикова</div>
+                            <div class="chat-message__time">
+                              <div class="chat-message__date">14.04.2023</div>
+                              <div class="chat-message__time">08:15</div>
+                            </div>
+                          </div>
+                          <div class="chat-message__text">Ищу двушку в центре на горького до 8 млн</div>
+                          <div class="chat-message__footer"><a href="#" class="btn btn-mini">обсудить</a></div>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__img"><img src="img/chat/2.jpg" alt="alt">
+                        </div>
+                        <div class="chat-message__body">
+                          <div class="chat-message__top">
+                            <div class="chat-message__name">Марина Светикова</div>
+                            <div class="chat-message__time">
+                              <div class="chat-message__date">14.04.2023</div>
+                              <div class="chat-message__time">08:15</div>
+                            </div>
+                          </div>
+                          <div class="chat-message__text">Жильё в г. Сочи, в зелёной зоне с видом на море. На территории дома хочется, чтобы был собственный бассейн, В апартаментах — большая</div>
+                          <div class="chat-message__footer"><a href="#" class="btn btn-mini">обсудить</a></div>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__img"><span>МС</span>
+                        </div>
+                        <div class="chat-message__body">
+                          <div class="chat-message__top">
+                            <div class="chat-message__name">Евгений Орлов</div>
+                            <div class="chat-message__time">
+                              <div class="chat-message__date">14.04.2023</div>
+                              <div class="chat-message__time">08:15</div>
+                            </div>
+                          </div>
+                          <div class="chat-message__text">ЖК гранд парк до 8 млн, выше 8 этажа</div>
+                          <div class="chat-message__footer"><a href="#" class="btn btn-mini">обсудить</a></div>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__img"><img src="img/chat/5.jpg" alt="alt">
+                        </div>
+                        <div class="chat-message__body">
+                          <div class="chat-message__top">
+                            <div class="chat-message__name">Елена</div>
+                            <div class="chat-message__time">
+                              <div class="chat-message__date">14.04.2023</div>
+                              <div class="chat-message__time">08:15</div>
+                            </div>
+                          </div>
+                          <div class="chat-message__text">Жильё в г. Сочи, в зелёной зоне с видом на море. На территории дома хочется, чтобы был собственный бассейн, В апартаментах — большая</div>
+                          <div class="chat-message__footer"><a href="#" class="btn btn-mini">обсудить</a></div>
+                        </div>
+                      </div>
+                      <div class="chat-message">
+                        <div class="chat-message__img"><img src="img/chat/4.jpg" alt="alt">
+                        </div>
+                        <div class="chat-message__body">
+                          <div class="chat-message__top">
+                            <div class="chat-message__name">Екатерина</div>
+                            <div class="chat-message__time">
+                              <div class="chat-message__date">14.04.2023</div>
+                              <div class="chat-message__time">08:15</div>
+                            </div>
+                          </div>
+                          <div class="chat-message__text">Жильё в г. Сочи, в зелёной зоне с видом на море. На территории дома хочется, чтобы был собственный бассейн, В апартаментах — большая</div>
+                          <div class="chat-message__footer"><a href="#" class="btn btn-mini">обсудить</a></div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </div>
             <div class="expanse__chat">
               <form action="#" class="chat-form">
                 <label class="chat-form__label">
@@ -158,7 +235,6 @@
     
     
     <script src="js/libs/tabs/tabs-pure.js"></script>
-    <script src="js/libs/tiny-slider/dist/min/tiny-slider.js"></script>
     <script src="js/libs/einput/einput.js"></script>
     <script src="js/common.js"></script>
   </body>

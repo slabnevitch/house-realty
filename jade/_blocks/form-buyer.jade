@@ -60,7 +60,7 @@ form(action="#" class="form sidebar-form")
 					each role, ind in roles
 						label.form__check
 							input(type="radio" name="salesman-role" checked=ind==1 ? true : false)
-							.form__check-value= role
+							span.form__check-value= role
 				label.form__label
 					span.form__key Фамилия Имя Отчество
 					span.form__error-message

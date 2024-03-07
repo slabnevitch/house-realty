@@ -1,15 +1,11 @@
 extends _misc/main-expanse
 
 block title
-	| Покупатель - чат
-	- var page = 3;
-	- var pageName = 'messenger';
-
-block messenger
-	include _blocks/messenger/messenger
+	| Агент - запрос
+	- var page = 1;
 
 block expanse-center
-	include _blocks/messenger/chat-messages-buyer
+	include _blocks/request/agent-request
 
 block chat
 	include _blocks/expanse/chat
@@ -115,7 +111,7 @@ block page-scripts
 	//- script(src="js/libs/swiper/swiper-bundle.min.js")
 
 	//- tiny-slider--------------------------
-	script(src="js/libs/tiny-slider/dist/min/tiny-slider.js")
+	//- script(src="js/libs/tiny-slider/dist/tiny-slider.min.js")
 
 	//- wNumb--------------------------
 	//- script(src=path + "wnumb/wNumb.js")
