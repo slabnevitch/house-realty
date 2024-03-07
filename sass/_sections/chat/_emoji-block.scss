@@ -10,26 +10,46 @@
 	}
 	.tabs__buttons {
 		flex: 0 0 auto;
+		margin-right: rem(40);
 	}
 	.tabs__container {
-		overflow-y: auto;
+		// overflow-y: auto;
 		flex: 1 1 auto;
+		// height: 100%;
+		height: calc(100% - rem(70));
+		padding-top: rem(24);
+		padding-bottom: rem(28);
+
+		.simplebar-track{
+			right: rem(5);
+		}
 	}
-	// .tab-content {
-	// 	height: 100%;
-	// }
+	.tab-content {
+		padding-right: rem(40);
+	}
 }
 .emoji-block__tabs {
 	flex: 1 1 auto;
+	height: 100%;	
+	margin-right: rem(-40);
+	overflow: hidden;
 }
 .tabs__item {}
 .tab {}
 .active {}
-.emoji-list {}
-.emoji {}
-.anxious-face-with-sweat {}
-.astonished-face {}
-.baby-medium-dark-skin-tone {}
+.emoji-box {
+
+}
+.emoji-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(14);
+	height: 100%;
+	overflow-y: auto;
+}
+.emoji {
+	flex-shrink: 0;
+}
 .hidden {}
 .emoji-block__navs {
 	margin-left: rem(-40);
@@ -53,10 +73,5 @@
 		font-size: rem(24);
 	}
 }
-.icon {}
-.icon-frame {}
-.icon-teacher {}
-.icon-crown {}
-.icon-heart {}
-.icon-house {}
+
 /*--------------------END emoji-block----------------------*/ 

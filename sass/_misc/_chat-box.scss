@@ -1,18 +1,48 @@
 /*--------------------expanse__chat----------------------*/
 .expanse__chat {
-  
+  padding: rem(20);
+  min-height: rem(60);
+  border-radius: 0 0 rem(30) rem(30);
+  border-top: 1px soid $line;
+  background-color: #fff;
+  box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+
 }
-.chat-form {}
-.chat-form__label {}
-.file-input {}
-.chat-form__file-add {}
-.icon {}
+.chat-form {
+  display: flex;
+  align-items: center;
+
+}
+.chat-form__label {
+  position: relative;
+}
+.file-input {
+  @include checkbox();
+}
+.chat-form__file-add {
+  width: rem(24);
+  height: rem(24);
+  flex-shrink: 0;
+  position: relative;
+
+  @media (any-hover: hover) { //только для устройств с ховером
+      cursor: pointer;
+    }
+
+  .icon {
+    font-size: rem(20);
+    color: $gray-dark;
+  }
+
+}
 .icon-plus-circle {}
-.chat-box {}
+.chat-box {
+  flex: 1 1 auto;
+}
 .chat-box__field {}
 /*--------------------END expanse__chat----------------------*/ 
 // background-color для панели смайлов
-// $main-color: #f9f9f9;
+$main-color: #f9f9f9;
 $width: 24px;
 
 
@@ -74,7 +104,7 @@ $width: 24px;
   font-weight: 400;
   
   // поле ввода
-  #input-box-field {
+  .chat-box__field {
     
     display: inline-block; // см. https://stackoverflow.com/questions/18552336/prevent-contenteditable-adding-div-on-enter-chrome
     
@@ -119,17 +149,17 @@ $width: 24px;
   }
   
   // placeholder
-  #input-box-placeholder {
-    position: absolute;
-    top: 0;
-    left: .5rem;
-    right: .5rem;
-    pointer-events: none;
-		color: darken($main-color, 15%);  
+  // #input-box-placeholder {
+  //   position: absolute;
+  //   top: 0;
+  //   left: .5rem;
+  //   right: .5rem;
+  //   pointer-events: none;
+	// 	color: darken($main-color, 15%);  
     
-    &::before { content: attr(data-ph); }
+  //   &::before { content: attr(data-ph); }
 
-  }
+  // }
 
 }
 
@@ -137,21 +167,21 @@ $width: 24px;
 #emoji-box {
   
   // открытая панель
-  &.show {
-    visibility: visible;
-    opacity: 1;
-    pointer-events: auto;
-  }
+  // &.show {
+  //   visibility: visible;
+  //   opacity: 1;
+  //   pointer-events: auto;
+  // }
   
   // pointer-events: none;
   // position: absolute;
-  width: 100%;
-  margin-top: .5rem;
+  // width: 100%;
+  // margin-top: .5rem;
   // visibility: hidden;
   // opacity: 0;
-  transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-  -webkit-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
-  will-change: opacity, visibility;
+  // transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+  // -webkit-transition: opacity .5s ease-in-out, visibility .5s ease-in-out;
+  // will-change: opacity, visibility;
  
   // стрелочка
   // &::before {
@@ -206,12 +236,12 @@ $width: 24px;
   //     }
   //   }
     
-  //   user-select: none;
-  //   -webkit-touch-callout: none;
-  //   -webkit-user-select: none;
-  //   -moz-user-select: none;
-  //   -ms-user-select: none;
-  //   -o-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
   //   background-color: $main-color;
   //   padding: 0 .75rem;
   //   width: 100%;
