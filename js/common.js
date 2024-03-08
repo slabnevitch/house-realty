@@ -162,7 +162,7 @@
 						// navAsThumbnails: true, //включение навигации миниатюрами
 						nav: false, //отключение bullets
 						// navPosition: 'bottom',//положение bullets
-						mouseDrag: true,
+						mouseDrag: false,
 						gutter: 10, //добавляет padding, а не margin! Нужна обертка вокруг содержимого каждого слайда!
 						
 						// responsive: { // mobile first!
@@ -185,6 +185,31 @@
 			});
 		}
 	// END messenger filter slider
+
+	// messenger-contact tooltip
+		if(document.querySelector('.contact-messenger__name') !== null){
+			tippy('.contact-messenger__name', {
+				appendTo: function() {
+					return document.body;	
+				}, 
+				theme: 'contact', 
+				maxWidth: 'none',
+				allowHTML: true,
+				content: function(reference) {
+				    var id = reference.getAttribute('data-tooltip');
+				    var template = document.getElementById(id);
+				    return template.innerHTML;
+				  },
+				offset: [70, -15],
+				arrow: false,
+				placement: 'bottom-start',
+				// flipBehavior: ["top", "left"],
+				// trigger: 'hover',
+			    // placement: 'left-start',
+			    interactive: true
+			});
+		}
+		//END messenger-contact tooltip
 	});
 })();
 

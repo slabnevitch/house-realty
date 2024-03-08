@@ -3,7 +3,21 @@
 	height: 100vh;
 	padding: rem(20) 0;
 	display: flex;
+	margin-right: rem(30);
 
+	&--messenger{
+		.expanse__chat{
+			border-radius: 0;
+			box-shadow: none;
+		}
+	}
+}
+.expanse__messenger{
+	overflow: hidden;
+	width: 100%;
+	display: flex;
+	box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+	border-radius: rem(30);
 }
 .expanse-nav{
 	flex: 0 0 rem(300);
@@ -33,6 +47,10 @@
 	overflow-y: auto;
 	background-color: #fff;
 	box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+
+	.expanse--messenger &{
+		box-shadow: none;
+	}
 }
 .expanse__chat{
 	flex: 0 0 auto;

@@ -5,13 +5,21 @@
 	flex-direction: column;
 	flex: 0 0 rem(382);
 	max-width: rem(382);
+	// overflow: hidden;
 }
 .messenger__header {
 	flex: 0 0 auto;
-	position: relative;
-	margin-bottom: rem(30);
+	// margin-bottom: rem(30);
+	padding-top: rem(20);
+	padding-left: rem(5);
+	height: rem(80);
+	// display: flex;
+	// align-items: center;
 }
-.messenger__filter {}
+.messenger__filter {
+	position: relative;
+	margin-top: rem(-15);
+}
 .filter-messenger {}
 .tiny-carousel {
 	padding-right: rem(15);
@@ -62,6 +70,7 @@
 }
 .filter-messenger__input {
 	@include checkbox();
+	display: none;
 	&:checked + .filter-messenger__value{
 		background-color: $accent;
 		color: #fff;
@@ -72,15 +81,142 @@
 .filter-messenger__value {
 	height: rem(30);
 	padding-left: rem(20);
-	padding-right: rem(20);
+	padding-right: rem(30);
 	background-color: $gray;
 
 	@media (any-hover: hover) { //только для устройств с ховером
 			cursor: pointer;
 			&:hover{
-				background-color: $accent;
+				background-color: $gray;
 				color: #fff;
 			}
 		}
 }
+.messenger__contacts {
+	flex: 1 1 auto;
+	// overflow: auto;
+	height: calc(100% - rem(80));
+}
+.messenger__contact {
+	max-height: rem(80);
+	padding: rem(12) rem(23) rem(16) rem(20);
+	display: grid;
+	grid-template-columns: rem(40) 1fr auto;
+	column-gap: rem(11);
+	align-items: start;
+	font-size: rem(14);
+	transition: background-color 0.1s;
+	&.active{
+		background-color: $gray;
+	}
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+			&:hover{
+				background-color: rgba($gray, 0.6);
+			}
+		}
+}
+.contact-messenger {}
+.contact-messenger__userpic {
+	position: relative;
+}
+.contact-messenger__userpic-content{
+	width: rem(40);
+	height: rem(40);
+	position: relative;
+	border-radius: 50%;
+	overflow: hidden;
+	background-color: $gray;
+
+	img{
+		@include absolute-center;
+	}
+	span{
+		@include absolute-center;
+	}
+}
+.contact-messenger__online {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: rem(12);
+	height: rem(12);
+	border: 2px solid rgb(255, 255, 255);
+	border-radius: 50%;
+	background-color: rgb(27, 230, 47);
+}
+.contact-messenger__body {
+	display: flex;
+	flex-direction: column;
+}
+.contact-messenger__name {
+	margin-bottom: rem(4);
+	padding-right: rem(10);
+	font-weight: 500;
+	line-height: 1;
+	flex: 1 0 auto;
+	overflow: hidden;
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+			&:hover{
+				color: $accent;
+			}
+		}
+}
+.contact-messenger__text {
+	color: $gray-dark;
+	line-height: calc(16/14);
+	flex: 0 1 auto;
+	overflow: hidden;
+}
+.contact-messenger__info {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: rem(35);
+}
+.contact-messenger__time {
+	margin-bottom: rem(6);
+	font-size: rem(12);
+	color: $gray-dark;
+}
+.contact-messenger__count {
+	max-width: rem(35);
+	padding: 0 rem(8);
+	min-width: rem(20);
+	height: rem(20);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// text-align: center;
+	font-size: rem(12);
+	color: #fff;
+	border-radius: rem(50);
+	background-color: $accent;
+	@include dots-family();
+}
+
+/*--------------------tippy theme custom----------------------*/
+.tippy-tooltip.contact-theme {
+}
+.tippy-box[data-theme~='contact'] {
+  padding: 0;
+  background-color: $gray;
+  color: $text;
+  border-radius: 0 rem(10) rem(10) 0;
+
+  .tippy-content{
+  	padding: 0;
+  }
+}
+#user{
+	display: none;
+}
+[data-tippy-root]{
+	width: 100%;
+	max-width: rem(340);
+}
+/*--------------------END tippy theme custom----------------------*/ 
 /*--------------------END messenger----------------------*/ 

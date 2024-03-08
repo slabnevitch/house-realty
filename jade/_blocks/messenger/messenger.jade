@@ -1,21 +1,24 @@
 .messenger
 	.messenger__header
-		form(action="#").messenger__filter.filter-messenger
-		- var roles = ['Все', 'Продавец', 'Агент', 'Застройщик', 'Агенство недвижимости', 'Инвестор'];
-		
-		//- Общий блок слайдера
-		.tiny-carousel
-			//- Навигация кастомная (если требуется)
-			//- в js добавить параметр controlsContainer: '.tiny-carousel__nav'
-			.tiny-carousel__nav
-				button(type="button" class="tns-prev")
-					+icon('chevron-rught')
-				button(type="button" class="tns-next")
-					+icon('chevron-rught')
-			
-			//- Собственно, слайдер
-			.tiny-sldr
-				for role,i in roles
-					label.filter-messenger__item
-						input(autocomplete="off" type="checkbox" name="role" class="filter-messenger__input" checked=i==0?true:false)
-						span.btn.btn-mini.filter-messenger__value= role
+		.messenger__filter.filter-messenger
+			- var roles = ['Все', 'Продавец', 'Агент', 'Застройщик', 'Агенство недвижимости', 'Инвестор'];
+			.tiny-carousel
+				.tiny-carousel__nav
+					button(type="button" class="tns-prev")
+						+icon('chevron-rught')
+					button(type="button" class="tns-next")
+						+icon('chevron-rught')
+				
+				//- Собственно, слайдер
+				.tiny-sldr
+					for role,i in roles
+						label.filter-messenger__item
+							input(autocomplete="off" type="checkbox" name="role" class="filter-messenger__input" checked=i==0?true:false)
+							span.btn.btn-mini.filter-messenger__value= role
+	.messenger__contacts(data-simplebar)
+			- var conts = [{name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Елена Михайлова (Застройщик)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 1}, {name: 'Евгений Иванович Орлов (Агенство недвижимости)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 2}, {name: 'Евгений Орлов (Инвестор)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 3}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 4}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 4}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 5}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img:6}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false},];
+					each item,ind in conts
+						if ind == 2
+							mixin messengerContact(item.img,item.name,item.text, true)
+						else
+							mixin messengerContact(item.img,item.name,item.text)

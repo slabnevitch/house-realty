@@ -30,10 +30,11 @@ html(lang='ru')
 		//- при использовании _body-html-for-slideout или _footer-to-bottom  -- закомментировать:
 		//- #wrapper-for-scroll-fix
 		//- include ../_sections/header
-		.expanse
+		.expanse.expanse--messenger
 			include ../_blocks/expanse/expanse-sidebar-left
-			block messenger
-			include ../_blocks/expanse/expanse-content
+			.expanse__messenger
+				include ../_blocks/messenger/messenger
+				include ../_blocks/expanse/expanse-content-messenger
 		//- block content
 
 		//- include ../_sections/footer

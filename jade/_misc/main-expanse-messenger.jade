@@ -6,10 +6,10 @@ html(lang='ru')
 			block title
 		meta(name="description" content="")
 		link(rel="icon" href="img/favicon.png")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0" )
+		//- meta(name="viewport" content="width=device-width, initial-scale=1.0" )
 		
 		//- убрать "зуммирование" на safari ios:
-		//- meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no")
+		meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1, user-scalable=no")
 		
 		//- фикс подсветки телефонов на safari ios:
 		//- meta(content="telephone=no" name="format-detection")
@@ -30,10 +30,30 @@ html(lang='ru')
 		//- при использовании _body-html-for-slideout или _footer-to-bottom  -- закомментировать:
 		//- #wrapper-for-scroll-fix
 		//- include ../_sections/header
-		.expanse
+		.expanse.expanse--messenger
 			include ../_blocks/expanse/expanse-sidebar-left
-			block messenger
-			include ../_blocks/expanse/expanse-content
+			.expanse__messenger
+				include ../_blocks/messenger/messenger
+				include ../_blocks/expanse/expanse-content-messenger
+
+		#user
+			.user-tooltip
+				.user-tooltip__header
+					.user-tooltip__photo
+						img(src="img/chat/users/user-big.jpg" alt="alt")
+					.user-tooltip__person
+						.user-tooltip__name Евгений Орлов
+						a(href="tel:+79125873656").user-tooltip__phone +7 912 587-36-56
+						.user-tooltip__role Агент
+				
+				.user-tooltip__info
+					.user-tooltip__key На сайте:
+					.user-tooltip__val с 15 мая 2024г
+					.user-tooltip__key Рейтинг:
+					.user-tooltip__val Премиум / В бане до 23.02.24
+
+				.user-tooltip__footer
+					button.btn.btn-empty(type="button") Подтвердить  сделку
 		//- block content
 
 		//- include ../_sections/footer

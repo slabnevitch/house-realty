@@ -1,12 +1,9 @@
-extends _misc/main-expanse
+extends _misc/main-expanse-messenger
 
 block title
 	| Покупатель - чат
 	- var page = 3;
 	- var pageName = 'messenger';
-
-block messenger
-	include _blocks/messenger/messenger
 
 block expanse-center
 	include _blocks/messenger/chat-messages-buyer
@@ -138,8 +135,8 @@ block page-scripts
 	//- tippy--------------------------
 	//- https://atomiks.github.io/tippyjs/
 	//- base using:  html: <button data-tippy-content="Tooltip">Text</button>; js: tippy('[data-tippy-content]');
-	//- script(src="js/libs/tippy/popper.min.js"")
-	//- script(src="js/libs/tippy/tippy-bundle.umd.js")
+	script(src="js/libs/tippy/popper.min.js")
+	script(src="js/libs/tippy/tippy-bundle.umd.js")
 
 	//- sticky-sidebar--------------------------
 	//- https://abouolia.github.io/sticky-sidebar/#usage

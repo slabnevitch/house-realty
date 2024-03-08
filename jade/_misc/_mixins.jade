@@ -22,6 +22,24 @@ mixin message(img, name, text, button=false, imgs=false)
 				.chat-message__footer
 					a(href="#").btn.btn-mini обсудить
 
+mixin messengerContact(img,name,text,active=false)
+	div(class=active?"messenger__contact contact-messenger active":"messenger__contact contact-messenger")
+		.contact-messenger__userpic
+			.contact-messenger__userpic-content
+				if img
+					img(src="img/chat/users/"+img+".jpeg" alt="alt")
+				else
+					span EO
+			.contact-messenger__online
+		
+		.contact-messenger__body
+			.contact-messenger__name(data-tooltip="user")= name
+			.contact-messenger__text= text
+		
+		.contact-messenger__info
+			.contact-messenger__time 16:00
+			.contact-messenger__count 1
+
 mixin icon(name,mod)
 	- mod = mod || ''
 	svg(class="icon icon-" + name + ' ' + mod)
