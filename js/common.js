@@ -210,6 +210,12 @@
 			});
 		}
 		//END messenger-contact tooltip
+
+		// modals calls
+		// MicroModal.show('service-rules-modal');
+		// MicroModal.show('city-select-modal');
+		MicroModal.show('requests-modal');
+		// END modals calls
 	});
 })();
 

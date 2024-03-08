@@ -2139,7 +2139,7 @@
   box-sizing: border-box;
   width: 0.0625rem;
   height: 0.0625rem;
-  display: block;
+  display: none;
   left: 50%;
   top: 100%;
   margin: 0;
@@ -2580,7 +2580,7 @@ textarea {
   box-sizing: border-box;
   width: 0.0625rem;
   height: 0.0625rem;
-  display: block;
+  display: none;
   left: 50%;
   top: 100%;
   margin: 0;
@@ -3041,6 +3041,9 @@ h2 {
 .modal h2 {
   margin-bottom: 1.875rem;
 }
+.modal .offers-filter__name {
+  border-color: #E1E5ED;
+}
 
 @media (any-hover: hover) {
   .modal__close {
@@ -3070,6 +3073,7 @@ h2 {
 .modal__container {
   width: 100%;
   max-width: 40rem;
+  min-height: 23.75rem;
   padding-top: 3.75rem;
   padding-bottom: 3.75rem;
   padding-left: 5.3125rem;
@@ -3561,7 +3565,7 @@ h2 {
   box-sizing: border-box;
   width: 0.0625rem;
   height: 0.0625rem;
-  display: block;
+  display: none;
   left: 50%;
   top: 100%;
   margin: 0;
@@ -4265,7 +4269,7 @@ h2 {
   box-sizing: border-box;
   width: 0.0625rem;
   height: 0.0625rem;
-  display: block;
+  display: none;
   left: 50%;
   top: 100%;
   margin: 0;

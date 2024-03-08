@@ -1,3 +1,4 @@
+//- enter/registrations modals
 mixin privacy-modal()
 	#privacy-modal.modal.modal-privacy.micromodal-slide(aria-hidden='true')
 		.modal__overlay(tabindex='-1' data-micromodal-close)
@@ -14,11 +15,10 @@ mixin privacy-modal()
 					p 1.4. Администрация вправе устанавливать требования к составу Обезличенных данных Пользователя, которые собираются использованием сайта.
 					p 1.5 Администрация вправе устанавливать требования к составу Обезличенных данных Пользователя, которые собираются использованием сайта.
 					p 1.6. Администрация вправе устанавливать требования к составу Обезличенных данных 
-
 mixin reg-regard-modal()
 	#reg-regard-modal.modal.modal-reg-regard.micromodal-slide(aria-hidden='true')
 		.modal__overlay(tabindex='-1' data-micromodal-close)
-			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title' data-simplebar)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
 				button.modal__close(aria-label='Close modal' data-micromodal-close)
 				main.modal__content
 					h2 Спасибо за регистрацию!
@@ -28,10 +28,50 @@ mixin reg-regard-modal()
 mixin email-modal()
 	#email-modal.modal.modal-email.micromodal-slide(aria-hidden='true')
 		.modal__overlay(tabindex='-1' data-micromodal-close)
-			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title' data-simplebar)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
 				button.modal__close(aria-label='Close modal' data-micromodal-close)
 				main.modal__content
 					h2 Подтвердите электронную почту
 					p.modal__text На указанную вами электронную почту было отправлено письмо. Передийте по ссылке в письме, чтобы начать просмотр
 					.modal__bottom
 						button.btn(type="button" aria-label='Close modal' data-micromodal-close) Понятно
+
+//- chat/messenger modals
+mixin service-rules-modal()
+	#service-rules-modal.modal.modal-service-rules.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Правила сервиса
+					p.modal__text Спасибо за регистрацию! Посмотрите правила общения на сервисе, а также изучите информацию о том, как получить бонусы и повысить свой рейтинг. Пробный период пользования сервисом для продавца — 3 дня, дальше все функции заблокируются. Оплата через профиль.
+					.modal__bottom
+						a(href="#").btn(type="button" aria-label='Close modal' data-micromodal-close) Смотреть
+
+mixin city-select-modal()
+	#city-select-modal.modal.modal-city-select.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Выберите свой населённый пункт
+					form(action="#" class="offers-filter")
+						- var prices = ['Брянск', 'Москва', 'Санкт-Петербург', 'Сочи', 'Томск', 'Ялта'];
+							.offers-filter__items
+								each price, ind in prices
+									label.offers-filter__item
+										input(type="radio" name="city" class="offers-filter__input" checked=ind==0?true:false)
+										span.btn.offers-filter__name= price
+						.modal__bottom
+							a(href="#").btn(type="submit") Выбрать
+
+mixin requests-modal()
+	#requests-modal.modal.modal-requests.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Запросы
+					p.modal__text Вам доступен чат. Здесь вы можете разместить свой запрос, набрав текст. Ваш запрос увидят все, он общий для покупателей и продавцов. За запрос не по теме, либо рекламу следует бан.
+					.modal__bottom
+						a(href="#").btn(type="button" aria-label='Close modal' data-micromodal-close) Понятно

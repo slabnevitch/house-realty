@@ -20,7 +20,6 @@ html(lang='ru')
 		include _mixins
 		include _vars
 		include ../_blocks/modals
-
 		//- html for use slideOut.js--------------------
 		//- include _body-html-for-slideout 
 
@@ -54,6 +53,9 @@ html(lang='ru')
 
 				.user-tooltip__footer
 					button.btn.btn-empty(type="button") Подтвердить  сделку
+		+service-rules-modal
+		+city-select-modal
+		+requests-modal
 		//- block content
 
 		//- include ../_sections/footer
