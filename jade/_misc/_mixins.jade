@@ -40,6 +40,18 @@ mixin messengerContact(img,name,text,active=false)
 			.contact-messenger__time 16:00
 			.contact-messenger__count 1
 
+mixin messengerPost(name,author,text, imgs=false)
+	div(class="messenger-post messenger-post--"+author)
+		.messenger-post__body
+			.messenger-post__author= name
+			.messenger-post__text= text
+
+		if autor='agent' &&  imgs
+			.messenger-post__gallery.gallery
+				- for (var i=0; i < 8; i++)
+					a(href="img/chat/gallery-lg.jpg").messenger-post__image._fit
+						img._fit-img(src="img/chat/gallery/"+(i+1)+".jpg" alt="alt")
+
 mixin icon(name,mod)
 	- mod = mod || ''
 	svg(class="icon icon-" + name + ' ' + mod)

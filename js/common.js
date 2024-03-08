@@ -204,7 +204,7 @@
 				arrow: false,
 				placement: 'bottom-start',
 				// flipBehavior: ["top", "left"],
-				// trigger: 'hover',
+				trigger: 'click',
 			    // placement: 'left-start',
 			    interactive: true
 			});

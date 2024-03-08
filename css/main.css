@@ -3262,6 +3262,9 @@ h2 {
 .chat-messages {
   height: 100%;
 }
+.chat-messages--heading {
+  padding-top: 3.75rem;
+}
 
 .chat-message {
   display: -ms-flexbox;
@@ -3471,6 +3474,7 @@ h2 {
   -ms-flex: 0 0 23.875rem;
   flex: 0 0 23.875rem;
   max-width: 23.875rem;
+  border-right: 0.0625rem solid #E1E5ED;
 }
 
 .messenger__header {
@@ -3479,6 +3483,7 @@ h2 {
   padding-top: 1.25rem;
   padding-left: 0.3125rem;
   height: 5rem;
+  overflow: hidden;
 }
 
 .messenger__filter {
@@ -3661,19 +3666,20 @@ h2 {
 }
 
 .contact-messenger__body {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  overflow: hidden;
 }
 
 .contact-messenger__name {
   margin-bottom: 0.25rem;
   padding-right: 0.625rem;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1;
-  -ms-flex: 1 0 auto;
-  flex: 1 0 auto;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
   overflow: hidden;
 }
 @media (any-hover: hover) {
@@ -3686,10 +3692,11 @@ h2 {
 }
 
 .contact-messenger__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #697586;
   line-height: 1.1428571429;
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
   overflow: hidden;
 }
 
@@ -3750,6 +3757,121 @@ h2 {
 }
 
 /*--------------------END tippy theme custom----------------------*/
+.chat-heading {
+  height: 3.75rem;
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  padding: 0.75rem 1.25rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  column-gap: 0.625rem;
+  background-color: #fff;
+  border-top: 1px solid #E1E5ED;
+  border-bottom: 1px solid #E1E5ED;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.chat-heading__body {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  overflow: hidden;
+  font-size: 0.875rem;
+}
+
+.chat-heading__author {
+  margin-bottom: 0.1875rem;
+  font-weight: 600;
+}
+
+.chat-heading__theme {
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 0.4375rem;
+}
+
+.chat-heading__offer {
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  font-weight: 500;
+}
+
+.chat-heading__content {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #697586;
+}
+
+.chat-heading__action {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+}
+.chat-heading__action .btn {
+  height: 2rem;
+}
+
+.messenger-post {
+  margin-bottom: 1.25rem;
+  font-size: 0.875rem;
+}
+
+.messenger-post--user .messenger-post__body {
+  border-left: 0.125rem solid #FFD54A;
+  background-color: #FFFBED;
+}
+
+.messenger-post__body {
+  padding: 1.25rem 0;
+  padding-left: 1.875rem;
+  padding-right: 1.875rem;
+}
+@media (max-width: 81.25em) {
+  .messenger-post__body {
+    padding-left: clamp( 0.9375rem , 0.75rem  +  0.9375vw , 1.875rem );
+  }
+}
+@media (max-width: 81.25em) {
+  .messenger-post__body {
+    padding-right: clamp( 0.9375rem , 0.75rem  +  0.9375vw , 1.875rem );
+  }
+}
+
+.messenger-post--agent .messenger-post__body {
+  border-left: 0.125rem solid #3A8BF3;
+  background-color: rgba(58, 139, 243, 0.1);
+}
+
+.messenger-post__author {
+  font-weight: 500;
+}
+
+.messenger-post__gallery {
+  padding-top: 0.75rem;
+}
+
+.gallery {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 0.625rem;
+}
+
+.messenger-post__image {
+  -ms-flex: 0 0 19.1326530612%;
+  flex: 0 0 19.1326530612%;
+  aspect-ratio: 150/140;
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
 /*--------------------END messenger----------------------*/
 /*--------------------user-tolltip----------------------*/
 .user-tooltip {
@@ -3808,7 +3930,9 @@ h2 {
   display: grid;
   -ms-grid-columns: 27.3037542662% 1fr;
   grid-template-columns: 27.3037542662% 1fr;
-  column-gap: 0.75rem;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  column-gap: 0.5rem;
   row-gap: 0.375rem;
   margin-bottom: 1rem;
   font-weight: 500;
@@ -4083,6 +4207,7 @@ h2 {
 }
 
 .expanse__main {
+  position: relative;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   display: -ms-flexbox;
@@ -4098,6 +4223,7 @@ h2 {
   overflow-y: auto;
   background-color: #fff;
   box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+  overflow: hidden;
 }
 .expanse--messenger .expanse__field {
   box-shadow: none;

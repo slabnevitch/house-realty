@@ -36,7 +36,7 @@
 	height: calc(100% - rem(80));
 }
 .expanse__main{
-
+	position: relative;
 	flex: 1 1 auto;
 	display: flex;
 	flex-direction: column;
@@ -47,7 +47,7 @@
 	overflow-y: auto;
 	background-color: #fff;
 	box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
-
+	overflow: hidden;
 	.expanse--messenger &{
 		box-shadow: none;
 	}

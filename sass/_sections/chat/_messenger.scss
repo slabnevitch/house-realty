@@ -5,16 +5,14 @@
 	flex-direction: column;
 	flex: 0 0 rem(382);
 	max-width: rem(382);
-	// overflow: hidden;
+	border-right: rem(1) solid $line;
 }
 .messenger__header {
 	flex: 0 0 auto;
-	// margin-bottom: rem(30);
 	padding-top: rem(20);
 	padding-left: rem(5);
 	height: rem(80);
-	// display: flex;
-	// align-items: center;
+	overflow: hidden;
 }
 .messenger__filter {
 	position: relative;
@@ -147,16 +145,17 @@
 	background-color: rgb(27, 230, 47);
 }
 .contact-messenger__body {
-	display: flex;
-	flex-direction: column;
+	overflow: hidden;
+	// line-height: calc(16/14);
 }
 .contact-messenger__name {
 	margin-bottom: rem(4);
 	padding-right: rem(10);
-	font-weight: 500;
+	font-weight: 600;
 	line-height: 1;
-	flex: 1 0 auto;
+	
 	overflow: hidden;
+	@include dots-family-multi(2);
 
 	@media (any-hover: hover) { //только для устройств с ховером
 			cursor: pointer;
@@ -166,9 +165,9 @@
 		}
 }
 .contact-messenger__text {
+	@include dots-family();
 	color: $gray-dark;
 	line-height: calc(16/14);
-	flex: 0 1 auto;
 	overflow: hidden;
 }
 .contact-messenger__info {
@@ -218,5 +217,90 @@
 	width: 100%;
 	max-width: rem(340);
 }
-/*--------------------END tippy theme custom----------------------*/ 
+/*--------------------END tippy theme custom----------------------*/
+.chat-heading {
+	height: rem($chatHeding);
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	padding: rem(12) rem(20);
+	display: flex;
+	align-items: center;
+	column-gap: rem(10);
+	background-color: #fff;
+	border-top: 1px solid $line;
+	border-bottom: 1px solid $line;
+	overflow: hidden;
+	z-index: 1;
+}
+.chat-heading__body {
+	flex: 1 1 auto;
+	overflow: hidden;
+	font-size: rem(14);
+}
+.chat-heading__author {
+	margin-bottom: rem(3);
+	font-weight: 600;
+}
+.chat-heading__theme {
+	display: flex;
+	column-gap: rem(7);
+}
+.chat-heading__offer {
+	flex-shrink: 0;
+	font-weight: 500;
+}
+.chat-heading__content {
+	flex: 1 1 auto;
+	@include dots-family();
+	color: $gray-dark;
+}
+.chat-heading__action {
+	flex: 0 0 auto;
+	.btn {
+		height: rem(32);
+	}
+}
+
+.messenger-post {
+	
+	margin-bottom: rem(20);
+	font-size: rem(14);
+}
+.messenger-post--user {
+	.messenger-post__body {
+		border-left: rem(2) solid #FFD54A;
+		background-color: #FFFBED;
+	}
+}
+.messenger-post__body {
+	padding: rem(20) 0;
+	@include adaptive-value-rem('padding-left', 30, 15, $maxWidth, $minWidth, 1);
+	@include adaptive-value-rem('padding-right', 30, 15, $maxWidth, $minWidth, 1);
+}
+.messenger-post--agent {
+	.messenger-post__body {
+		border-left: rem(2) solid $accent;
+		background-color: rgba($accent, .1);
+	}
+
+}
+.messenger-post__author {
+	font-weight: 500;
+}
+.messenger-post__gallery {
+	padding-top: rem(12);
+}
+.gallery {
+	display: flex;
+	flex-wrap: wrap;
+	gap: rem(10);
+}
+.messenger-post__image {
+	flex: 0 0 prc(150,784);
+	aspect-ratio: 150/140;
+	border-radius: rem(10);
+	overflow: hidden;
+}
 /*--------------------END messenger----------------------*/ 

@@ -39,7 +39,8 @@
 .user-tooltip__info {
 	display: grid;
 	grid-template-columns: prc(80,293) 1fr;
-	column-gap: rem(12);
+	align-items: baseline;
+	column-gap: rem(8);
 	row-gap: rem(6);
 	margin-bottom: rem(16);
 	font-weight: 500;

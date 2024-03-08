@@ -1,0 +1,15 @@
+.chat-heading
+	.chat-heading__body
+		.chat-heading__author Евгений Орлов
+		.chat-heading__theme
+			.chat-heading__offer По предложению:
+			.chat-heading__content Продаётся ЖК новая заря 50 м2, черновая 8 млн
+
+.chat-messages.chat-messages--heading(data-simplebar)
+
+		.chat-messages__line
+				.chat-messages__mark 14 апреля 2023
+		- var posts = [{name: 'Евгений Орлов', text: 'Здравствуйте! Заинтересовало ваше предложение. Расскажите подробнее', author: 'agent', imgs: false},{name: 'Вы', text: 'Здравствуйте! Хочу предложить вам новую двухкомнатную квартиру 50м², по привлекательной цене, в новостройке с инфраструктурой. Квартира с двумя спальнями, площадью 110м² находится на 1 т этаже (над коммерческим помещением) комплекса с небольшой территорией и минимальной, недорогой в ежемесячном обслуживании, инфраструктурой. В апартаментах — большая гостиная, отдельная кухня, две спальни, прихожая, две ванных комнаты (в одной установлена ванна) и два балкона.', author: 'user', imgs:true}, {name: 'Евгений Орлов', text: 'Спасибо, подумаю', author: 'agent', imgs:false}];
+			- for (var i=0; i < 2; i++)
+				each post in posts
+					+messengerPost(post.name, post.author, post.text, post.imgs)

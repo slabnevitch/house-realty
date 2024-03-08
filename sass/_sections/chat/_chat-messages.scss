@@ -1,6 +1,10 @@
 /*--------------------chat-messages----------------------*/
 .chat-messages {
 	height: 100%;
+
+	&--heading{
+		padding-top: rem($chatHeding);
+	}
 }
 .chat-messages__block {}
 .chat-message {
