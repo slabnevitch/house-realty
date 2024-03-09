@@ -98,6 +98,11 @@
   width: 1em;
 }
 
+.icon-smile {
+  font-size: 80rem;
+  width: 1em;
+}
+
 .icon-teacher {
   font-size: 2.2rem;
   width: 0.8636363636em;
@@ -2173,6 +2178,23 @@
   color: #697586;
 }
 
+.chat-form__smile {
+  position: relative;
+  top: -0.0625rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+@media (any-hover: hover) {
+  .chat-form__smile {
+    cursor: pointer;
+  }
+}
+.chat-form__smile .icon {
+  font-size: 1.25rem;
+  color: #697586;
+}
+
 .chat-box {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
@@ -2940,6 +2962,68 @@ h2 {
   display: none;
 }
 
+.toggle-mnu {
+  position: fixed;
+  right: 1.875rem;
+  top: 0.9375rem;
+  display: block;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-top: 0.875rem;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.toggle-mnu span:after, .toggle-mnu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5625rem;
+}
+.toggle-mnu span:after {
+  top: 1.125rem;
+}
+.toggle-mnu span {
+  position: relative;
+  display: block;
+}
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+  width: 100%;
+  height: 0.125rem;
+  background-color: #000;
+  transition: all 0.3s;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 0.125rem;
+}
+.toggle-mnu.on span {
+  background-color: transparent;
+}
+.toggle-mnu.on span:before {
+  -ms-transform: rotate(45deg) translate(-0.0625rem, 0);
+  transform: rotate(45deg) translate(-0.0625rem, 0);
+}
+.toggle-mnu.on span:after {
+  -ms-transform: rotate(-45deg) translate(0.375rem, -0.4375rem);
+  transform: rotate(-45deg) translate(0.375rem, -0.4375rem);
+}
+.expanse .toggle-mnu {
+  margin-left: 1.875rem;
+  margin-bottom: 1.875rem;
+  position: static;
+  margin-top: 0;
+}
+@media (any-hover: hover) {
+  .toggle-mnu {
+    cursor: pointer;
+  }
+}
+@media only screen and (min-width: 106.25em) {
+  .toggle-mnu {
+    display: none;
+  }
+}
+
 /*--------------------END ui----------------------*/
 /*--------------------footer----------------------*/
 /*--------------------END footer----------------------*/
@@ -3406,15 +3490,25 @@ h2 {
   right: 0.3125rem;
 }
 .emoji-block .tab-content {
-  padding-right: 2.5rem;
+  padding-right: 1.875rem;
+}
+@media only screen and (min-width: 106.25em) {
+  .emoji-block .tab-content {
+    padding-right: 2.5rem;
+  }
 }
 
 .emoji-block__tabs {
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   height: 100%;
-  margin-right: -2.5rem;
   overflow: hidden;
+  margin-right: -1.875rem;
+}
+@media only screen and (min-width: 106.25em) {
+  .emoji-block__tabs {
+    margin-right: -2.5rem;
+  }
 }
 
 .emoji-list {
@@ -3480,6 +3574,11 @@ h2 {
   max-width: 23.875rem;
   border-right: 0.0625rem solid #E1E5ED;
 }
+@media only screen and (max-width: 106.25em) {
+  .messenger .toggle-mnu {
+    margin-top: 1.125rem;
+  }
+}
 
 .messenger__header {
   -ms-flex: 0 0 auto;
@@ -3488,6 +3587,12 @@ h2 {
   padding-left: 0.3125rem;
   height: 5rem;
   overflow: hidden;
+}
+@media only screen and (max-width: 106.25em) {
+  .messenger__header {
+    height: 3.125rem;
+    padding-top: 0;
+  }
 }
 
 .messenger__filter {
@@ -3973,9 +4078,19 @@ h2 {
   background-color: #fff;
   overflow: hidden;
 }
-.expanse__header:not(.expanse__header--messenger) {
-  border-radius: 30px 30px 0px 0px;
-  box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+@media only screen and (max-width: 106.25em) {
+  .expanse__header .btn {
+    height: 2.1875rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    font-size: 0.75rem;
+  }
+}
+@media only screen and (max-width: 106.25em) {
+  .expanse__header {
+    padding: 0.3125rem 1.875rem;
+    height: 3.75rem;
+  }
 }
 
 .header-expanse__content {
@@ -4002,8 +4117,21 @@ h2 {
     column-gap: clamp( 0.3125rem , -0.125rem  +  2.1875vw , 2.5rem );
   }
 }
+@media only screen and (max-width: 106.25em) {
+  .header-expanse__search {
+    column-gap: 0.625rem;
+  }
+}
 .header-expanse__search .btn {
   height: 2.75rem;
+}
+@media only screen and (max-width: 106.25em) {
+  .header-expanse__search .btn {
+    height: 2.1875rem;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    font-size: 0.75rem;
+  }
 }
 
 .expanse-form {
@@ -4015,6 +4143,11 @@ h2 {
 }
 .expanse-form .form__input {
   height: 2.75rem;
+}
+@media only screen and (max-width: 106.25em) {
+  .expanse-form .form__input {
+    height: 2.1875rem;
+  }
 }
 
 .header-expanse__submit {
@@ -4054,6 +4187,12 @@ h2 {
 @media (max-width: 81.25em) {
   .header-expanse__contacts {
     column-gap: clamp( 0.3125rem , 0rem  +  1.5625vw , 1.875rem );
+  }
+}
+@media only screen and (max-width: 106.25em) {
+  .header-expanse__contacts {
+    column-gap: 0.625rem;
+    padding-right: 0rem;
   }
 }
 
@@ -4109,13 +4248,47 @@ h2 {
 /*--------------------expanse-sidebar-left----------------------*/
 .expanse__nav {
   padding: 0.75rem 2rem;
+  transition: all 0.3s;
+}
+@media only screen and (max-width: 106.25em) {
+  .expanse__nav {
+    height: calc(100% - 1.875rem);
+    background-color: #fff;
+    position: fixed;
+    top: 1.875rem;
+    left: 0;
+    -ms-transform: translateX(-110%);
+    transform: translateX(-110%);
+    z-index: 2;
+  }
 }
 
-.expanse-sidebar__logo {
+.nav-expanse__header {
+  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  column-gap: 0.625rem;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+.nav-expanse__header .toggle-mnu {
+  position: static;
+  margin-top: 0;
+  height: auto;
+}
+@media only screen and (min-width: 106.25em) {
+  .nav-expanse__header .toggle-mnu {
+    display: none;
+  }
+}
+
+.nav-expanse__logo {
   max-width: 5.0625rem;
   margin-bottom: 2.5rem;
 }
-.expanse-sidebar__logo img {
+.nav-expanse__logo img {
   max-width: 100%;
 }
 
@@ -4173,10 +4346,50 @@ h2 {
   display: -ms-flexbox;
   display: flex;
   margin-right: 1.875rem;
+  overflow: hidden;
+}
+@supports (overflow: clip) {
+  .expanse {
+    overflow: clip;
+  }
+}
+@supports (height: 100dvh) {
+  .expanse {
+    height: 100dvh;
+  }
 }
 .expanse--messenger .expanse__chat {
   border-radius: 0;
   box-shadow: none;
+}
+@media only screen and (max-width: 106.25em) {
+  .expanse--messenger .expanse__container {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 106.25em) {
+  .expanse--messenger .expanse__main {
+    height: 60%;
+  }
+}
+@media only screen and (max-width: 106.25em) {
+  .expanse--messenger .expanse__sidebar {
+    display: none;
+    height: 40%;
+    padding: 0.625rem 1.875rem 0 1.875rem;
+  }
+}
+@media only screen and (min-width: px) {
+  .expanse--messenger .expanse__sidebar {
+    -ms-flex: 0 0 23.875rem;
+    flex: 0 0 23.875rem;
+  }
+}
+@media only screen and (max-width: 106.25em) {
+  .expanse--messenger .expanse__sidebar.opened {
+    display: block;
+  }
 }
 
 .expanse__messenger {
@@ -4201,6 +4414,11 @@ h2 {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+.expanse__content--sdw {
+  border-radius: 1.875rem 1.875rem 1.875rem 1.875rem;
+  box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+  overflow: hidden;
+}
 
 .expanse__container {
   display: -ms-flexbox;
@@ -4219,6 +4437,11 @@ h2 {
   -ms-flex-direction: column;
   flex-direction: column;
 }
+@media only screen and (max-width: 106.25em) {
+  .expanse__main {
+    height: 70%;
+  }
+}
 
 .expanse__field {
   -ms-flex: 1 1 auto;
@@ -4226,7 +4449,6 @@ h2 {
   padding-left: 1.875rem;
   overflow-y: auto;
   background-color: #fff;
-  box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
   overflow: hidden;
 }
 .expanse--messenger .expanse__field {
@@ -4239,10 +4461,19 @@ h2 {
 }
 
 .expanse__sidebar {
-  -ms-flex: 0 0 23.875rem;
-  flex: 0 0 23.875rem;
   padding: 1.875rem 2.5rem 0 2.5rem;
   background-color: #F8F9FC;
+}
+@media only screen and (max-width: 106.25em) {
+  .expanse__sidebar {
+    height: 40%;
+  }
+}
+@media only screen and (min-width: 106.25em) {
+  .expanse__sidebar {
+    -ms-flex: 0 0 23.875rem;
+    flex: 0 0 23.875rem;
+  }
 }
 
 /*--------------------END expanse-template----------------------*/

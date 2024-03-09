@@ -1,6 +1,11 @@
-aside.expanse__nav
-	.expanse-sidebar__logo
-		img(src="img/logo.svg" alt="alt")
+aside.expanse__nav.nav-expanse
+	.nav-expanse__header
+		.nav-expanse__logo
+			img(src="img/logo.svg" alt="alt")
+
+		button.toggle-mnu.on
+			span
+
 	- var menu = ['Запрос', 'Предложения', 'Чат'];
 	ul.expanse-menu
 		each item, ind in menu

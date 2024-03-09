@@ -6,13 +6,29 @@
 	flex: 0 0 rem(382);
 	max-width: rem(382);
 	border-right: rem(1) solid $line;
+
+	.toggle-mnu{
+		@include max-screen($mess-mob){
+			margin-top: rem(18);
+		}
+
+	}
+	// @include max-screen($lg){
+	// 	flex-basis: rem(280);
+	// 	max-width: rem(280);
+	// }
 }
 .messenger__header {
 	flex: 0 0 auto;
 	padding-top: rem(20);
 	padding-left: rem(5);
-	height: rem(80);
+	height: rem($chatHeader);
 	overflow: hidden;
+
+	@include max-screen($mess-mob){
+		height: rem($chatHeader - 30);
+		padding-top:0;
+	}
 }
 .messenger__filter {
 	position: relative;
@@ -61,7 +77,9 @@
 .tns-next{
 	right: 0;
 }
-.tiny-sldr {}
+.tiny-sldr {
+
+}
 .filter-messenger__item {
 	position: relative;
 	user-select: none;

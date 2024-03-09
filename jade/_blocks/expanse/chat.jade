@@ -1,5 +1,7 @@
 .expanse__chat
 	form(action="#" class="chat-form")
+		button#emoji-toggle.chat-form__smile(type="button")
+			+icon('smile')
 		label.chat-form__label
 			input( type="file" name="chat-file" class="file-input" )
 			.chat-form__file-add

@@ -25,14 +25,22 @@
 		}
 	}
 	.tab-content {
-		padding-right: rem(40);
+			padding-right: rem(30);
+		@include min-screen($mess-mob){
+			padding-right: rem(40);
+			
+		}
 	}
 }
 .emoji-block__tabs {
 	flex: 1 1 auto;
 	height: 100%;	
-	margin-right: rem(-40);
 	overflow: hidden;
+		margin-right: rem(-30);
+
+	@include min-screen($mess-mob){
+		margin-right: rem(-40);
+	}
 }
 .tabs__item {}
 .tab {}
@@ -62,7 +70,7 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	height: rem(60);
+	height: rem($chatHeding);
 	@include but-null();
 	background-color: #fff;
 

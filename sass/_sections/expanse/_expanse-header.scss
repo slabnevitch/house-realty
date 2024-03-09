@@ -3,7 +3,7 @@
 	position: relative;
 	z-index: 1;
 	flex-shrink: 0;
-	height: rem(80);
+	height: rem($chatHeader);
 	padding: rem(18) rem(30);
 	display: flex;
 	align-items: center;
@@ -11,11 +11,26 @@
 	background-color: #fff;
 	overflow: hidden;
 
-	&:not(.expanse__header--messenger){
+	.btn {
 
-		border-radius: 30px 30px 0px 0px;
-		box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+		@include max-screen($mess-mob){
+			height: rem(35);
+			padding-left: rem(10);
+			padding-right: rem(10);
+			font-size: rem(12);
+			
+		}
 	}
+
+	@include max-screen($mess-mob){
+		padding: rem(5) rem(30);
+		height: rem($chatHeader - 20);
+	}
+	// &:not(.expanse__header--messenger){
+
+	// 	border-radius: 30px 30px 0px 0px;
+	// 	box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+	// }
 }
 .header-expanse {}
 .header-expanse__content{
@@ -29,9 +44,20 @@
 	align-items: center;
 	flex: 1 1 auto;
 	@include adaptive-value-rem('column-gap', 40, 5, $maxWidth, $minWidth, 1);
-	// column-gap: rem(40);
+
+	@include max-screen($mess-mob){
+		column-gap: rem(10);
+		
+	}
 	.btn {
 		height: rem(44);
+
+		@include max-screen($mess-mob){
+			height: rem(35);
+			padding-left: rem(10);
+			padding-right: rem(10);
+			font-size: rem(12);
+		}
 	}
 
 }
@@ -42,6 +68,10 @@
 	display: flex;
 	.form__input {
 		height: rem(44);
+
+		@include max-screen($mess-mob){
+			height: rem(35);
+		}
 	}
 }
 .header-expanse__submit{
@@ -62,6 +92,11 @@
 	display: flex;
 	align-items: center;
 	@include adaptive-value-rem('column-gap', 30, 5, $maxWidth, $minWidth, 1);
+
+	@include max-screen($mess-mob){
+		column-gap: rem(10);
+		padding-right: rem(0);
+	}
 }
 .header-expanse__email {
 	font-weight: 500;
@@ -93,5 +128,5 @@
 	justify-content: flex-end;
 	column-gap: rem(16);
 }
-.btn-empty {}
+
 /*--------------------END expanse-header----------------------*/ 

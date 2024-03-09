@@ -42,6 +42,15 @@
   }
 
 }
+.chat-form__smile{
+  position: relative;
+  top: rem(-1);
+  @include but-null();
+  .icon {
+    font-size: rem(20);
+    color: $gray-dark;
+  }
+}
 .icon-plus-circle {}
 .chat-box {
   flex: 1 1 auto;

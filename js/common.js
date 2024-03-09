@@ -140,6 +140,14 @@
 		}
 	// END добавление смайлов в чат
 
+	// movbile emoji toggle
+		if(document.getElementById('emoji-toggle') !==null){
+			document.getElementById('emoji-toggle').onclick = function(e) {
+				document.querySelector('.expanse__sidebar').classList.toggle('opened');
+			}
+		}
+	// END movbile emoji toggle
+
 	// baguetteBox
 		if(document.querySelector('.gallery') !== null){
 			baguetteBox.run('.gallery');
@@ -209,12 +217,14 @@
 			    interactive: true
 			});
 		}
-		//END messenger-contact tooltip
+	//END messenger-contact tooltip
+
+	
 
 		// modals calls
 		// MicroModal.show('service-rules-modal');
 		// MicroModal.show('city-select-modal');
-		MicroModal.show('requests-modal');
+		// MicroModal.show('requests-modal');
 		// END modals calls
 	});
 })();

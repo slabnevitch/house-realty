@@ -11,8 +11,11 @@
   </head>
   <body>
     <div class="expanse expanse--messenger">
-      <aside class="expanse__nav">
-        <div class="expanse-sidebar__logo"><img src="img/logo.svg" alt="alt"></div>
+      <aside class="expanse__nav nav-expanse">
+        <div class="nav-expanse__header">
+          <div class="nav-expanse__logo"><img src="img/logo.svg" alt="alt"></div>
+          <button class="toggle-mnu on"><span></span></button>
+        </div>
         <ul class="expanse-menu">
           <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Запрос</a></li>
           <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Предложения</a></li>
@@ -21,6 +24,7 @@
       </aside>
       <div class="expanse__messenger">
         <div class="messenger">
+          <button class="toggle-mnu"><span></span></button>
           <div class="messenger__header">
             <div class="messenger__filter filter-messenger">
               <div class="tiny-carousel">
@@ -401,6 +405,11 @@
               </div>
               <div class="expanse__chat">
                 <form action="#" class="chat-form">
+                  <button id="emoji-toggle" type="button" class="chat-form__smile">
+                        <svg class="icon icon-smile ">
+                          <use xlink:href="img/icons-svg/symbol/sprite.svg#smile"></use>
+                        </svg>
+                  </button>
                   <label class="chat-form__label">
                     <input type="file" name="chat-file" class="file-input">
                     <div class="chat-form__file-add">
@@ -547,6 +556,7 @@
             </div>
           </div>
         </div>
+    <!-- script(src="js/libs/service-functions/fade.js")-->
     
     
     <script src="js/libs/dynamic-adaptive/da.min.js"></script>
