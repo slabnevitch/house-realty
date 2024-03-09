@@ -1,4 +1,8 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M8 15L1 8L8 1" stroke="#697586" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M15 8L1 8" stroke="#697586" stroke-linecap="round" stroke-linejoin="round"/>
+<svg width="15.000000" height="15.004272" viewBox="0 0 15 15.0043" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs/>
+	<path id="Vector (Граница)" d="M7.14624 14.8557C7.34424 15.0536 7.65552 15.0536 7.85352 14.8557C8.05151 14.6577 8.05151 14.3466 7.85352 14.1486L1.20703 7.50208L7.85352 0.855713C8.05151 0.657715 8.05151 0.346558 7.85352 0.14856C7.65552 -0.0494385 7.34424 -0.0494385 7.14624 0.14856L0.14624 7.14856C0.0488281 7.24622 0 7.36401 0 7.50208C0 7.64014 0.0488281 7.75806 0.14624 7.85571L7.14624 14.8557Z" fill="#697586" fill-opacity="1.000000" fill-rule="evenodd"/>
+	<path id="Vector (Граница)" d="M14.5 8.0022C14.78 8.0022 15 7.78223 15 7.5022C15 7.22217 14.78 7.0022 14.5 7.0022L0.5 7.0022C0.219971 7.0022 0 7.22217 0 7.5022C0 7.78223 0.219971 8.0022 0.5 8.0022L14.5 8.0022Z" fill="#697586" fill-opacity="1.000000" fill-rule="evenodd"/>
 </svg>

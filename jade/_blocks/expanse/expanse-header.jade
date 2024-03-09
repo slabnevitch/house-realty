@@ -1,16 +1,26 @@
 header(class=pageName=='messenger'?"expanse__header header-expanse expanse__header--messenger":"expanse__header header-expanse")
 	.header-expanse__content
+		button.header-expanse__back(type="button")
+			+icon('arrow-left')
+			
 		.header-expanse__search
-			button.btn(type="button") Сочи
+			button.header-expanse__city.btn(type="button") Сочи
 			form(action="#" class="expanse-form")
 				input(autocomplete="off" type="text" name="" class="form__input" placeholder="Поиск по чату")
 				button(type="submit").header-expanse__submit
 					+icon('search')
+		
+			button(type="submit").header-expanse__submit.header-expanse__button
+				+icon('search')
+		
 		.header-expanse__contacts
 			a(href="mailto:house@gmail.ru").header-expanse__email house@gmail.ru
 			a(href="#").header-expanse__wats
 				+icon('watsapp')
+
 	
 	.header-expanse__actions
 		a(href="#").btn.btn-empty Рейтинг продавцов
 		a(href="#").btn Профиль
+		a(href="#").header-expanse__profile
+			+icon('user')

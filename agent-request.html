@@ -14,7 +14,7 @@
       <aside class="expanse__nav nav-expanse">
         <div class="nav-expanse__header">
           <div class="nav-expanse__logo"><img src="img/logo.svg" alt="alt"></div>
-          <button class="toggle-mnu on"><span></span></button>
+          <button id="menu-close" class="toggle-mnu on"><span></span></button>
         </div>
         <ul class="expanse-menu">
           <li class="expanse-menu__item"><a href="#" class="expanse-menu__link active">Запрос</a></li>
@@ -25,8 +25,13 @@
       <main class="expanse__content expanse__content--sdw">
         <header class="expanse__header header-expanse">
           <div class="header-expanse__content">
+            <button type="button" class="header-expanse__back">
+                  <svg class="icon icon-arrow-left ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#arrow-left"></use>
+                  </svg>
+            </button>
             <div class="header-expanse__search">
-              <button type="button" class="btn">Сочи</button>
+              <button type="button" class="header-expanse__city btn">Сочи</button>
               <form action="#" class="expanse-form">
                 <input autocomplete="off" type="text" name="" placeholder="Поиск по чату" class="form__input">
                 <button type="submit" class="header-expanse__submit">
@@ -35,13 +40,21 @@
                       </svg>
                 </button>
               </form>
+              <button type="submit" class="header-expanse__submit header-expanse__button">
+                    <svg class="icon icon-search ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#search"></use>
+                    </svg>
+              </button>
             </div>
             <div class="header-expanse__contacts"><a href="mailto:house@gmail.ru" class="header-expanse__email">house@gmail.ru</a><a href="#" class="header-expanse__wats">
                     <svg class="icon icon-watsapp ">
                       <use xlink:href="img/icons-svg/symbol/sprite.svg#watsapp"></use>
                     </svg></a></div>
           </div>
-          <div class="header-expanse__actions"><a href="#" class="btn btn-empty">Рейтинг продавцов</a><a href="#" class="btn">Профиль</a></div>
+          <div class="header-expanse__actions"><a href="#" class="btn btn-empty">Рейтинг продавцов</a><a href="#" class="btn">Профиль</a><a href="#" class="header-expanse__profile">
+                  <svg class="icon icon-user ">
+                    <use xlink:href="img/icons-svg/symbol/sprite.svg#user"></use>
+                  </svg></a></div>
         </header>
         <div class="expanse__container">
           <div class="expanse__main">

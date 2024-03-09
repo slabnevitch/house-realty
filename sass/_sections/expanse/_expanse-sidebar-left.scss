@@ -10,7 +10,13 @@
 		top: rem(30);
 		left: 0;
 		transform: translateX(-110%);
-		z-index: 2;
+		z-index: 4;
+
+		box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+	}
+	.menu-opened &{
+		transform: translateX(0);
+
 	}
 }
 .nav-expanse__header{

@@ -6,6 +6,28 @@
 	flex: 0 0 rem(382);
 	max-width: rem(382);
 	border-right: rem(1) solid $line;
+	transition: transform .3s;
+	will-change: transform;
+
+	.contacts-collapsed &{
+		transform: translateX(-110%);
+	}
+
+	@include max-screen($md){
+		max-width: none;
+		flex: 0 0 auto;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		top: rem($chatHeader);
+		height: calc(100vh - rem($chatHeader + 20));
+		z-index: 3;
+		background-color: #fff;
+
+		@supports(height: 100dvh){
+			height: calc(100dvh - rem($chatHeader + 20));
+		}
+	}
 
 	.toggle-mnu{
 		@include max-screen($mess-mob){
@@ -13,10 +35,6 @@
 		}
 
 	}
-	// @include max-screen($lg){
-	// 	flex-basis: rem(280);
-	// 	max-width: rem(280);
-	// }
 }
 .messenger__header {
 	flex: 0 0 auto;
@@ -278,6 +296,13 @@
 	flex: 0 0 auto;
 	.btn {
 		height: rem(32);
+
+		@include max-screen($xs){
+			padding-left: rem(10);
+			padding-right: rem(10);
+			height: rem(20);
+			font-size: rem(10);
+		}
 	}
 }
 

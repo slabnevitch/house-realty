@@ -1,7 +1,7 @@
 /*--------------------expanse-header----------------------*/
 .expanse__header {
 	position: relative;
-	z-index: 1;
+	z-index: 3;
 	flex-shrink: 0;
 	height: rem($chatHeader);
 	padding: rem(18) rem(30);
@@ -9,7 +9,7 @@
 	align-items: center;
 	column-gap: rem(10);
 	background-color: #fff;
-	overflow: hidden;
+	// overflow: hidden;
 
 	.btn {
 
@@ -47,25 +47,52 @@
 
 	@include max-screen($mess-mob){
 		column-gap: rem(10);
-		
 	}
-	.btn {
-		height: rem(44);
+}
+.header-expanse__city{
+	height: rem(44);
+	flex-shrink: 0;
+	@include dots-family();
+	max-width: rem(120);
+	// width: 100%;
+	text-align: left;
+	// justify-content: flex-start;
 
-		@include max-screen($mess-mob){
-			height: rem(35);
-			padding-left: rem(10);
-			padding-right: rem(10);
-			font-size: rem(12);
-		}
+	@include max-screen($mess-mob){
+		height: rem(35);
+		padding-left: rem(10);
+		padding-right: rem(10);
+		font-size: rem(12);
 	}
-
+	@include max-screen($xss){
+		max-width: rem(120);
+	}
 }
 .expanse-form {
 	position: relative;
 	width: 100%;
 	max-width: rem(400);
 	display: flex;
+
+	@include max-screen($lg){
+		position: absolute;
+		top: 100%;
+		left: rem(20);
+		right: rem(20);
+		max-width: none;
+		width: auto;
+		box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.3s;
+	}
+	.search-opened &{
+		@include max-screen($lg){
+			opacity: 1;
+			visibility: visible;
+		
+		}
+	}
 	.form__input {
 		height: rem(44);
 
@@ -85,6 +112,16 @@
 	.icon{
 		@include absolute-center-old;
 		font-size: 14px;
+	}
+}
+.header-expanse__button{
+	position: relative;
+	height: 100%;
+	width: rem(48);
+	margin-top: 0;
+	margin-left: rem(15);
+	@include min-screen($lg){
+		display: none;
 	}
 }
 .header-expanse__contacts {
@@ -108,6 +145,12 @@
 		max-width: rem(120);
 		@include dots-family();
 	}
+	@include max-screen($sm){
+		font-size: rem(10);
+	}
+	@include max-screen($xss){
+		display: none;
+	}
 }
 .header-expanse__wats {
 	position: relative;
@@ -115,11 +158,21 @@
 	height: rem(40);
 	border-radius: 50%;
 	background-color: rgb(72, 201, 95);
+
+	@include max-screen($sm){
+		width: rem(20);
+		height: rem(20);
+	}
 }
 .icon-watsapp {
 	@include absolute-center();
 	font-size: rem(21);
 	color: #fff;
+
+	@include max-screen($sm){
+		width: rem(11);
+		height: rem(11);
+	}
 }
 .header-expanse__actions{
 	flex-shrink: 0;
@@ -127,6 +180,44 @@
 	align-items: center;
 	justify-content: flex-end;
 	column-gap: rem(16);
-}
 
+	.btn,
+	.btn-empty{
+		@include max-screen($sm){
+			display: none;
+		}
+	}
+}
+.header-expanse__profile{
+	display: block;
+	width: rem(24);
+	height: rem(24);
+	position: relative;
+	.icon{
+		@include absolute-center;
+		color: $accent;
+		font-size: rem(20);
+	}
+	@include min-screen($sm){
+		display: none;	
+	}
+}
+.header-expanse__back{
+	@include but-null();
+	height: 100%;
+	width: rem(24);
+	display: none;
+	align-items: center;
+	jusstify-content: center;
+	flex-shrink: 0;
+
+	.contacts-collapsed &{
+		display: flex;
+	}
+
+	.icon{
+		font-size: rem(20);
+		color: $gray-dark;
+	}
+}
 /*--------------------END expanse-header----------------------*/ 
