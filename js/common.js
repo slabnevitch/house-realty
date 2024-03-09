@@ -81,6 +81,7 @@
 
 	document.addEventListener('DOMContentLoaded', function() {
 		console.log('DOMContentLoaded!');
+		
 		// password show
 		if(document.querySelector('.eye-ico') !== null){
 			[].forEach.call(document.querySelectorAll('.eye-ico'), function(el) {
@@ -95,6 +96,48 @@
 		}
 		// END password show
 
+		// chat menu toggle
+		if(document.querySelector('#menu-open') !== null){
+			document.querySelector('#menu-open').onclick = function(e) {
+				// this.classList.toggle('on');
+				console.log('open')
+				document.documentElement.classList.add('menu-opened');
+			}
+
+		}
+		if(document.querySelector('#menu-close') !== null){
+			document.querySelector('#menu-close').onclick = function(e) {
+				// this.classList.toggle('on');
+				document.documentElement.classList.remove('menu-opened');
+			}
+			
+		}
+		// END chat menu toggle
+		
+		document.onclick = function(e){
+			var target = e.target;
+			console.log(target.closest('.header-expanse__button') !==null);
+			console.log(target);
+			
+			// bobile search form toggle
+			if(target.closest('.header-expanse__button') !==null){
+				document.querySelector('.expanse__header').classList.toggle('search-opened');
+			}else if (!target.parentElement.classList.contains('expanse-form')){
+				document.querySelector('.expanse__header').classList.remove('search-opened');
+			}
+			// END bobile search form toggle
+			
+			// убрать контакты при открытии текущего чата
+			if(window.innerWidth < 991.98){
+				if(target.closest('.messenger__contact') !== null){
+					document.querySelector('.expanse').classList.add('contacts-collapsed');
+				}
+				if(target.closest('.header-expanse__back') !== null){
+					document.querySelector('.expanse').classList.remove('contacts-collapsed');
+				}
+			}
+			// END убрать контакты при открытии текущего чата
+		}
 
 		// enter-form toggle
 		if(document.querySelector('.page-main__form-display') !== null){
@@ -140,6 +183,14 @@
 		}
 	// END добавление смайлов в чат
 
+	// movbile emoji toggle
+		if(document.getElementById('emoji-toggle') !==null){
+			document.getElementById('emoji-toggle').onclick = function(e) {
+				document.querySelector('.expanse__sidebar').classList.toggle('opened');
+			}
+		}
+	// END movbile emoji toggle
+
 	// baguetteBox
 		if(document.querySelector('.gallery') !== null){
 			baguetteBox.run('.gallery');
@@ -162,7 +213,7 @@
 						// navAsThumbnails: true, //включение навигации миниатюрами
 						nav: false, //отключение bullets
 						// navPosition: 'bottom',//положение bullets
-						mouseDrag: true,
+						mouseDrag: false,
 						gutter: 10, //добавляет padding, а не margin! Нужна обертка вокруг содержимого каждого слайда!
 						
 						// responsive: { // mobile first!
@@ -185,6 +236,39 @@
 			});
 		}
 	// END messenger filter slider
+
+	// messenger-contact tooltip
+		if(document.querySelector('.contact-messenger__name') !== null){
+			tippy('.contact-messenger__name', {
+				appendTo: function() {
+					return document.body;	
+				}, 
+				theme: 'contact', 
+				maxWidth: 'none',
+				allowHTML: true,
+				content: function(reference) {
+				    var id = reference.getAttribute('data-tooltip');
+				    var template = document.getElementById(id);
+				    return template.innerHTML;
+				  },
+				offset: [70, -15],
+				arrow: false,
+				placement: 'bottom-start',
+				// flipBehavior: ["top", "left"],
+				// trigger: 'click',
+			    // placement: 'left-start',
+			    interactive: true
+			});
+		}
+	//END messenger-contact tooltip
+
+	
+
+		// modals calls
+		// MicroModal.show('service-rules-modal');
+		// MicroModal.show('city-select-modal');
+		// MicroModal.show('requests-modal');
+		// END modals calls
 	});
 })();
 
