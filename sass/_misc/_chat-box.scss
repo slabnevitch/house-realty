@@ -136,19 +136,21 @@ $width: rem(24);
   #input-box-field {
     
     display: block; // см. https://stackoverflow.com/questions/18552336/prevent-contenteditable-adding-div-on-enter-chrome
-    
+    // word-break: break-all;
     &:focus { outline: 0; }
     
     
     // position: absolute;
-    top: 0;
-    left: .5rem;
-    right: .5rem;
+    // top: 0;
+    // left: .5rem;
+    // right: .5rem;
     // white-space: nowrap;
     // overflow-x: scroll; // скрытие скроллбара
     // min-height: 2.5rem;
-    resize: none;
+    // resize: none;
     // text-overflow: ellipsis;
+    max-height: rem(300);
+    overflow: auto;
     
     // вывод placeholder
     &:not(:empty) ~ #input-box-placeholder { display: none; }

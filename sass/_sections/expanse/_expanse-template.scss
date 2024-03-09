@@ -1,7 +1,6 @@
 /*--------------------expanse-template----------------------*/
 .expanse{
-	height: 100vh;
-	padding: rem(20) 0;
+	height: 100%;
 	display: flex;
 	margin-right: rem(30);
 
@@ -10,12 +9,77 @@
 	@supports(overflow: clip){
 		overflow: clip;
 	}
-	@supports(height: 100dvh){
-		height: 100dvh;
-	}
+	// @supports(height: 100dvh){
+	// 	height: 100dvh;
+	// }
 
 	@include max-screen($md){
-		margin-right: 0;
+		margin-right: 1px;
+	}
+	@include min-screen($md){
+		padding: rem(20) 0;
+		
+	}
+
+	&:not(&--messenger){
+		.expanse__container{
+			@include max-screen($md){
+				flex-direction: column;
+			}
+		}
+		.toggle-mnu{
+			margin-left: 0;
+			margin-bottom: rem(20);
+			@include min-screen($md){
+				display: none;
+			}
+		}
+		.expanse__nav{
+			@include max-screen($lg){
+				height: 100%;
+				background-color: #fff;
+				position: fixed;
+				top: 0;
+				left: 0;
+				transform: translateX(-110%);
+				z-index: 4;
+
+				box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+			}
+
+			.menu-opened &{
+				transform: translateX(0) !important;
+
+			}
+
+		}
+		.toggle-mnu{
+			@include min-screen($lg){
+				display: none;
+			}
+		}
+		.expanse__main{
+			@include max-screen($md){
+				height: 60%;
+			}
+		}
+		.expanse__sidebar{
+			@include max-screen($md){
+				display: none;
+				height: 40%;
+				padding: rem(10) rem(30) 0 rem(30);
+			}
+
+			// @include min-screen(px){
+			// 	flex: 0 0 rem(382);
+			// }
+
+			&.opened{
+				@include max-screen($md){
+					display: block;
+				}
+			}
+		}
 	}
 
 	&--messenger{
@@ -27,6 +91,29 @@
 			@include max-screen($mess-mob){
 				flex-direction: column;
 			}
+		}
+		.toggle-mnu{
+			@include min-screen($mess-mob){
+				display: none;
+			}
+		}
+		.expanse__nav{
+			@include max-screen($mess-mob){
+				height: calc(100% - rem(30));
+				background-color: #fff;
+				position: fixed;
+				top: rem(30);
+				left: 0;
+				transform: translateX(-110%);
+				z-index: 4;
+
+				box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+			}
+			.menu-opened &{
+				transform: translateX(0) !important;
+
+			}
+
 		}
 		.expanse__main{
 			@include max-screen($mess-mob){
@@ -40,9 +127,9 @@
 				padding: rem(10) rem(30) 0 rem(30);
 			}
 
-			@include min-screen(px){
-				flex: 0 0 rem(382);
-			}
+			// @include min-screen(px){
+			// 	flex: 0 0 rem(382);
+			// }
 
 			&.opened{
 				@include max-screen($mess-mob){
@@ -93,10 +180,10 @@
 	display: flex;
 	flex-direction: column;
 
-	@include max-screen($mess-mob){
-		// flex-basis: 50%;
-		height: 70%;
-	}
+	// @include max-screen($mess-mob){
+	// 	// flex-basis: 50%;
+	// 	height: 70%;
+	// }
 }
 .expanse__field{
 	flex: 1 1 auto;
@@ -104,6 +191,10 @@
 	overflow-y: auto;
 	background-color: #fff;
 	overflow: hidden;
+
+	@include max-screen($md){
+		padding-left: rem(15);
+	}
 	.expanse--messenger &{
 		box-shadow: none;
 	}
@@ -116,13 +207,9 @@
 .expanse__sidebar{
 	padding: rem(30) rem(40) 0 rem(40);
 	background-color: #F8F9FC;
-
-	@include max-screen($mess-mob){
-		height: 40%;
-	}
+	flex: 0 0 rem(382);
 
 	@include min-screen($mess-mob){
-		flex: 0 0 rem(382);
 		
 	}
 }

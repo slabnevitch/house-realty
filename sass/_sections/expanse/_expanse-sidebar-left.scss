@@ -3,21 +3,6 @@
 	padding: rem(12) rem(32);
 	transition: all 0.3s;
 
-	@include max-screen($mess-mob){
-		height: calc(100% - rem(30));
-		background-color: #fff;
-		position: fixed;
-		top: rem(30);
-		left: 0;
-		transform: translateX(-110%);
-		z-index: 4;
-
-		box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
-	}
-	.menu-opened &{
-		transform: translateX(0);
-
-	}
 }
 .nav-expanse__header{
 	width: 100%;
@@ -30,10 +15,6 @@
 		position: static;
 		margin-top: 0;
 		height: auto;
-
-		@include min-screen($mess-mob){
-			display: none;
-		}
 	}
 }
 .nav-expanse__logo{

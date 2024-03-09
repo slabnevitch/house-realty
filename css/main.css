@@ -2230,10 +2230,8 @@
 }
 .chat-box #input-box-field {
   display: block;
-  top: 0;
-  left: 0.5rem;
-  right: 0.5rem;
-  resize: none;
+  max-height: 18.75rem;
+  overflow: auto;
   user-select: text;
   -webkit-touch-callout: text;
   -webkit-user-select: text;
@@ -2888,6 +2886,7 @@ h2 {
 
 .simplebar-scrollbar {
   width: 2px;
+  right: 0.125rem;
   left: auto;
   background-color: #3A8BF3;
 }
@@ -3582,21 +3581,17 @@ h2 {
 }
 @media only screen and (max-width: 61.99875em) {
   .messenger {
+    padding-bottom: 0.9375rem;
     max-width: none;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
     position: fixed;
     width: 100%;
     left: 0;
-    top: 5rem;
-    height: calc(100vh - 6.25rem);
+    top: 3.125rem;
+    height: calc(100% - 3.125rem);
     z-index: 3;
     background-color: #fff;
-  }
-  @supports (height: 100dvh) {
-    .messenger {
-      height: calc(100dvh - 6.25rem);
-    }
   }
 }
 @media only screen and (max-width: 106.25em) {
@@ -3909,6 +3904,11 @@ h2 {
   overflow: hidden;
   z-index: 1;
 }
+@media only screen and (max-width: 47.99875em) {
+  .chat-heading {
+    padding: 0.75rem 0.9375rem;
+  }
+}
 
 .chat-heading__body {
   -ms-flex: 1 1 auto;
@@ -4122,6 +4122,11 @@ h2 {
   .expanse__header {
     padding: 0.3125rem 1.875rem;
     height: 3.75rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .expanse__header {
+    padding: 0.5rem 0.9375rem;
   }
 }
 
@@ -4407,23 +4412,6 @@ h2 {
   padding: 0.75rem 2rem;
   transition: all 0.3s;
 }
-@media only screen and (max-width: 106.25em) {
-  .expanse__nav {
-    height: calc(100% - 1.875rem);
-    background-color: #fff;
-    position: fixed;
-    top: 1.875rem;
-    left: 0;
-    -ms-transform: translateX(-110%);
-    transform: translateX(-110%);
-    z-index: 4;
-    box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
-  }
-}
-.menu-opened .expanse__nav {
-  -ms-transform: translateX(0);
-  transform: translateX(0);
-}
 
 .nav-expanse__header {
   width: 100%;
@@ -4439,11 +4427,6 @@ h2 {
   position: static;
   margin-top: 0;
   height: auto;
-}
-@media only screen and (min-width: 106.25em) {
-  .nav-expanse__header .toggle-mnu {
-    display: none;
-  }
 }
 
 .nav-expanse__logo {
@@ -4503,8 +4486,7 @@ h2 {
 /*--------------------END expanse-sidebar----------------------*/
 /*--------------------expanse-template----------------------*/
 .expanse {
-  height: 100vh;
-  padding: 1.25rem 0;
+  height: 100%;
   display: -ms-flexbox;
   display: flex;
   margin-right: 1.875rem;
@@ -4515,14 +4497,68 @@ h2 {
     overflow: clip;
   }
 }
-@supports (height: 100dvh) {
+@media only screen and (max-width: 61.99875em) {
   .expanse {
-    height: 100dvh;
+    margin-right: 1px;
+  }
+}
+@media only screen and (min-width: 61.99875em) {
+  .expanse {
+    padding: 1.25rem 0;
   }
 }
 @media only screen and (max-width: 61.99875em) {
-  .expanse {
-    margin-right: 0;
+  .expanse:not(.expanse--messenger) .expanse__container {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.expanse:not(.expanse--messenger) .toggle-mnu {
+  margin-left: 0;
+  margin-bottom: 1.25rem;
+}
+@media only screen and (min-width: 61.99875em) {
+  .expanse:not(.expanse--messenger) .toggle-mnu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 81.25em) {
+  .expanse:not(.expanse--messenger) .expanse__nav {
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -ms-transform: translateX(-110%);
+    transform: translateX(-110%);
+    z-index: 4;
+    box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+  }
+}
+.menu-opened .expanse:not(.expanse--messenger) .expanse__nav {
+  -ms-transform: translateX(0) !important;
+  transform: translateX(0) !important;
+}
+@media only screen and (min-width: 81.25em) {
+  .expanse:not(.expanse--messenger) .toggle-mnu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .expanse:not(.expanse--messenger) .expanse__main {
+    height: 60%;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .expanse:not(.expanse--messenger) .expanse__sidebar {
+    display: none;
+    height: 40%;
+    padding: 0.625rem 1.875rem 0 1.875rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .expanse:not(.expanse--messenger) .expanse__sidebar.opened {
+    display: block;
   }
 }
 .expanse--messenger .expanse__chat {
@@ -4535,6 +4571,28 @@ h2 {
     flex-direction: column;
   }
 }
+@media only screen and (min-width: 106.25em) {
+  .expanse--messenger .toggle-mnu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 106.25em) {
+  .expanse--messenger .expanse__nav {
+    height: calc(100% - 1.875rem);
+    background-color: #fff;
+    position: fixed;
+    top: 1.875rem;
+    left: 0;
+    -ms-transform: translateX(-110%);
+    transform: translateX(-110%);
+    z-index: 4;
+    box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+  }
+}
+.menu-opened .expanse--messenger .expanse__nav {
+  -ms-transform: translateX(0) !important;
+  transform: translateX(0) !important;
+}
 @media only screen and (max-width: 106.25em) {
   .expanse--messenger .expanse__main {
     height: 60%;
@@ -4545,12 +4603,6 @@ h2 {
     display: none;
     height: 40%;
     padding: 0.625rem 1.875rem 0 1.875rem;
-  }
-}
-@media only screen and (min-width: px) {
-  .expanse--messenger .expanse__sidebar {
-    -ms-flex: 0 0 23.875rem;
-    flex: 0 0 23.875rem;
   }
 }
 @media only screen and (max-width: 106.25em) {
@@ -4604,11 +4656,6 @@ h2 {
   -ms-flex-direction: column;
   flex-direction: column;
 }
-@media only screen and (max-width: 106.25em) {
-  .expanse__main {
-    height: 70%;
-  }
-}
 
 .expanse__field {
   -ms-flex: 1 1 auto;
@@ -4617,6 +4664,11 @@ h2 {
   overflow-y: auto;
   background-color: #fff;
   overflow: hidden;
+}
+@media only screen and (max-width: 61.99875em) {
+  .expanse__field {
+    padding-left: 0.9375rem;
+  }
 }
 .expanse--messenger .expanse__field {
   box-shadow: none;
@@ -4630,19 +4682,9 @@ h2 {
 .expanse__sidebar {
   padding: 1.875rem 2.5rem 0 2.5rem;
   background-color: #F8F9FC;
+  -ms-flex: 0 0 23.875rem;
+  flex: 0 0 23.875rem;
 }
-@media only screen and (max-width: 106.25em) {
-  .expanse__sidebar {
-    height: 40%;
-  }
-}
-@media only screen and (min-width: 106.25em) {
-  .expanse__sidebar {
-    -ms-flex: 0 0 23.875rem;
-    flex: 0 0 23.875rem;
-  }
-}
-
 /*--------------------END expanse-template----------------------*/
 /*--------------------offers-filter----------------------*/
 .offers-filter__group:not(:last-child) {

@@ -81,6 +81,7 @@
 
 	document.addEventListener('DOMContentLoaded', function() {
 		console.log('DOMContentLoaded!');
+		
 		// password show
 		if(document.querySelector('.eye-ico') !== null){
 			[].forEach.call(document.querySelectorAll('.eye-ico'), function(el) {
@@ -99,6 +100,7 @@
 		if(document.querySelector('#menu-open') !== null){
 			document.querySelector('#menu-open').onclick = function(e) {
 				// this.classList.toggle('on');
+				console.log('open')
 				document.documentElement.classList.add('menu-opened');
 			}
 

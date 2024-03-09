@@ -14,19 +14,20 @@
 	}
 
 	@include max-screen($md){
+		padding-bottom: rem(15);
 		max-width: none;
 		flex: 0 0 auto;
 		position: fixed;
 		width: 100%;
 		left: 0;
-		top: rem($chatHeader);
-		height: calc(100vh - rem($chatHeader + 20));
+		top: rem($chatHeader - 30);
+		height: calc(100% - rem($chatHeader - 30));
 		z-index: 3;
 		background-color: #fff;
 
-		@supports(height: 100dvh){
-			height: calc(100dvh - rem($chatHeader + 20));
-		}
+		// @supports(height: 100dvh){
+		// 	height: calc(100dvh - rem($chatHeader + 20));
+		// }
 	}
 
 	.toggle-mnu{
@@ -269,6 +270,10 @@
 	border-bottom: 1px solid $line;
 	overflow: hidden;
 	z-index: 1;
+
+	@include max-screen($sm){
+		padding: rem(12) rem(15);
+	}
 }
 .chat-heading__body {
 	flex: 1 1 auto;

@@ -1,4 +1,7 @@
 header(class=pageName=='messenger'?"expanse__header header-expanse expanse__header--messenger":"expanse__header header-expanse")
+	if pageName !='messenger'
+		button(type="button")#menu-open.toggle-mnu
+			span
 	.header-expanse__content
 		button.header-expanse__back(type="button")
 			+icon('arrow-left')
