@@ -179,6 +179,7 @@
 .info-user-rating__name {}
 .info-user-rating__role {
 	margin-bottom: rem(20);
+	@include adaptive-value-rem('margin-bottom', 20, 10, $maxWidth, $minWidth, 1);
 }
 .info-user-rating__indicators {
 	display: flex;
@@ -202,5 +203,12 @@
 	}
 
 
+}
+.info-user-rating__bottom{
+	@include adaptive-value-rem('padding-top', 30, 10, $maxWidth, $minWidth, 1);
+
+	@include min-screen($lg){
+		text-align: center;
+	}
 }
 /*--------------------END user-rating----------------------*/ 

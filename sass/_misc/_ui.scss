@@ -74,6 +74,15 @@
 		}
 	}
 }
+a{
+	text-decoration: none;
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			&:hover{
+		color: $accent;
+			}
+		}
+}
 .btn{
   display: inline-flex;
   justify-content: center;

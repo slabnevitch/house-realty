@@ -23,6 +23,10 @@
 			margin-right: prc(233, 1446);
 		}
 	}
+
+	&--agent{
+		justify-content: space-between;
+	}
 }
 .profile-buer__content {
 	flex: 1 1 auto;
