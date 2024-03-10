@@ -1,0 +1,32 @@
+.user-rating
+	- var header = ['Место', 'Фамилия Имя Отчество', 'Бонусы', 'Статус', 'Баны', 'Сделки'];
+	- var body = [['10 670', 'Премиум', '0', '120'], ['10 500', 'Премиум', '0', '117'], ['10 500', 'Премиум', '0', '110'], ['10 500', 'Премиум', '0', '115'], ['10 500', 'Премиум', '0', '45'], ['10 120', 'Премиум', '3', '47'], ['10 190', 'Премиум', '5', '40']];
+	
+	.user-rating__main
+		.user-rating__header
+			h2 Таблица рейтинга продавцов/агентов
+		
+		.user-rating__content
+			.user-rating__scroll(data-simplebar)
+				.user-rating__table
+					.user-rating__table-header
+						.user-rating__row
+							each head in header
+								.user-rating__col= head
+					.user-rating__table-body
+						// - for (var i=0; i < 3; i++)
+						each item, ind in body
+							.user-rating__row
+								.user-rating__col= (ind+1)
+								.user-rating__col
+									a(href="#").link Крыжановский Олег Михайлович
+								each col in item
+									.user-rating__col= col
+
+	.user-rating__info.info-user-rating
+		h2.info-user-rating__name Крыжановский Олег Михайлович
+		h2.info-user-rating__role Застройщик
+		- var inds = ['Место 12', 'Бонусы 9 100', 'Баны 1', 'Сделки 14'];
+			.info-user-rating__indicators
+				each item in inds
+					.info-user-rating__indicator= item

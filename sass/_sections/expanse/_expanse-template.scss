@@ -202,12 +202,19 @@
 	@include adaptive-value('padding-top', 44, 15, 1);
 	padding-left: rem(40);
 
+	@include max-screen($sm){
+		display: flex;
+		column-gap: rem(30);
+	}
 	@include max-screen($xs){
 		padding-left: rem(20);
 	}
 	@include min-screen($sm){
 		flex: 0 0 rem(138);
 		
+	}
+	.toggle-mnu{
+		margin-bottom: 0;
 	}
 }
 .profile__back-link{

@@ -99,7 +99,7 @@
 		// chat menu toggle
 		if(document.querySelector('#menu-open') !== null){
 			document.querySelector('#menu-open').onclick = function(e) {
-				// this.classList.toggle('on');
+				this.classList.toggle('on');
 				console.log('open')
 				document.documentElement.classList.add('menu-opened');
 			}
@@ -107,8 +107,9 @@
 		}
 		if(document.querySelector('#menu-close') !== null){
 			document.querySelector('#menu-close').onclick = function(e) {
-				// this.classList.toggle('on');
+				this.classList.toggle('on');
 				document.documentElement.classList.remove('menu-opened');
+				document.querySelector('#menu-open').classList.remove('on');
 			}
 			
 		}

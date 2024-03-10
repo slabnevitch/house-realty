@@ -1,0 +1,71 @@
+/*--------------------user-rating----------------------*/
+.user-rating {
+	display: flex;
+	height: 100%;
+}
+.user-rating__main {
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.user-rating__header {
+	flex: 0 0 auto;
+	margin-bottom: rem(30);
+}
+.user-rating__content {
+	flex: 1 1 auto;
+	position: relative;
+}
+.user-rating__scroll {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+.user-rating__table {}
+.user-rating__table-header {
+
+}
+.user-rating__row {
+	display: flex;
+}
+.user-rating__col {
+	&:nth-child(1){
+		flex: 0 0 prc(80, 883);
+		
+	}
+	&:nth-child(2){
+		flex: 0 0 prc(376, 883);
+		
+	}
+	&:nth-child(3){
+		flex: 0 0 prc(76, 883);
+		
+	}
+	&:nth-child(4){
+		flex: 0 0 prc(76, 883);
+		
+	}
+	&:nth-child(5){
+		flex: 0 0 prc(76, 883);
+		
+	}
+	&:nth-child(6){
+		flex: 0 0 prc(76, 883);
+		
+	}
+
+}
+.user-rating__table-body {}
+.link {}
+.user-rating__info {
+	flex: 0 0 rem(460);
+}
+.info-user-rating {}
+.info-user-rating__name {}
+.info-user-rating__role {}
+.info-user-rating__indicators {}
+.info-user-rating__indicator {}
+/*--------------------END user-rating----------------------*/ 

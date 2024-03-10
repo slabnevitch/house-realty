@@ -4691,6 +4691,13 @@ h2 {
     padding-top: calc(15px + 29 * ((100vw - 320px) / 980));
   }
 }
+@media only screen and (max-width: 47.99875em) {
+  .profile__back {
+    display: -ms-flexbox;
+    display: flex;
+    column-gap: 1.875rem;
+  }
+}
 @media only screen and (max-width: 36em) {
   .profile__back {
     padding-left: 1.25rem;
@@ -4701,6 +4708,9 @@ h2 {
     -ms-flex: 0 0 8.625rem;
     flex: 0 0 8.625rem;
   }
+}
+.profile__back .toggle-mnu {
+  margin-bottom: 0;
 }
 
 .profile__back-link {
@@ -4891,4 +4901,77 @@ h2 {
 }
 
 /*--------------------END buyer-profile----------------------*/
+/*--------------------user-rating----------------------*/
+.user-rating {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+}
+
+.user-rating__main {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.user-rating__header {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-bottom: 1.875rem;
+}
+
+.user-rating__content {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  position: relative;
+}
+
+.user-rating__scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.user-rating__row {
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.user-rating__col:nth-child(1) {
+  -ms-flex: 0 0 9.0600226501%;
+  flex: 0 0 9.0600226501%;
+}
+.user-rating__col:nth-child(2) {
+  -ms-flex: 0 0 42.5821064553%;
+  flex: 0 0 42.5821064553%;
+}
+.user-rating__col:nth-child(3) {
+  -ms-flex: 0 0 8.6070215176%;
+  flex: 0 0 8.6070215176%;
+}
+.user-rating__col:nth-child(4) {
+  -ms-flex: 0 0 8.6070215176%;
+  flex: 0 0 8.6070215176%;
+}
+.user-rating__col:nth-child(5) {
+  -ms-flex: 0 0 8.6070215176%;
+  flex: 0 0 8.6070215176%;
+}
+.user-rating__col:nth-child(6) {
+  -ms-flex: 0 0 8.6070215176%;
+  flex: 0 0 8.6070215176%;
+}
+
+.user-rating__info {
+  -ms-flex: 0 0 28.75rem;
+  flex: 0 0 28.75rem;
+}
+
+/*--------------------END user-rating----------------------*/
 /*# sourceMappingURL=maps/main.css.map */
