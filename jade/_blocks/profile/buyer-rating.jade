@@ -6,26 +6,34 @@
 		.user-rating__header
 			h2 Таблица рейтинга продавцов/агентов
 		
+		.user-rating__table-header
+			.user-rating__row
+				each head in header
+					.user-rating__col= head
+		
 		.user-rating__content
 			.user-rating__scroll(data-simplebar)
 				.user-rating__table
-					.user-rating__table-header
-						.user-rating__row
-							each head in header
-								.user-rating__col= head
+					
 					.user-rating__table-body
-						// - for (var i=0; i < 3; i++)
-						each item, ind in body
-							.user-rating__row
-								.user-rating__col= (ind+1)
-								.user-rating__col
-									a(href="#").link Крыжановский Олег Михайлович
-								each col in item
-									.user-rating__col= col
+						- for (var i=0; i < 3; i++)
+							each item, ind in body
+								.user-rating__row
+									.user-rating__col
+										.user-rating__label Место
+										.user-rating__value= (ind+1)
+									.user-rating__col
+										.user-rating__label Фамилия Имя Отчество
+										.user-rating__value
+											a(href="#").link Крыжановский Олег Михайлович
+									each col, n in item
+										.user-rating__col
+											.user-rating__label= header[n+2]
+											.user-rating__value= col
 
 	.user-rating__info.info-user-rating
-		h2.info-user-rating__name Крыжановский Олег Михайлович
-		h2.info-user-rating__role Застройщик
+		.info-user-rating__name Крыжановский Олег Михайлович
+		.info-user-rating__role Застройщик
 		- var inds = ['Место 12', 'Бонусы 9 100', 'Баны 1', 'Сделки 14'];
 			.info-user-rating__indicators
 				each item in inds
