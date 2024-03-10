@@ -60,6 +60,9 @@
 	@include max-screen($md){
 		padding-right: rem(30);
 	}
+	@include max-screen($xs){
+		padding-right: rem(20);
+	}
 	
 	.form__bottom {
 		margin-top: rem(40);
@@ -71,6 +74,10 @@
 	grid-template-columns: repeat(auto-fit, minmax(rem(340),1fr));
 	@include adaptive-value-rem('column-gap', 80, 0, $maxWidth, $minWidth, 1);
 	grid-row-gap: rem(15);
+
+	@include max-screen($xss){
+		grid-template-columns: auto;
+	}
 }
 .form-profile-buer__column {}
 .form__label {}

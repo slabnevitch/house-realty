@@ -4691,6 +4691,11 @@ h2 {
     padding-top: calc(15px + 29 * ((100vw - 320px) / 980));
   }
 }
+@media only screen and (max-width: 36em) {
+  .profile__back {
+    padding-left: 1.25rem;
+  }
+}
 @media only screen and (min-width: 47.99875em) {
   .profile__back {
     -ms-flex: 0 0 8.625rem;
@@ -4723,6 +4728,11 @@ h2 {
 @media only screen and (max-width: 47.99875em) {
   .profile__content {
     padding-left: 2.5rem;
+  }
+}
+@media only screen and (max-width: 36em) {
+  .profile__content {
+    padding-left: 1.25rem;
   }
 }
 
@@ -4851,6 +4861,11 @@ h2 {
     padding-right: 1.875rem;
   }
 }
+@media only screen and (max-width: 36em) {
+  .profile-buer__form {
+    padding-right: 1.25rem;
+  }
+}
 .profile-buer__form .form__bottom {
   margin-top: 2.5rem;
 }
@@ -4866,6 +4881,12 @@ h2 {
 @media (max-width: 81.25em) {
   .form-profile-buer__grid {
     column-gap: clamp( 0rem , -1rem  +  5vw , 5rem );
+  }
+}
+@media only screen and (max-width: 30em) {
+  .form-profile-buer__grid {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
   }
 }
 
