@@ -243,11 +243,12 @@ h2{
 	top: rem(15);
   display: block;
   width: rem(28);
-  height: rem(28);
+  height: 0;
   margin-top: rem(14);
   padding: 0;
   background-color: transparent;
   border: none;
+  padding-bottom: rem(26);
 
   span:after, span:before{
 
@@ -279,6 +280,9 @@ h2{
   }
 
 
+  &.on{
+  	padding-bottom: 12%;
+  }
   &.on span{
 
     background-color: transparent;
@@ -296,7 +300,7 @@ h2{
 
   .expanse &{
 		margin-left: rem(30);
-		margin-bottom: rem(30);
+		margin-bottom: rem(10);
 		position: static;
 		margin-top: 0;
 		// height: auto;

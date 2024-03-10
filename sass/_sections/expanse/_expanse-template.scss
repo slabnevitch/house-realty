@@ -2,7 +2,8 @@
 .expanse{
 	height: 100%;
 	display: flex;
-	margin-right: rem(30);
+	max-width: rem($maxWidth);
+	margin: 0 auto;
 
 	overflow: hidden;
 
@@ -13,29 +14,31 @@
 	// 	height: 100dvh;
 	// }
 
-	@include max-screen($md){
-		margin-right: 1px;
+	@include max-screen($maxWidth){
+		padding-right: rem(30);
+		max-width: rem(calc($maxWidth + 30));
 	}
 	@include min-screen($md){
-		padding: rem(20) 0;
+		padding-top: rem(20);
+		padding-bottom: rem(20);
 		
 	}
 
-	&:not(&--messenger){
-		.expanse__container{
-			@include max-screen($md){
-				flex-direction: column;
-			}
-		}
+	&--profile{
+		// .expanse__container{
+		// 	@include max-screen($md){
+		// 		flex-direction: column;
+		// 	}
+		// }
 		.toggle-mnu{
 			margin-left: 0;
 			margin-bottom: rem(20);
-			@include min-screen($md){
+			@include min-screen($sm){
 				display: none;
 			}
 		}
 		.expanse__nav{
-			@include max-screen($lg){
+			@include max-screen($sm){
 				height: 100%;
 				background-color: #fff;
 				position: fixed;
@@ -52,33 +55,6 @@
 
 			}
 
-		}
-		.toggle-mnu{
-			@include min-screen($lg){
-				display: none;
-			}
-		}
-		.expanse__main{
-			@include max-screen($md){
-				height: 60%;
-			}
-		}
-		.expanse__sidebar{
-			@include max-screen($md){
-				display: none;
-				height: 40%;
-				padding: rem(10) rem(30) 0 rem(30);
-			}
-
-			// @include min-screen(px){
-			// 	flex: 0 0 rem(382);
-			// }
-
-			&.opened{
-				@include max-screen($md){
-					display: block;
-				}
-			}
 		}
 	}
 
@@ -99,10 +75,10 @@
 		}
 		.expanse__nav{
 			@include max-screen($mess-mob){
-				height: calc(100% - rem(30));
+				height: 100%;
 				background-color: #fff;
 				position: fixed;
-				top: rem(30);
+				top: 0;
 				left: 0;
 				transform: translateX(-110%);
 				z-index: 4;
@@ -213,5 +189,46 @@
 		
 	}
 }
+.profile{
+	flex-basis: 100%;
+	column-gap: rem(15);
+	display: flex;
 
+	@include max-screen($sm){
+		flex-direction: column;
+	}
+}
+.profile__back{
+	@include adaptive-value('padding-top', 44, 15, 1);
+	padding-left: rem(40);
+
+	@include min-screen($sm){
+		flex: 0 0 rem(138);
+		
+	}
+}
+.profile__back-link{
+	display: flex;
+	align-items: center;
+	column-gap: rem(17);
+	text-decoration: none;
+	color: $gray-dark;
+	
+	.icon{
+		font-size: rem(14);
+	}
+	
+	span{
+
+	}
+
+}
+.profile__content{
+	flex: 1 1 auto;
+	@include adaptive-value('padding-top', 40, 14, 1);
+
+	@include max-screen($sm){
+		padding-left: rem(40);
+	}
+}
 /*--------------------END expanse-template----------------------*/ 

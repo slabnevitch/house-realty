@@ -1,0 +1,89 @@
+/*--------------------buyer-profile----------------------*/
+.profile-buer {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+}
+.profile-buer__header {
+	flex: 0 0 auto;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-end;
+	margin-bottom: rem(40);
+	gap: rem(15);
+
+	@include max-screen($sm){
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	h2{
+		@include min-screen($md){
+			
+			margin-right: prc(233, 1446);
+		}
+	}
+}
+.profile-buer__content {
+	flex: 1 1 auto;
+	position: relative;
+}
+.profile-buer__scroll {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	padding-bottom: rem(30);
+}
+.profile-buer__reg {
+
+	@include max-screen($md){
+		margin-right: rem(30);
+	}
+	@include min-screen($md){
+		margin-right: prc(190, 1446);	
+	}
+}
+.pizdyk{
+	flex: 0 0 auto;
+}
+.form {}
+.profile-buer__form {
+
+	padding: 0;
+	flex: 0 1 auto;
+	padding-right: prc(190, 1446);
+	// grid-template-columns: repeat(3,1fr);
+	background-color: transparent;
+
+	@include max-screen($md){
+		padding-right: rem(30);
+	}
+	
+	.form__bottom {
+		margin-top: rem(40);
+	}
+	
+}
+.form-profile-buer__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(rem(340),1fr));
+	@include adaptive-value-rem('column-gap', 80, 0, $maxWidth, $minWidth, 1);
+	grid-row-gap: rem(15);
+}
+.form-profile-buer__column {}
+.form__label {}
+.form__key {}
+.form__error-message {}
+.form__input {}
+.form__error {}
+.form__label--password {}
+.eye-ico {}
+.unblind {}
+.icon {}
+.icon-eye {}
+.icon-eye-off {}
+.form__line {}
+.btn {}
+/*--------------------END buyer-profile----------------------*/ 
