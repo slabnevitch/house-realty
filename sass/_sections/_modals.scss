@@ -4,7 +4,13 @@
 
 	font-family: "Raleway", sans-serif;
 
-	&.modal-seller{
+	&-trial{
+		.offers-filter{
+			margin-top: rem(24);
+		}
+	}
+	&.modal-seller,
+	&.modal-deal{
 		.form{
 			padding-top: rem(32);
 		}
@@ -48,6 +54,11 @@
 }
 .modal__bottom{
 	margin-top: rem(50);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: rem(20);
+	row-gap: rem(10);
 }
 .modal__container{
 	width: 100%;
@@ -62,6 +73,10 @@
 
 	.modal-review-regard &{
 		min-height: rem(206);
+	}
+	.modal-trial &{
+		@include adaptive-value-rem('padding-left', 65, 30, $maxWidth, $minWidth, 1);
+		@include adaptive-value-rem('padding-right', 65, 30, $maxWidth, $minWidth, 1);
 	}
 }
 .modal-privacy{

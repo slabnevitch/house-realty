@@ -60,14 +60,14 @@
 
 	&--null{
 		.expanse__container{
-			@include max-screen($md){
+			@include max-screen($lg){
 				flex-direction: column;
 			}
 		}
 		.toggle-mnu{
 			margin-left: 0;
-			margin-bottom: rem(20);
-			@include min-screen($md){
+			margin-bottom: 0;
+			@include min-screen($lg){
 				display: none;
 			}
 		}
@@ -96,12 +96,12 @@
 			}
 		}
 		.expanse__main{
-			@include max-screen($md){
+			@include max-screen($lg){
 				height: 60%;
 			}
 		}
 		.expanse__sidebar{
-			@include max-screen($md){
+			@include max-screen($lg){
 				display: none;
 				height: 40%;
 				padding: rem(10) rem(30) 0 rem(30);
@@ -112,7 +112,7 @@
 			// }
 
 			&.opened{
-				@include max-screen($md){
+				@include max-screen($lg){
 					display: block;
 				}
 			}

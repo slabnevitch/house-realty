@@ -44,6 +44,8 @@
 }
 .user-rating__table-header {
 	max-width: rem(883);
+	overflow: hidden;
+	border-radius: rem(8) rem(8) 0 0;
 
 	@include max-screen($md){
 		display: none;

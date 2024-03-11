@@ -214,7 +214,7 @@ h2{
 	overflow: hidden;
 	border-radius: rem(30);
 	// background-color: red;
-	max-height: 100%;
+	max-height: calc(100% - 100px);
 	aspect-ratio: 900/700;
 	position: relative;
 
@@ -239,6 +239,16 @@ h2{
 	background-position: 50% 50%;
 	background-repeat: no-repeat;
 	background-size: rem(20) rem(20);
+
+	@include max-screen($mess-mob){
+		top: rem(50);
+		right: rem(50);
+	}
+
+	@include max-screen($sm){
+		top: rem(30);
+		right: rem(30);
+	}
 
 	svg{
 		display: none;

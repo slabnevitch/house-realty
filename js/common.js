@@ -279,7 +279,12 @@
 				// MicroModal.show('chat-modal');
 				// MicroModal.show('review-regard-modal');
 				// MicroModal.show('seller-modal');
-				MicroModal.show('deal-modal');
+				// MicroModal.show('deal-modal');
+			
+			//- profile modals
+				// MicroModal.show('ban-modal');
+				// MicroModal.show('trial-modal');
+				
 		// END modals calls
 	});
 })();
