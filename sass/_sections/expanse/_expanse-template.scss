@@ -33,12 +33,12 @@
 		.toggle-mnu{
 			margin-left: 0;
 			margin-bottom: rem(20);
-			@include min-screen($md){
+			@include min-screen($mess-mob){
 				display: none;
 			}
 		}
 		.expanse__nav{
-			@include max-screen($md){
+			@include max-screen($mess-mob){
 				height: 100%;
 				background-color: #fff;
 				position: fixed;
@@ -255,7 +255,7 @@
 	column-gap: rem(15);
 	display: flex;
 
-	@include max-screen($md){
+	@include max-screen($lg){
 		flex-direction: column;
 	}
 }
@@ -265,18 +265,18 @@
 	@include adaptive-value('padding-top', 44, 15, 1);
 	padding-left: rem(40);
 
-	@include max-screen($md){
+	@include max-screen($mess-mob){
 		display: flex;
 		column-gap: rem(30);
 	}
 	@include max-screen($xs){
 		padding-left: rem(20);
 	}
-	@include min-screen($md){
+	@include min-screen($mess-mob){
 		flex: 0 0 rem(150);
 		
 	}
-	@include min-screen($lg){
+	@include min-screen($mess-mob){
 		flex: 0 0 rem(200);
 		
 	}
@@ -304,7 +304,7 @@
 	flex: 1 1 auto;
 	@include adaptive-value('padding-top', 40, 14, 1);
 
-	@include max-screen($md){
+	@include max-screen($mess-mob){
 		padding-left: rem(40);
 		padding-right: rem(40);
 	}
