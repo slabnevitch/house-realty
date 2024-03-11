@@ -18,13 +18,16 @@
 	flex-wrap: wrap;
 	justify-content: space-between;
 
-	
-
 	&:not(:last-child){
 		margin-bottom: rem(15);
 	}
+
+}
+.form__add {
+	flex-direction: column;
 }
 .form__key{
+
 	display: block;
 	margin-bottom: rem(8);
 	color: $gray-dark;
@@ -195,4 +198,26 @@
 				}
 			}
 	}
+}
+.form__file{
+	@include checkbox();
+}
+.form__file-field{
+	width: rem(60);
+	height: rem(60);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: rem(1) solid $line;
+	border-radius: 50%;
+
+	.icon{
+		font-size: rem(20);
+		color:$gray-dark;
+	}
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+
+		}
 }

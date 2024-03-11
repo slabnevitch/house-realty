@@ -83,6 +83,11 @@
   width: 0.9166666667em;
 }
 
+.icon-plus {
+  font-size: 1.6rem;
+  width: 1em;
+}
+
 .icon-plus-circle {
   font-size: 2.2rem;
   width: 1em;
@@ -1600,7 +1605,7 @@
   float: left;
 }
 
-/*# sourceMappingURL=sourcemaps/tiny-slider.css.map */
+
 /*--end tiny-slider--*/
 /*--tippy--*/
 .tippy-box[data-animation=fade][data-state=hidden] {
@@ -2458,7 +2463,7 @@ textarea {
   z-index: 1;
   padding-bottom: 0.8125rem;
   color: #697586;
-  border-bottom: 0.125rem solid transparent;
+  border-bottom: 0.125rem solid #E1E5ED;
 }
 .tab.active {
   color: #000;
@@ -2473,19 +2478,6 @@ textarea {
 .tab {
   text-decoration: none;
   display: block;
-}
-
-.tabs__buttons {
-  position: relative;
-}
-.tabs__buttons:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 2px;
-  background-color: #E1E5ED;
 }
 
 .form {
@@ -2515,6 +2507,11 @@ textarea {
 }
 .form__label:not(:last-child) {
   margin-bottom: 0.9375rem;
+}
+
+.form__add {
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .form__key {
@@ -2728,6 +2725,41 @@ textarea {
 @media (any-hover: hover) {
   .form__text a:hover {
     color: #000;
+  }
+}
+
+.form__file {
+  position: absolute;
+  box-sizing: border-box;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  display: none;
+  left: 50%;
+  top: 100%;
+  margin: 0;
+  padding: 0;
+  opacity: 0;
+}
+
+.form__file-field {
+  width: 3.75rem;
+  height: 3.75rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border: 0.0625rem solid #E1E5ED;
+  border-radius: 50%;
+}
+.form__file-field .icon {
+  font-size: 1.25rem;
+  color: #697586;
+}
+@media (any-hover: hover) {
+  .form__file-field {
+    cursor: pointer;
   }
 }
 
@@ -3034,6 +3066,33 @@ h2 {
   .toggle-mnu {
     display: none;
   }
+}
+
+.profile-notice {
+  position: relative;
+}
+
+.profile-notice__count {
+  position: absolute;
+  top: -0.9375rem;
+  right: -1.25rem;
+  max-width: 2.1875rem;
+  padding: 0 0.5rem;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  color: #fff;
+  border-radius: 3.125rem;
+  background-color: #3A8BF3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /*--------------------END ui----------------------*/
@@ -4555,6 +4614,60 @@ h2 {
   -ms-transform: translateX(0) !important;
   transform: translateX(0) !important;
 }
+@media only screen and (max-width: 61.99875em) {
+  .expanse--null .expanse__container {
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+.expanse--null .toggle-mnu {
+  margin-left: 0;
+  margin-bottom: 1.25rem;
+}
+@media only screen and (min-width: 61.99875em) {
+  .expanse--null .toggle-mnu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 81.25em) {
+  .expanse--null .expanse__nav {
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    -ms-transform: translateX(-110%);
+    transform: translateX(-110%);
+    z-index: 4;
+    box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+  }
+}
+.menu-opened .expanse--null .expanse__nav {
+  -ms-transform: translateX(0) !important;
+  transform: translateX(0) !important;
+}
+@media only screen and (min-width: 81.25em) {
+  .expanse--null .toggle-mnu {
+    display: none;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .expanse--null .expanse__main {
+    height: 60%;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .expanse--null .expanse__sidebar {
+    display: none;
+    height: 40%;
+    padding: 0.625rem 1.875rem 0 1.875rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .expanse--null .expanse__sidebar.opened {
+    display: block;
+  }
+}
 .expanse--messenger .expanse__chat {
   border-radius: 0;
   box-shadow: none;
@@ -4816,6 +4929,44 @@ h2 {
 }
 
 /*--------------------END offers-filter----------------------*/
+/*--------------------profile-agent----------------------*/
+.profile-agent-rating .info-user-rating__indicators {
+  font-size: 1.5rem;
+  line-height: 1.1666666667;
+  font-weight: 500;
+}
+.profile-agent-rating .info-user-rating__indicators:not(:last-child) {
+  margin-bottom: 1.5rem;
+}
+
+.profile-agent-rating__item:not(:last-child).active {
+  margin-bottom: 1.875rem;
+}
+
+.profile-agent-rating__tab {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0.75rem;
+  column-gap: 1.0625rem;
+  font-weight: 500;
+}
+.profile-agent-rating__tab .icon {
+  font-size: 0.625rem;
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.profile-agent-rating__item.active .profile-agent-rating__tab .icon {
+  -ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+}
+
+.profile-agent-rating__prg:not(:last-child) {
+  margin-bottom: 0.625rem;
+}
+
+/*--------------------END profile-agent----------------------*/
 /*--------------------buyer-profile----------------------*/
 .profile-buer {
   display: -ms-flexbox;
@@ -4853,6 +5004,49 @@ h2 {
 .profile-buer__header--agent {
   -ms-flex-pack: justify;
   justify-content: space-between;
+  column-gap: 1.875rem;
+}
+@media only screen and (max-width: 81.25em) {
+  .profile-buer__header--agent {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -ms-flex-align: start;
+    align-items: flex-start;
+  }
+}
+.profile-buer__header--agent .tabs__buttons {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 0.625rem;
+}
+@media only screen and (max-width: 47.99875em) {
+  .profile-buer__header--agent .tabs__buttons {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.profile-buer__header--agent .tabs__item {
+  -ms-flex: 0 0 11.1875rem;
+  flex: 0 0 11.1875rem;
+}
+@media only screen and (max-width: 47.99875em) {
+  .profile-buer__header--agent .tabs__item {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .profile-buer__header--agent .tabs__item {
+    width: 11.1875rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .profile-buer__header--agent .tab {
+    padding-bottom: 0.3125rem;
+  }
 }
 
 .profile-buer__content {
@@ -5165,4 +5359,324 @@ h2 {
 }
 
 /*--------------------END user-rating----------------------*/
+
+.webp .alien-monster{ background-image: url(../img/sprite.webp); }
+
+.webp .alien{ background-image: url(../img/sprite.webp); }
+
+.webp .angry-face-with-horns{ background-image: url(../img/sprite.webp); }
+
+.webp .angry-face{ background-image: url(../img/sprite.webp); }
+
+.webp .anguished-face{ background-image: url(../img/sprite.webp); }
+
+.webp .anxious-face-with-sweat{ background-image: url(../img/sprite.webp); }
+
+.webp .astonished-face{ background-image: url(../img/sprite.webp); }
+
+.webp .baby-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .baby-medium-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .baby-medium-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .baby-medium-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .baby{ background-image: url(../img/sprite.webp); }
+
+.webp .beaming-face-with-smiling-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .cat-face{ background-image: url(../img/sprite.webp); }
+
+.webp .cat-with-tears-of-joy{ background-image: url(../img/sprite.webp); }
+
+.webp .cat-with-wry-smile{ background-image: url(../img/sprite.webp); }
+
+.webp .clown-face{ background-image: url(../img/sprite.webp); }
+
+.webp .cold-face{ background-image: url(../img/sprite.webp); }
+
+.webp .confounded-face{ background-image: url(../img/sprite.webp); }
+
+.webp .confused-face{ background-image: url(../img/sprite.webp); }
+
+.webp .cowboy-hat-face{ background-image: url(../img/sprite.webp); }
+
+.webp .crying-cat{ background-image: url(../img/sprite.webp); }
+
+.webp .crying-face{ background-image: url(../img/sprite.webp); }
+
+.webp .disappointed-face{ background-image: url(../img/sprite.webp); }
+
+.webp .disguised-face{ background-image: url(../img/sprite.webp); }
+
+.webp .dizzy-face{ background-image: url(../img/sprite.webp); }
+
+.webp .downcast-face-with-sweat{ background-image: url(../img/sprite.webp); }
+
+.webp .drooling-face{ background-image: url(../img/sprite.webp); }
+
+.webp .exploding-head{ background-image: url(../img/sprite.webp); }
+
+.webp .expressionless-face{ background-image: url(../img/sprite.webp); }
+
+.webp .face-blowing-a-kiss{ background-image: url(../img/sprite.webp); }
+
+.webp .face-exhaling{ background-image: url(../img/sprite.webp); }
+
+.webp .face-in-clouds{ background-image: url(../img/sprite.webp); }
+
+.webp .face-savoring-food{ background-image: url(../img/sprite.webp); }
+
+.webp .face-screaming-in-fear{ background-image: url(../img/sprite.webp); }
+
+.webp .face-vomiting{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-hand-over-mouth{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-head-bandage{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-medical-mask{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-monocle{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-open-mouth{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-raised-eyebrow{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-rolling-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-spiral-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-steam-from-nose{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-symbols-on-mouth{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-tears-of-joy{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-thermometer{ background-image: url(../img/sprite.webp); }
+
+.webp .face-with-tongue{ background-image: url(../img/sprite.webp); }
+
+.webp .face-without-mouth{ background-image: url(../img/sprite.webp); }
+
+.webp .fearful-face{ background-image: url(../img/sprite.webp); }
+
+.webp .flushed-face{ background-image: url(../img/sprite.webp); }
+
+.webp .frowning-face-with-open-mouth{ background-image: url(../img/sprite.webp); }
+
+.webp .frowning-face{ background-image: url(../img/sprite.webp); }
+
+.webp .ghost{ background-image: url(../img/sprite.webp); }
+
+.webp .goblin{ background-image: url(../img/sprite.webp); }
+
+.webp .grimacing-face{ background-image: url(../img/sprite.webp); }
+
+.webp .grinning-cat-with-smiling-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .grinning-cat{ background-image: url(../img/sprite.webp); }
+
+.webp .grinning-face-with-big-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .grinning-face-with-smiling-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .grinning-face-with-sweat{ background-image: url(../img/sprite.webp); }
+
+.webp .grinning-face{ background-image: url(../img/sprite.webp); }
+
+.webp .grinning-squinting-face{ background-image: url(../img/sprite.webp); }
+
+.webp .hand-with-fingers-splayed-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .hand-with-fingers-splayed-medium-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .hand-with-fingers-splayed-medium-skin-tone-1{ background-image: url(../img/sprite.webp); }
+
+.webp .hand-with-fingers-splayed-medium-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .hand-with-fingers-splayed{ background-image: url(../img/sprite.webp); }
+
+.webp .hot-face{ background-image: url(../img/sprite.webp); }
+
+.webp .hugging-face{ background-image: url(../img/sprite.webp); }
+
+.webp .hushed-face{ background-image: url(../img/sprite.webp); }
+
+.webp .kiss-mark{ background-image: url(../img/sprite.webp); }
+
+.webp .kissing-cat{ background-image: url(../img/sprite.webp); }
+
+.webp .kissing-face-with-closed-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .kissing-face-with-smiling-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .kissing-face{ background-image: url(../img/sprite.webp); }
+
+.webp .loudly-crying-face{ background-image: url(../img/sprite.webp); }
+
+.webp .lying-face{ background-image: url(../img/sprite.webp); }
+
+.webp .money-mouth-face{ background-image: url(../img/sprite.webp); }
+
+.webp .mouth{ background-image: url(../img/sprite.webp); }
+
+.webp .nauseated-face{ background-image: url(../img/sprite.webp); }
+
+.webp .nerd-face{ background-image: url(../img/sprite.webp); }
+
+.webp .neutral-face{ background-image: url(../img/sprite.webp); }
+
+.webp .ogre{ background-image: url(../img/sprite.webp); }
+
+.webp .partying-face{ background-image: url(../img/sprite.webp); }
+
+.webp .pensive-face{ background-image: url(../img/sprite.webp); }
+
+.webp .persevering-face{ background-image: url(../img/sprite.webp); }
+
+.webp .pile-of-poo{ background-image: url(../img/sprite.webp); }
+
+.webp .pleading-face{ background-image: url(../img/sprite.webp); }
+
+.webp .pouting-cat{ background-image: url(../img/sprite.webp); }
+
+.webp .pouting-face{ background-image: url(../img/sprite.webp); }
+
+.webp .raised-back-of-hand-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .raised-back-of-hand-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .raised-back-of-hand-medium-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .raised-back-of-hand-medium-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .raised-back-of-hand-medium-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .raised-back-of-hand{ background-image: url(../img/sprite.webp); }
+
+.webp .relieved-face{ background-image: url(../img/sprite.webp); }
+
+.webp .rolling-on-the-floor-laughing{ background-image: url(../img/sprite.webp); }
+
+.webp .sad-but-relieved-face{ background-image: url(../img/sprite.webp); }
+
+.webp .shushing-face{ background-image: url(../img/sprite.webp); }
+
+.webp .skull-and-crossbones{ background-image: url(../img/sprite.webp); }
+
+.webp .skull{ background-image: url(../img/sprite.webp); }
+
+.webp .sleeping-face{ background-image: url(../img/sprite.webp); }
+
+.webp .sleepy-face{ background-image: url(../img/sprite.webp); }
+
+.webp .slightly-frowning-face{ background-image: url(../img/sprite.webp); }
+
+.webp .slightly-smiling-face{ background-image: url(../img/sprite.webp); }
+
+.webp .smiling-cat-with-heart-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .smiling-face-with-halo{ background-image: url(../img/sprite.webp); }
+
+.webp .smiling-face-with-heart-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .smiling-face-with-hearts{ background-image: url(../img/sprite.webp); }
+
+.webp .smiling-face-with-horns{ background-image: url(../img/sprite.webp); }
+
+.webp .smiling-face-with-smiling-eyes{ background-image: url(../img/sprite.webp); }
+
+.webp .smiling-face-with-sunglasses{ background-image: url(../img/sprite.webp); }
+
+.webp .smiling-face-with-tear{ background-image: url(../img/sprite.webp); }
+
+.webp .smiling-face{ background-image: url(../img/sprite.webp); }
+
+.webp .smirking-face{ background-image: url(../img/sprite.webp); }
+
+.webp .sneezing-face{ background-image: url(../img/sprite.webp); }
+
+.webp .squinting-face-with-tongue{ background-image: url(../img/sprite.webp); }
+
+.webp .star-struck{ background-image: url(../img/sprite.webp); }
+
+.webp .thinking-face{ background-image: url(../img/sprite.webp); }
+
+.webp .tired-face{ background-image: url(../img/sprite.webp); }
+
+.webp .tooth{ background-image: url(../img/sprite.webp); }
+
+.webp .unamused-face{ background-image: url(../img/sprite.webp); }
+
+.webp .upside-down-face{ background-image: url(../img/sprite.webp); }
+
+.webp .waving-hand-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .waving-hand-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .waving-hand-medium-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .waving-hand-medium-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .waving-hand-medium-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .waving-hand{ background-image: url(../img/sprite.webp); }
+
+.webp .weary-cat{ background-image: url(../img/sprite.webp); }
+
+.webp .weary-face{ background-image: url(../img/sprite.webp); }
+
+.webp .winking-face-with-tongue{ background-image: url(../img/sprite.webp); }
+
+.webp .winking-face{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-frowning-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-frowning-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-frowning-medium-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-frowning-medium-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-frowning-medium-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-frowning{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-no-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-no-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-no-medium-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-no-medium-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-no-medium-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-no{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-ok-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-ok-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-ok-medium-dark-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-ok-medium-light-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-ok-medium-skin-tone{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-gesturing-ok{ background-image: url(../img/sprite.webp); }
+
+.webp .woman-getting-haircut{ background-image: url(../img/sprite.webp); }
+
+.webp .woozy-face{ background-image: url(../img/sprite.webp); }
+
+.webp .worried-face{ background-image: url(../img/sprite.webp); }
+
+.webp .yawning-face{ background-image: url(../img/sprite.webp); }
+
+.webp .zany-face{ background-image: url(../img/sprite.webp); }
+
+.webp .zipper-mouth-face{ background-image: url(../img/sprite.webp); }
 /*# sourceMappingURL=maps/main.css.map */

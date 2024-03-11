@@ -124,7 +124,10 @@
 			if(target.closest('.header-expanse__button') !==null){
 				document.querySelector('.expanse__header').classList.toggle('search-opened');
 			}else if (!target.parentElement.classList.contains('expanse-form')){
-				document.querySelector('.expanse__header').classList.remove('search-opened');
+				if(document.querySelector('.expanse__header') !== null){
+					document.querySelector('.expanse__header').classList.remove('search-opened');
+
+				}
 			}
 			// END bobile search form toggle
 			

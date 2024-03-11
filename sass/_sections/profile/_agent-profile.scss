@@ -1,0 +1,49 @@
+/*--------------------profile-agent----------------------*/
+.profile-agent-rating{
+
+
+	.info-user-rating__indicators{
+		font-size: rem(24);
+		line-height: calc(28/24);
+		font-weight: 500;
+		
+		&:not(:last-child){
+			margin-bottom: rem(24);
+		}
+	}
+
+}
+.profile-agent-rating__item{
+
+	&:not(:last-child){
+		&.active{
+
+			margin-bottom: rem(30);
+		}
+	}
+
+}
+.profile-agent-rating__tab{
+	display: inline-flex;
+	align-items: center;
+	margin-bottom: rem(12);
+	column-gap: rem(17);
+	font-weight: 500;
+
+	.icon{
+		font-size: rem(10);
+		transform: rotate(90deg);
+
+		.profile-agent-rating__item.active &{
+			transform: rotate(-90deg);
+		}
+	}
+}
+.profile-agent-rating__prg{
+
+	&:not(:last-child){
+		margin-bottom: rem(10);
+	}
+
+}
+/*--------------------END profile-agent----------------------*/ 

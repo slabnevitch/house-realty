@@ -7,7 +7,10 @@
 			li.tabs__item
 				a.tab(href='#') Мой рейтинг
 			li.tabs__item
-				a.tab(href='#') Уведомления
+				a.tab(href='#')
+					span.profile-notice
+						| Уведомления
+						span.profile-notice__count 1
 
 		.profile-buer__reg Зарегистрирован 15.05.2023
 	
@@ -15,62 +18,37 @@
 		.profile-buer__scroll(data-simplebar)
 			ul.tabs__container
 				li.tab-content.active
-					form(action="#" class="form profile-buer__form form-profile-buer" )
-						.form-profile-buer__grid
-							.form-profile-buer__column
-								label.form__label
-									span.form__key Фамилия Имя Отчество
-									span.form__error-message
-									input(autocomplete="off" type="text" name="" class="form__input" value="Семашко Захар Михайлович")
-
-								label.form__label.form__error
-									span.form__key Телефон
-									span.form__error-message Обязательное поле
-									input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56")
-
-							.form-profile-buer__column
-								label.form__label
-									span.form__key Город
-									span.form__error-message
-									input(autocomplete="off" type="text" name="" class="form__input" value="Сочи")
-								label.form__label
-										span.form__key Email
-										span.form__error-message
-										input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru")
-
-							.form-profile-buer__column
-								label.form__label.form__label--password
-									button(type="button").eye-ico.unblind
-										+icon('eye')
-										+icon('eye-off')
-									span.form__key Старый пароль
-									span.form__error-message
-									input(autocomplete="off" type="text" name="" class="form__input" value="5UimdK5dd")
-
-								label.form__label.form__label--password
-									button(type="button").eye-ico
-										+icon('eye')
-										+icon('eye-off')
-									span.form__key Новый пароль
-									span.form__error-message
-									input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd")
-
-								label.form__label.form__label--password
-									button(type="button").eye-ico
-										+icon('eye')
-										+icon('eye-off')
-									span.form__key Повторить пароль
-									span.form__error-message
-									input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd")
-
-						.form__bottom
-							.form__line
-								button.btn(type="submit") Сохранить
-							.form__line
-								a(href="#") Выйти из профиля
+					include profile-form
 				li.tab-content.hidden
-					p.content
-						| Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates nulla obcaecati architecto eaque quo qui dicta, at modi ratione reiciendis consectetur cumque quisquam quia tempora eos quos officia nostrum iusto!
+					.profile-agent-rating
+						- var inds = ['Место 12', 'Бонусы 9 100', 'Баны 1', 'Сделки 14'];
+							.info-user-rating__indicators
+								each item in inds
+									.info-user-rating__indicator= item
+						
+						ul.accordion(data-accordion)
+							li.accordion__item.profile-agent-rating__item
+								.accordion__link.profile-agent-rating__tab
+									| Правила сервиса
+									+icon('chevron-right')
+								.accordion__content
+									p.profile-agent-rating__prg Пробный период для продавцов 3 дня.  Дльше все функции заблокируются. Оплата через профиль.
+									p.profile-agent-rating__prg Если 3  жалобы от клиента за рекламу либо фейк-информацию - бан 3 дня
+									p.profile-agent-rating__prg Дополнительные 3 жалобы у данного пользователя увеличивается количество блокировки до 9 дней
+									p.profile-agent-rating__prg За еще 3 жалобы  - бан 1 месяц
+									p.profile-agent-rating__prg Во время бана пользователю недоступны все функции сервиса кроме профиля и обратной связи
+							
+							li.accordion__item.profile-agent-rating__item
+								.accordion__link.profile-agent-rating__tab
+									| Как получить бонусы
+									+icon('chevron-right')
+								.accordion__content.hidden
+									p.profile-agent-rating__prg Проведение сделки с подтверждением покупателя через личные сообщения — 1000 бонусов
+									p.profile-agent-rating__prg Регистрация на сервисе — 500 бонусов
+									p.profile-agent-rating__prg Предоставление пользователю фейк, рекламу — минус 250 бонусов
+									p.profile-agent-rating__prg Полностью заполнен профиль — 100 бонусов
+									p.profile-agent-rating__prg Оценка покупателем за хорошую работу и предоставление информации — 50 бонусов
+									p.profile-agent-rating__prg Публикация предложения или запроса (ежедневно) - 10 бонусов
 				li.tab-content.hidden
 					p.content
 						| Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.

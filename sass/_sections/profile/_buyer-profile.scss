@@ -26,6 +26,40 @@
 
 	&--agent{
 		justify-content: space-between;
+		column-gap: rem(30);
+
+		@include max-screen($lg){
+			flex-direction: column-reverse;
+			align-items: flex-start;
+		}
+
+		.tabs__buttons{
+			flex: 0 0 auto;
+			flex-wrap: wrap;
+			row-gap: rem(10);
+
+			@include max-screen($sm){
+				flex-direction: column;
+				width: 100%;
+			}
+		}
+		.tabs__item{
+			flex: 0 0 rem(179);
+
+			@include max-screen($sm){
+				flex: 0 0 auto;
+			}
+
+			@include min-screen($sm){
+				width: rem(179);
+				
+			}
+		}
+		.tab{
+			@include max-screen($xss){
+				padding-bottom: rem(5);
+			}
+		}
 	}
 }
 .profile-buer__content {

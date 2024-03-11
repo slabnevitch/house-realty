@@ -58,6 +58,67 @@
 		}
 	}
 
+	&--null{
+		.expanse__container{
+			@include max-screen($md){
+				flex-direction: column;
+			}
+		}
+		.toggle-mnu{
+			margin-left: 0;
+			margin-bottom: rem(20);
+			@include min-screen($md){
+				display: none;
+			}
+		}
+		.expanse__nav{
+			@include max-screen($lg){
+				height: 100%;
+				background-color: #fff;
+				position: fixed;
+				top: 0;
+				left: 0;
+				transform: translateX(-110%);
+				z-index: 4;
+
+				box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
+			}
+
+			.menu-opened &{
+				transform: translateX(0) !important;
+
+			}
+
+		}
+		.toggle-mnu{
+			@include min-screen($lg){
+				display: none;
+			}
+		}
+		.expanse__main{
+			@include max-screen($md){
+				height: 60%;
+			}
+		}
+		.expanse__sidebar{
+			@include max-screen($md){
+				display: none;
+				height: 40%;
+				padding: rem(10) rem(30) 0 rem(30);
+			}
+
+			// @include min-screen(px){
+			// 	flex: 0 0 rem(382);
+			// }
+
+			&.opened{
+				@include max-screen($md){
+					display: block;
+				}
+			}
+		}
+	}
+
 	&--messenger{
 		.expanse__chat{
 			border-radius: 0;
