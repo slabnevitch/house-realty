@@ -4,11 +4,28 @@
 
 	font-family: "Raleway", sans-serif;
 
+	&.modal-seller{
+		.form{
+			padding-top: rem(32);
+		}
+		h2{
+
+			margin-bottom: rem(8);
+		}
+	}
+
 	h2{
 		margin-bottom: rem(30);
+
+
 	}
 	.offers-filter__name{
 		border-color: $line;
+	}
+	.form{
+		background-color: transparent;
+		padding: 0;
+		text-align: left;
 	}
 }
 .modal__close{
@@ -42,6 +59,10 @@
 	@include adaptive-value-rem('padding-right', 85, 30, $maxWidth, $minWidth, 1);
 	border-radius: rem(20);
 	text-align: center;
+
+	.modal-review-regard &{
+		min-height: rem(206);
+	}
 }
 .modal-privacy{
 
@@ -66,6 +87,8 @@
 		font-weight: 500;
 		font-size: rem(20);
 		line-height: calc(24/20);
+
+		
 	}
 }
 /*--------------------END modals----------------------*/ 

@@ -269,9 +269,17 @@
 	
 
 		// modals calls
-		// MicroModal.show('service-rules-modal');
-		// MicroModal.show('city-select-modal');
-		// MicroModal.show('requests-modal');
+			//- request/offers modals
+				// MicroModal.show('service-rules-modal');
+				// MicroModal.show('city-select-modal');
+				// MicroModal.show('requests-modal');
+				// MicroModal.show('offer-modal');
+
+			//- chat/messenger modals
+				// MicroModal.show('chat-modal');
+				// MicroModal.show('review-regard-modal');
+				// MicroModal.show('seller-modal');
+				MicroModal.show('deal-modal');
 		// END modals calls
 	});
 })();

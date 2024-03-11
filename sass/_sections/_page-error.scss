@@ -4,14 +4,29 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	position: relative;
 
-	background-image: url(../img/404.jpg);
+	background-image: url(../img/main-page/3.jpg);
 	background-position: 0 0;
 	background-repeat: no-repeat;
 	background-size: cover;
+
+
+	&:after{
+		content: '';
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: rgba(#fff, .9);
+	}
 }
 .page-error__block {
+	position: relative;
+	z-index: 1;
 	text-align: center;
+	transform: translateY(-20%);
 	
 	.btn {
 		border-radius: rem(100);
@@ -20,7 +35,7 @@
 }
 .page-error__title {
 	margin-bottom: rem(27);
-	@include adaptive-value-rem('font-size', 300, 50, $maxWidth, $minWidth, 1);
+	@include adaptive-value-rem('font-size', 300, 100, $maxWidth, $minWidth, 1);
 	font-weight: 500;
 }
 .page-error__text {

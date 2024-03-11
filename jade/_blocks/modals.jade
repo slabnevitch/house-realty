@@ -36,7 +36,7 @@ mixin email-modal()
 					.modal__bottom
 						button.btn(type="button" aria-label='Close modal' data-micromodal-close) Понятно
 
-//- chat/messenger modals
+//- request/offers modals
 mixin service-rules-modal()
 	#service-rules-modal.modal.modal-service-rules.micromodal-slide(aria-hidden='true')
 		.modal__overlay(tabindex='-1' data-micromodal-close)
@@ -74,4 +74,76 @@ mixin requests-modal()
 					h2 Запросы
 					p.modal__text Вам доступен чат. Здесь вы можете разместить свой запрос, набрав текст. Ваш запрос увидят все, он общий для покупателей и продавцов. За запрос не по теме, либо рекламу следует бан.
 					.modal__bottom
-						a(href="#").btn(type="button" aria-label='Close modal' data-micromodal-close) Понятно
+						button.btn(type="button" aria-label='Close modal' data-micromodal-close) Понятно
+
+mixin offer-modal()
+	#offer-modal.modal.modal-offer.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Предложение
+					p.modal__text Вы можете видеть предложения других продавцов. Если вам нравится предложение, вы можете перейти в личный чат и там вести диалог по данному предложению. За запрос не по теме, либо рекламу следует бан.
+					.modal__bottom
+						button.btn(type="button" aria-label='Close modal' data-micromodal-close) Понятно
+
+//- chat/messenger modals
+mixin chat-modal()
+	#chat-modal.modal.modal-chat.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Чат
+					p.modal__text Вам доступен чат, где вы можете вести диалог с продавцами, а также имеете возможность посмотреть данные продавца и оценить его работу. За сообщения не по теме, либо рекламу следует бан.
+					
+					.modal__bottom
+						button.btn(type="button" aria-label='Close modal' data-micromodal-close) Понятно
+
+mixin review-regard-modal()
+	#review-regard-modal.modal.modal-review-regard.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Спасибо за отзыв
+					p.modal__text Мы обязательно учтём ваше мнение
+
+mixin seller-modal()
+	#seller-modal.modal.modal-seller.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Оценить продавца
+					p.modal__text Евгений Орлов
+					form(action="#" class="form")
+						- var checks = ['Хороший продавец, предоставил много информации', 'Не понравился, предоставляет недостоверную информацию, либо много рекламы', 'Ещё какое‑то описание в оценке'];
+						each item, i in checks
+							label.form__check 
+								input(type="radio" name="seller-mark" checked=i==0?true:false)
+								span.form__custom
+								span.form__check-value= item
+						
+						.modal__bottom.form__bottom
+							a(href="#").btn Оценить
+							button.btn.btn-empty(type="button" aria-label='Close modal' data-micromodal-close) Отмена
+mixin deal-modal()
+	#deal-modal.modal.modal-deal.micromodal-slide(aria-hidden='true')
+		.modal__overlay(tabindex='-1' data-micromodal-close)
+			.modal__container(role='dialog' aria-modal='true' aria-labelledby='modal-1-title')
+				button.modal__close(aria-label='Close modal' data-micromodal-close)
+				main.modal__content
+					h2 Подтвердить сделку
+					p.modal__text Евгений Орлов
+					form(action="#" class="form")
+						- var checks = ['Хороший продавец, предоставил много информации', 'Не понравился, предоставляет недостоверную информацию, либо много рекламы', 'Ещё какое‑то описание в оценке'];
+						each item, i in checks
+							label.form__check 
+								input(type="radio" name="seller-mark" checked=i==0?true:false)
+								span.form__custom
+								span.form__check-value= item
+						
+						.modal__bottom.form__bottom
+							a(href="#").btn Оценить
+							button.btn.btn-empty(type="button" aria-label='Close modal' data-micromodal-close) Отмена

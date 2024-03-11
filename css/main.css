@@ -2574,10 +2574,29 @@ textarea {
 }
 
 .form__custom {
+  margin-top: 0.1875rem;
   position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  margin-right: 1.25rem;
+  margin-right: 0.75rem;
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid rgb(105, 117, 134);
+  border-radius: 50%;
+}
+.form__custom:after {
+  display: none;
+  content: "";
+  width: 0.5625rem;
+  height: 0.5625rem;
+  background-color: #3A8BF3;
+  border-radius: inherit;
 }
 
 .form__checks {
@@ -2591,6 +2610,11 @@ textarea {
 
 .form__check {
   position: relative;
+  display: -ms-flexbox;
+  display: flex;
+}
+.form__check:not(:last-of-type) {
+  margin-bottom: 1rem;
 }
 .form__check input[type=radio] {
   position: absolute;
@@ -2604,35 +2628,11 @@ textarea {
   padding: 0;
   opacity: 0;
 }
-.form__check input[type=radio]:checked + .form__check-value {
-  background: #3A8BF3;
-  color: #fff;
+.form__check input[type=radio]:checked + .form__custom {
+  border-color: #3A8BF3;
 }
-
-.form__check-value {
+.form__check input[type=radio]:checked + .form__custom:after {
   display: block;
-  position: relative;
-  padding: 0.3125rem 1rem;
-  height: 2rem;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  background-color: #fff;
-  border-radius: 0.3125rem;
-  font-size: 0.875rem;
-  transition: all 0.3s;
-}
-@media (any-hover: hover) {
-  .form__check-value {
-    cursor: pointer;
-  }
-  .form__check-value:hover {
-    background: #3A8BF3;
-    color: #fff;
-  }
 }
 
 .form__area {
@@ -2687,6 +2687,14 @@ textarea {
 }
 
 .form__bottom {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-pack: center;
+  justify-content: center;
+  column-gap: 1.25rem;
+  row-gap: 0.625rem;
   text-align: center;
 }
 
@@ -3193,11 +3201,22 @@ h2 {
 .modal {
   font-family: "Raleway", sans-serif;
 }
+.modal.modal-seller .form {
+  padding-top: 2rem;
+}
+.modal.modal-seller h2 {
+  margin-bottom: 0.5rem;
+}
 .modal h2 {
   margin-bottom: 1.875rem;
 }
 .modal .offers-filter__name {
   border-color: #E1E5ED;
+}
+.modal .form {
+  background-color: transparent;
+  padding: 0;
+  text-align: left;
 }
 
 @media (any-hover: hover) {
@@ -3256,6 +3275,9 @@ h2 {
     padding-right: clamp( 1.875rem , 1.1875rem  +  3.4375vw , 5.3125rem );
   }
 }
+.modal-review-regard .modal__container {
+  min-height: 12.875rem;
+}
 
 .modal-privacy .modal__container {
   max-width: 56.25rem;
@@ -3283,14 +3305,28 @@ h2 {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-image: url(../img/404.jpg);
+  position: relative;
+  background-image: url(../img/main-page/3.jpg);
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: cover;
 }
+.page-error:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+}
 
 .page-error__block {
+  position: relative;
+  z-index: 1;
   text-align: center;
+  -ms-transform: translateY(-20%);
+  transform: translateY(-20%);
 }
 .page-error__block .btn {
   border-radius: 6.25rem;
@@ -3303,7 +3339,7 @@ h2 {
 }
 @media (max-width: 81.25em) {
   .page-error__title {
-    font-size: clamp( 3.125rem , 0rem  +  15.625vw , 18.75rem );
+    font-size: clamp( 6.25rem , 3.75rem  +  12.5vw , 18.75rem );
   }
 }
 
@@ -5863,5 +5899,5 @@ h2 {
 
 .webp .zipper-mouth-face{ background-image: url(../img/sprite.webp); }
 
-.webp .page-error{ background-image: url(../img/404.webp); }
+.webp .page-error{ background-image: url(../img/main-page/3.webp); }
 /*# sourceMappingURL=maps/main.css.map */

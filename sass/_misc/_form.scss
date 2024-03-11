@@ -69,48 +69,58 @@
 
 }
 .form__custom {
+	margin-top: rem(3);
 	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	flex-shrink: 0;
-	margin-right: rem(20);
+	margin-right: rem(12);
+	width: rem(16);
+	height: rem(16);
+	border: 1px solid rgb(105, 117, 134);
+	border-radius: 50%;
+
+
+	&:after{
+		display: none;
+		content: '';
+		width: rem(9);
+		height: rem(9);
+		background-color: $accent;
+		border-radius: inherit;
+	}
 }
 .form__checks {
 	display: flex;
 	flex-wrap: wrap;
 	gap: rem(12);
 	margin-bottom: rem(24);
+
+
 }
 .form__check {
 	position: relative;
+	display: flex;
+
+	&:not(:last-of-type){
+		margin-bottom: rem(16);	
+	}
+
 	input[type="radio"]{
 		@include checkbox;
-		&:checked + .form__check-value {
-			background: $accent;
-			color: #fff;
+		&:checked + .form__custom {
+			border-color: $accent;
+
+			&:after{
+				display: block;
+			}
 		}
 
 	}
 }
 .form__check-value {
-	display: block;
-	position: relative;
-	padding: rem(5) rem(16);
-	height: rem(32);
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #fff;
-	border-radius: rem(5);
-	font-size: rem(14);
-	transition: all .3s;
-
-
-	@media (any-hover: hover) { //только для устройств с ховером
-			cursor: pointer;
-			&:hover{
-				background: $accent;
-				color: #fff;
-			}
-		}
+	
 }
 .form__area{
 	width: 100%;
@@ -161,6 +171,11 @@
 
 }
 .form__bottom{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	column-gap: rem(20);
+	row-gap: rem(10);
 	text-align: center;
 }
 .form__line{
