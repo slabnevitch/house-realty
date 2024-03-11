@@ -4743,12 +4743,12 @@ h2 {
   margin-left: 0;
   margin-bottom: 1.25rem;
 }
-@media only screen and (min-width: 106.25em) {
+@media only screen and (min-width: 61.99875em) {
   .expanse--profile .toggle-mnu {
     display: none;
   }
 }
-@media only screen and (max-width: 106.25em) {
+@media only screen and (max-width: 61.99875em) {
   .expanse--profile .expanse__nav {
     height: 100%;
     background-color: #fff;

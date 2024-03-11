@@ -33,12 +33,12 @@
 		.toggle-mnu{
 			margin-left: 0;
 			margin-bottom: rem(20);
-			@include min-screen($mess-mob){
+			@include min-screen($md){
 				display: none;
 			}
 		}
 		.expanse__nav{
-			@include max-screen($mess-mob){
+			@include max-screen($md){
 				height: 100%;
 				background-color: #fff;
 				position: fixed;
