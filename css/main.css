@@ -4743,12 +4743,12 @@ h2 {
   margin-left: 0;
   margin-bottom: 1.25rem;
 }
-@media only screen and (min-width: 61.99875em) {
+@media only screen and (min-width: 106.25em) {
   .expanse--profile .toggle-mnu {
     display: none;
   }
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 106.25em) {
   .expanse--profile .expanse__nav {
     height: 100%;
     background-color: #fff;
@@ -4950,7 +4950,7 @@ h2 {
   display: -ms-flexbox;
   display: flex;
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 81.25em) {
   .profile {
     -ms-flex-direction: column;
     flex-direction: column;
@@ -4970,7 +4970,7 @@ h2 {
     padding-top: calc(15px + 29 * ((100vw - 320px) / 980));
   }
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 106.25em) {
   .profile__back {
     display: -ms-flexbox;
     display: flex;
@@ -4982,13 +4982,13 @@ h2 {
     padding-left: 1.25rem;
   }
 }
-@media only screen and (min-width: 61.99875em) {
+@media only screen and (min-width: 106.25em) {
   .profile__back {
     -ms-flex: 0 0 9.375rem;
     flex: 0 0 9.375rem;
   }
 }
-@media only screen and (min-width: 81.25em) {
+@media only screen and (min-width: 106.25em) {
   .profile__back {
     -ms-flex: 0 0 12.5rem;
     flex: 0 0 12.5rem;
@@ -5020,7 +5020,7 @@ h2 {
     padding-top: calc(14px + 26 * ((100vw - 320px) / 980));
   }
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 106.25em) {
   .profile__content {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
@@ -5271,7 +5271,7 @@ h2 {
   margin-bottom: 2.5rem;
   gap: 0.9375rem;
 }
-@media only screen and (max-width: 47.99875em) {
+@media only screen and (max-width: 61.99875em) {
   .profile-buer__header {
     -ms-flex-direction: column;
     flex-direction: column;
