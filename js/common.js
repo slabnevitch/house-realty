@@ -278,7 +278,7 @@
 			//- chat/messenger modals
 				// MicroModal.show('chat-modal');
 				// MicroModal.show('review-regard-modal');
-				// MicroModal.show('seller-modal');
+				MicroModal.show('seller-modal');
 				// MicroModal.show('deal-modal');
 			
 			//- profile modals

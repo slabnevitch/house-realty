@@ -2628,11 +2628,41 @@ textarea {
   padding: 0;
   opacity: 0;
 }
+.form__check input[type=radio]:checked + .form__check-value {
+  background-color: #3A8BF3;
+  color: #fff;
+}
 .form__check input[type=radio]:checked + .form__custom {
   border-color: #3A8BF3;
 }
 .form__check input[type=radio]:checked + .form__custom:after {
   display: block;
+}
+
+.form__check-value {
+  display: block;
+  position: relative;
+  padding: 0.3125rem 1rem;
+  height: 2rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #fff;
+  border-radius: 0.3125rem;
+  font-size: 0.875rem;
+  transition: all 0.3s;
+}
+@media (any-hover: hover) {
+  .form__check-value {
+    cursor: pointer;
+  }
+  .form__check-value:hover {
+    background-color: #3A8BF3;
+    color: #fff;
+  }
 }
 
 .form__area {
@@ -3134,6 +3164,11 @@ h2 {
 
 .sidebar-form--access .form__bottom {
   padding-top: 1.875rem;
+}
+
+.sidebar-form__tab-item {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
 }
 
 .main-page__variants {
@@ -4708,12 +4743,12 @@ h2 {
   margin-left: 0;
   margin-bottom: 1.25rem;
 }
-@media only screen and (min-width: 61.99875em) {
+@media only screen and (min-width: 106.25em) {
   .expanse--profile .toggle-mnu {
     display: none;
   }
 }
-@media only screen and (max-width: 61.99875em) {
+@media only screen and (max-width: 106.25em) {
   .expanse--profile .expanse__nav {
     height: 100%;
     background-color: #fff;
