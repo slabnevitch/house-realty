@@ -339,7 +339,7 @@
                         </svg>
                   </button>
                 </form>
-                <button type="submit" class="header-expanse__submit header-expanse__button">
+                <button type="submit" class="header-expanse__button">
                       <svg class="icon icon-search ">
                         <use xlink:href="img/icons-svg/symbol/sprite.svg#search"></use>
                       </svg>
@@ -512,59 +512,77 @@
         </div>
       </div>
     </div>
-        <div id="service-rules-modal" aria-hidden="true" class="modal modal-service-rules micromodal-slide">
+        <div id="chat-modal" aria-hidden="true" class="modal modal-chat micromodal-slide">
           <div tabindex="-1" data-micromodal-close class="modal__overlay">
             <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal__container">
               <button aria-label="Close modal" data-micromodal-close class="modal__close"></button>
               <main class="modal__content">
-                <h2>Правила сервиса</h2>
-                <p class="modal__text">Спасибо за регистрацию! Посмотрите правила общения на сервисе, а также изучите информацию о том, как получить бонусы и повысить свой рейтинг. Пробный период пользования сервисом для продавца — 3 дня, дальше все функции заблокируются. Оплата через профиль.</p>
-                <div class="modal__bottom"><a href="#" type="button" aria-label="Close modal" data-micromodal-close class="btn">Смотреть</a></div>
+                <h2>Чат</h2>
+                <p class="modal__text">Вам доступен чат, где вы можете вести диалог с продавцами, а также имеете возможность посмотреть данные продавца и оценить его работу. За сообщения не по теме, либо рекламу следует бан.</p>
+                <div class="modal__bottom">
+                  <button type="button" aria-label="Close modal" data-micromodal-close class="btn">Понятно</button>
+                </div>
               </main>
             </div>
           </div>
         </div>
-        <div id="city-select-modal" aria-hidden="true" class="modal modal-city-select micromodal-slide">
+        <div id="review-regard-modal" aria-hidden="true" class="modal modal-review-regard micromodal-slide">
           <div tabindex="-1" data-micromodal-close class="modal__overlay">
             <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal__container">
               <button aria-label="Close modal" data-micromodal-close class="modal__close"></button>
               <main class="modal__content">
-                <h2>Выберите свой населённый пункт</h2>
-                <form action="#" class="offers-filter">
-                  <div class="offers-filter__items">
-                    <label class="offers-filter__item">
-                      <input type="radio" name="city" checked class="offers-filter__input"><span class="btn offers-filter__name">Брянск</span>
-                    </label>
-                    <label class="offers-filter__item">
-                      <input type="radio" name="city" class="offers-filter__input"><span class="btn offers-filter__name">Москва</span>
-                    </label>
-                    <label class="offers-filter__item">
-                      <input type="radio" name="city" class="offers-filter__input"><span class="btn offers-filter__name">Санкт-Петербург</span>
-                    </label>
-                    <label class="offers-filter__item">
-                      <input type="radio" name="city" class="offers-filter__input"><span class="btn offers-filter__name">Сочи</span>
-                    </label>
-                    <label class="offers-filter__item">
-                      <input type="radio" name="city" class="offers-filter__input"><span class="btn offers-filter__name">Томск</span>
-                    </label>
-                    <label class="offers-filter__item">
-                      <input type="radio" name="city" class="offers-filter__input"><span class="btn offers-filter__name">Ялта</span>
-                    </label>
+                <h2>Спасибо за отзыв</h2>
+                <p class="modal__text">Мы обязательно учтём ваше мнение</p>
+              </main>
+            </div>
+          </div>
+        </div>
+        <div id="seller-modal" aria-hidden="true" class="modal modal-seller micromodal-slide">
+          <div tabindex="-1" data-micromodal-close class="modal__overlay">
+            <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal__container">
+              <button aria-label="Close modal" data-micromodal-close class="modal__close"></button>
+              <main class="modal__content">
+                <h2>Оценить продавца</h2>
+                <p class="modal__text">Евгений Орлов</p>
+                <form action="#" class="form">
+                  <label class="form__check"> 
+                    <input type="radio" name="seller-mark" checked><span class="form__custom"></span><span class="form__radio-value">Хороший продавец, предоставил много информации</span>
+                  </label>
+                  <label class="form__check"> 
+                    <input type="radio" name="seller-mark"><span class="form__custom"></span><span class="form__radio-value">Не понравился, предоставляет недостоверную информацию, либо много рекламы</span>
+                  </label>
+                  <label class="form__check"> 
+                    <input type="radio" name="seller-mark"><span class="form__custom"></span><span class="form__radio-value">Ещё какое‑то описание в оценке</span>
+                  </label>
+                  <div class="modal__bottom form__bottom"><a href="#" class="btn">Оценить</a>
+                    <button type="button" aria-label="Close modal" data-micromodal-close class="btn btn-empty">Отмена</button>
                   </div>
-                  <div class="modal__bottom"><a href="#" type="submit" class="btn">Выбрать</a></div>
                 </form>
               </main>
             </div>
           </div>
         </div>
-        <div id="requests-modal" aria-hidden="true" class="modal modal-requests micromodal-slide">
+        <div id="deal-modal" aria-hidden="true" class="modal modal-deal micromodal-slide">
           <div tabindex="-1" data-micromodal-close class="modal__overlay">
             <div role="dialog" aria-modal="true" aria-labelledby="modal-1-title" class="modal__container">
               <button aria-label="Close modal" data-micromodal-close class="modal__close"></button>
               <main class="modal__content">
-                <h2>Запросы</h2>
-                <p class="modal__text">Вам доступен чат. Здесь вы можете разместить свой запрос, набрав текст. Ваш запрос увидят все, он общий для покупателей и продавцов. За запрос не по теме, либо рекламу следует бан.</p>
-                <div class="modal__bottom"><a href="#" type="button" aria-label="Close modal" data-micromodal-close class="btn">Понятно</a></div>
+                <h2>Подтвердить сделку</h2>
+                <p class="modal__text">Евгений Орлов</p>
+                <form action="#" class="form">
+                  <label class="form__check"> 
+                    <input type="radio" name="seller-mark" checked><span class="form__custom"></span><span class="form__radio-value">Хороший продавец, предоставил много информации</span>
+                  </label>
+                  <label class="form__check"> 
+                    <input type="radio" name="seller-mark"><span class="form__custom"></span><span class="form__radio-value">Не понравился, предоставляет недостоверную информацию, либо много рекламы</span>
+                  </label>
+                  <label class="form__check"> 
+                    <input type="radio" name="seller-mark"><span class="form__custom"></span><span class="form__radio-value">Ещё какое‑то описание в оценке</span>
+                  </label>
+                  <div class="modal__bottom"><a href="#" class="btn">Оценить</a>
+                    <button type="button" aria-label="Close modal" data-micromodal-close class="btn btn-empty">Отмена</button>
+                  </div>
+                </form>
               </main>
             </div>
           </div>

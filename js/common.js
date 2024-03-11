@@ -99,7 +99,7 @@
 		// chat menu toggle
 		if(document.querySelector('#menu-open') !== null){
 			document.querySelector('#menu-open').onclick = function(e) {
-				// this.classList.toggle('on');
+				this.classList.toggle('on');
 				console.log('open')
 				document.documentElement.classList.add('menu-opened');
 			}
@@ -109,6 +109,7 @@
 			document.querySelector('#menu-close').onclick = function(e) {
 				// this.classList.toggle('on');
 				document.documentElement.classList.remove('menu-opened');
+				document.querySelector('#menu-open').classList.remove('on');
 			}
 			
 		}
@@ -123,7 +124,10 @@
 			if(target.closest('.header-expanse__button') !==null){
 				document.querySelector('.expanse__header').classList.toggle('search-opened');
 			}else if (!target.parentElement.classList.contains('expanse-form')){
-				document.querySelector('.expanse__header').classList.remove('search-opened');
+				if(document.querySelector('.expanse__header') !== null){
+					document.querySelector('.expanse__header').classList.remove('search-opened');
+
+				}
 			}
 			// END bobile search form toggle
 			
@@ -265,9 +269,22 @@
 	
 
 		// modals calls
-		// MicroModal.show('service-rules-modal');
-		// MicroModal.show('city-select-modal');
-		// MicroModal.show('requests-modal');
+			//- request/offers modals
+				// MicroModal.show('service-rules-modal');
+				// MicroModal.show('city-select-modal');
+				// MicroModal.show('requests-modal');
+				// MicroModal.show('offer-modal');
+
+			//- chat/messenger modals
+				// MicroModal.show('chat-modal');
+				// MicroModal.show('review-regard-modal');
+				MicroModal.show('seller-modal');
+				// MicroModal.show('deal-modal');
+			
+			//- profile modals
+				// MicroModal.show('ban-modal');
+				// MicroModal.show('trial-modal');
+				
 		// END modals calls
 	});
 })();
