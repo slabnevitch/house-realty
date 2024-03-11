@@ -1,4 +1,72 @@
 /*--------------------profile-agent----------------------*/
+.profile-agent{
+	display: flex;
+	height: 100%;
+	column-gap: rem(30);
+
+	@include max-screen($mess-mob){
+		flex-direction: column-reverse;
+	}
+	@include min-screen($md){
+		padding-right: rem(20);
+	}
+	@include min-screen(em($maxWidth)){
+		column-gap: rem(250);
+	}
+
+	.profile-buer__form{
+		padding-right: 0;
+	}
+}
+.profile-agent__main{
+	flex: 1 1 auto;
+	display: flex;
+	flex-direction: column;
+
+	.tabs__buttons{
+			flex: 0 0 auto;
+			flex-wrap: wrap;
+			row-gap: rem(10);
+
+			@include max-screen($sm){
+				flex-direction: column;
+				width: 100%;
+			}
+		}
+		.tabs__item{
+			flex: 0 0 rem(179);
+
+			@include max-screen($sm){
+				flex: 0 0 auto;
+			}
+
+			@include min-screen($sm){
+				width: rem(179);
+				
+			}
+		}
+		.tab{
+			@include max-screen($xss){
+				padding-bottom: rem(5);
+			}
+
+			.profile-notice__count{
+				@include max-screen($sm){
+					position: relative;
+					top: 0;
+					right: 0;
+					display: inline-flex;
+					vertical-align: bottom;
+					margin-left: rem(5);
+					
+				}
+			}
+		}
+}
+.profile-agent__tabs{
+	flex: 0 0 auto;
+	margin-bottom: rem(30);
+}
 .profile-agent-rating{
 
 
@@ -6,6 +74,7 @@
 		font-size: rem(24);
 		line-height: calc(28/24);
 		font-weight: 500;
+		justify-content: flex-start;
 		
 		&:not(:last-child){
 			margin-bottom: rem(24);
@@ -15,11 +84,11 @@
 }
 .profile-agent-rating__item{
 
-	&:not(:last-child){
-		&.active{
+	&.active{
 
-			margin-bottom: rem(30);
-		}
+		margin-bottom: rem(30);
+	}
+	&:not(:last-child){
 	}
 
 }
@@ -30,6 +99,10 @@
 	column-gap: rem(17);
 	font-weight: 500;
 
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+		}
+
 	.icon{
 		font-size: rem(10);
 		transform: rotate(90deg);
@@ -38,6 +111,8 @@
 			transform: rotate(-90deg);
 		}
 	}
+
+	
 }
 .profile-agent-rating__prg{
 
@@ -45,5 +120,41 @@
 		margin-bottom: rem(10);
 	}
 
+}
+aside.profile-agent__sidebar{
+
+	@include max-screen($mess-mob){
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		gap: rem(10);
+		margin-bottom: rem(10);
+	}
+	@include min-screen($mess-mob){
+		flex: 0 0 rem(350);
+	
+		
+	}
+
+	.btn{
+		@include max-screen($md){
+			padding-left: rem(10);
+			padding-right: rem(10);
+			height: rem(35);
+		}
+		@include max-screen($sm){
+			
+			font-size: rem(10);
+		}
+		@include min-screen($mess-mob){
+			margin-bottom: rem(20);
+		}
+
+	}
+	.profile-buer__reg{
+		@include max-screen($mess-mob){
+			grid-column: span 2;
+			
+		}
+	}
 }
 /*--------------------END profile-agent----------------------*/ 

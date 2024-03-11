@@ -3274,6 +3274,57 @@ h2 {
 }
 
 /*--------------------END modals----------------------*/
+/*--------------------page-error----------------------*/
+.page-error {
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-image: url(../img/404.jpg);
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-error__block {
+  text-align: center;
+}
+.page-error__block .btn {
+  border-radius: 6.25rem;
+}
+
+.page-error__title {
+  margin-bottom: 1.6875rem;
+  font-size: 18.75rem;
+  font-weight: 500;
+}
+@media (max-width: 81.25em) {
+  .page-error__title {
+    font-size: clamp( 3.125rem , 0rem  +  15.625vw , 18.75rem );
+  }
+}
+
+.page-error__text {
+  font-size: 2.5rem;
+  margin-bottom: 2.125rem;
+  font-weight: 400;
+  line-height: 1.3;
+}
+@media (max-width: 81.25em) {
+  .page-error__text {
+    font-size: clamp( 1rem , 0.7rem  +  1.5vw , 2.5rem );
+  }
+}
+@media (max-width: 81.25em) {
+  .page-error__text {
+    margin-bottom: clamp( 0.9375rem , 0.7rem  +  1.1875vw , 2.125rem );
+  }
+}
+
+/*--------------------END page-error----------------------*/
 /*--------------------page-main----------------------*/
 .page-main__wrapper {
   display: -ms-flexbox;
@@ -4930,19 +4981,106 @@ h2 {
 
 /*--------------------END offers-filter----------------------*/
 /*--------------------profile-agent----------------------*/
+.profile-agent {
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  column-gap: 1.875rem;
+}
+@media only screen and (max-width: 106.25em) {
+  .profile-agent {
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+  }
+}
+@media only screen and (min-width: 61.99875em) {
+  .profile-agent {
+    padding-right: 1.25rem;
+  }
+}
+@media only screen and (min-width: 120em) {
+  .profile-agent {
+    column-gap: 15.625rem;
+  }
+}
+.profile-agent .profile-buer__form {
+  padding-right: 0;
+}
+
+.profile-agent__main {
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+.profile-agent__main .tabs__buttons {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  row-gap: 0.625rem;
+}
+@media only screen and (max-width: 47.99875em) {
+  .profile-agent__main .tabs__buttons {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+.profile-agent__main .tabs__item {
+  -ms-flex: 0 0 11.1875rem;
+  flex: 0 0 11.1875rem;
+}
+@media only screen and (max-width: 47.99875em) {
+  .profile-agent__main .tabs__item {
+    -ms-flex: 0 0 auto;
+    flex: 0 0 auto;
+  }
+}
+@media only screen and (min-width: 47.99875em) {
+  .profile-agent__main .tabs__item {
+    width: 11.1875rem;
+  }
+}
+@media only screen and (max-width: 30em) {
+  .profile-agent__main .tab {
+    padding-bottom: 0.3125rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  .profile-agent__main .tab .profile-notice__count {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    vertical-align: bottom;
+    margin-left: 0.3125rem;
+  }
+}
+
+.profile-agent__tabs {
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  margin-bottom: 1.875rem;
+}
+
 .profile-agent-rating .info-user-rating__indicators {
   font-size: 1.5rem;
   line-height: 1.1666666667;
   font-weight: 500;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
 }
 .profile-agent-rating .info-user-rating__indicators:not(:last-child) {
   margin-bottom: 1.5rem;
 }
 
-.profile-agent-rating__item:not(:last-child).active {
+.profile-agent-rating__item.active {
   margin-bottom: 1.875rem;
 }
-
 .profile-agent-rating__tab {
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -4951,6 +5089,11 @@ h2 {
   margin-bottom: 0.75rem;
   column-gap: 1.0625rem;
   font-weight: 500;
+}
+@media (any-hover: hover) {
+  .profile-agent-rating__tab {
+    cursor: pointer;
+  }
 }
 .profile-agent-rating__tab .icon {
   font-size: 0.625rem;
@@ -4964,6 +5107,46 @@ h2 {
 
 .profile-agent-rating__prg:not(:last-child) {
   margin-bottom: 0.625rem;
+}
+
+@media only screen and (max-width: 106.25em) {
+  aside.profile-agent__sidebar {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.625rem;
+    margin-bottom: 0.625rem;
+  }
+}
+@media only screen and (min-width: 106.25em) {
+  aside.profile-agent__sidebar {
+    -ms-flex: 0 0 21.875rem;
+    flex: 0 0 21.875rem;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  aside.profile-agent__sidebar .btn {
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    height: 2.1875rem;
+  }
+}
+@media only screen and (max-width: 47.99875em) {
+  aside.profile-agent__sidebar .btn {
+    font-size: 0.625rem;
+  }
+}
+@media only screen and (min-width: 106.25em) {
+  aside.profile-agent__sidebar .btn {
+    margin-bottom: 1.25rem;
+  }
+}
+@media only screen and (max-width: 106.25em) {
+  aside.profile-agent__sidebar .profile-buer__reg {
+    -ms-grid-column: span 2;
+    grid-column: span 2;
+  }
 }
 
 /*--------------------END profile-agent----------------------*/
@@ -5679,4 +5862,6 @@ h2 {
 .webp .zany-face{ background-image: url(../img/sprite.webp); }
 
 .webp .zipper-mouth-face{ background-image: url(../img/sprite.webp); }
+
+.webp .page-error{ background-image: url(../img/404.webp); }
 /*# sourceMappingURL=maps/main.css.map */

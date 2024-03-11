@@ -31,134 +31,161 @@
             <button id="menu-open" type="button" class="toggle-mnu"><span> </span></button>
           </div>
           <div class="profile__content">
-            <div class="profile-buer _tabs">
-              <div class="profile-buer__header profile-buer__header--agent">
-                <ul class="tabs__buttons">
-                  <li class="tabs__item"><a href="#" class="tab active">Профиль</a></li>
-                  <li class="tabs__item"><a href="#" class="tab">Мой рейтинг</a></li>
-                  <li class="tabs__item"><a href="#" class="tab"><span class="profile-notice">Уведомления<span class="profile-notice__count">1</span></span></a></li>
-                </ul>
-                <div class="profile-buer__reg">Зарегистрирован 15.05.2023</div>
-              </div>
-              <div class="profile-buer__content">
-                <div data-simplebar class="profile-buer__scroll">
-                  <ul class="tabs__container">
-                    <li class="tab-content active">
-                      <form action="#" class="form profile-buer__form form-profile-buer">
-                        <div class="form-profile-buer__grid">
-                          <div class="form-profile-buer__column">
-                            <label class="form__label"><span class="form__key">Фамилия Имя Отчество</span><span class="form__error-message"></span>
-                              <input autocomplete="off" type="text" name="" value="Семашко Захар Михайлович" class="form__input">
-                            </label>
-                            <label class="form__label form__error"><span class="form__key">Телефон</span><span class="form__error-message">Обязательное поле</span>
-                              <input autocomplete="off" type="text" name="" value="+7 912 587-36-56" class="form__input">
-                            </label>
-                            <label class="form__label form__add"><span class="form__key">Фото профиля</span>
-                              <input autocomplete="off" type="file" name="" value="+7 912 587-36-56" class="form__file"><span class="form__file-field">
-                                    <svg class="icon icon-plus ">
-                                      <use xlink:href="img/icons-svg/symbol/sprite.svg#plus"></use>
-                                    </svg></span>
-                            </label>
-                          </div>
-                          <div class="form-profile-buer__column">
-                            <label class="form__label"><span class="form__key">Город</span><span class="form__error-message"></span>
-                              <input autocomplete="off" type="text" name="" value="Сочи" class="form__input">
-                            </label>
-                            <label class="form__label"><span class="form__key">Email</span><span class="form__error-message"></span>
-                              <input autocomplete="off" type="text" name="" value="pochta@mail.ru" class="form__input">
-                            </label>
-                          </div>
-                          <div class="form-profile-buer__column">
-                            <label class="form__label form__label--password">
-                              <button type="button" class="eye-ico unblind">
-                                    <svg class="icon icon-eye ">
-                                      <use xlink:href="img/icons-svg/symbol/sprite.svg#eye"></use>
-                                    </svg>
-                                    <svg class="icon icon-eye-off ">
-                                      <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-off"></use>
-                                    </svg>
-                              </button><span class="form__key">Старый пароль</span><span class="form__error-message"></span>
-                              <input autocomplete="off" type="text" name="" value="5UimdK5dd" class="form__input">
-                            </label>
-                            <label class="form__label form__label--password">
-                              <button type="button" class="eye-ico">
-                                    <svg class="icon icon-eye ">
-                                      <use xlink:href="img/icons-svg/symbol/sprite.svg#eye"></use>
-                                    </svg>
-                                    <svg class="icon icon-eye-off ">
-                                      <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-off"></use>
-                                    </svg>
-                              </button><span class="form__key">Новый пароль</span><span class="form__error-message"></span>
-                              <input autocomplete="off" type="password" name="" value="5UimdK5dd" class="form__input">
-                            </label>
-                            <label class="form__label form__label--password">
-                              <button type="button" class="eye-ico">
-                                    <svg class="icon icon-eye ">
-                                      <use xlink:href="img/icons-svg/symbol/sprite.svg#eye"></use>
-                                    </svg>
-                                    <svg class="icon icon-eye-off ">
-                                      <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-off"></use>
-                                    </svg>
-                              </button><span class="form__key">Повторить пароль</span><span class="form__error-message"></span>
-                              <input autocomplete="off" type="password" name="" value="5UimdK5dd" class="form__input">
-                            </label>
-                          </div>
-                        </div>
-                        <div class="form__bottom">
-                          <div class="form__line">
-                            <button type="submit" class="btn">Сохранить</button>
-                          </div>
-                          <div class="form__line"><a href="#">Выйти из профиля</a></div>
-                        </div>
-                      </form>
-                    </li>
-                    <li class="tab-content hidden">
-                      <div class="profile-agent-rating">
-                        <div class="info-user-rating__indicators">
-                          <div class="info-user-rating__indicator">Место 12</div>
-                          <div class="info-user-rating__indicator">Бонусы 9 100</div>
-                          <div class="info-user-rating__indicator">Баны 1</div>
-                          <div class="info-user-rating__indicator">Сделки 14</div>
-                        </div>
-                        <ul data-accordion class="accordion">
-                          <li class="accordion__item profile-agent-rating__item">
-                            <div class="accordion__link profile-agent-rating__tab">Правила сервиса
-                                  <svg class="icon icon-chevron-right ">
-                                    <use xlink:href="img/icons-svg/symbol/sprite.svg#chevron-right"></use>
-                                  </svg>
-                            </div>
-                            <div class="accordion__content">
-                              <p class="profile-agent-rating__prg">Пробный период для продавцов 3 дня.  Дльше все функции заблокируются. Оплата через профиль.</p>
-                              <p class="profile-agent-rating__prg">Если 3  жалобы от клиента за рекламу либо фейк-информацию - бан 3 дня</p>
-                              <p class="profile-agent-rating__prg">Дополнительные 3 жалобы у данного пользователя увеличивается количество блокировки до 9 дней</p>
-                              <p class="profile-agent-rating__prg">За еще 3 жалобы  - бан 1 месяц</p>
-                              <p class="profile-agent-rating__prg">Во время бана пользователю недоступны все функции сервиса кроме профиля и обратной связи</p>
-                            </div>
-                          </li>
-                          <li class="accordion__item profile-agent-rating__item">
-                            <div class="accordion__link profile-agent-rating__tab">Как получить бонусы
-                                  <svg class="icon icon-chevron-right ">
-                                    <use xlink:href="img/icons-svg/symbol/sprite.svg#chevron-right"></use>
-                                  </svg>
-                            </div>
-                            <div class="accordion__content hidden">
-                              <p class="profile-agent-rating__prg">Проведение сделки с подтверждением покупателя через личные сообщения — 1000 бонусов</p>
-                              <p class="profile-agent-rating__prg">Регистрация на сервисе — 500 бонусов</p>
-                              <p class="profile-agent-rating__prg">Предоставление пользователю фейк, рекламу — минус 250 бонусов</p>
-                              <p class="profile-agent-rating__prg">Полностью заполнен профиль — 100 бонусов</p>
-                              <p class="profile-agent-rating__prg">Оценка покупателем за хорошую работу и предоставление информации — 50 бонусов</p>
-                              <p class="profile-agent-rating__prg">Публикация предложения или запроса (ежедневно) - 10 бонусов</p>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="tab-content hidden">
-                      <p class="content">Далеко-далеко за словесными горами в стране, гласных и согласных живут рыбные тексты.</p>
-                    </li>
+            <div class="profile-agent _tabs">
+              <div class="profile-agent__main">
+                <div class="profile-agent__tabs">
+                  <ul class="tabs__buttons">
+                    <li class="tabs__item"><a href="#" class="tab active">Профиль</a></li>
+                    <li class="tabs__item"><a href="#" class="tab">Мой рейтинг</a></li>
+                    <li class="tabs__item"><a href="#" class="tab"><span class="profile-notice">Уведомления<span class="profile-notice__count">1</span></span></a></li>
                   </ul>
                 </div>
+                <div class="profile-buer__content">
+                  <div data-simplebar class="profile-buer__scroll">
+                    <ul class="tabs__container">
+                      <li class="tab-content active">
+                        <form action="#" class="form profile-buer__form form-profile-buer">
+                          <div class="form-profile-buer__grid">
+                            <div class="form-profile-buer__column">
+                              <label class="form__label"><span class="form__key">Фамилия Имя Отчество</span><span class="form__error-message"></span>
+                                <input autocomplete="off" type="text" name="" value="Семашко Захар Михайлович" class="form__input">
+                              </label>
+                              <label class="form__label form__error"><span class="form__key">Телефон</span><span class="form__error-message">Обязательное поле</span>
+                                <input autocomplete="off" type="text" name="" value="+7 912 587-36-56" class="form__input">
+                              </label>
+                              <label class="form__label"><span class="form__key">Город</span><span class="form__error-message"></span>
+                                <input autocomplete="off" type="text" name="" value="Сочи" class="form__input">
+                              </label>
+                              <label class="form__label form__add"><span class="form__key">Фото профиля</span>
+                                <input autocomplete="off" type="file" name="" value="+7 912 587-36-56" class="form__file"><span class="form__file-field">
+                                      <svg class="icon icon-plus ">
+                                        <use xlink:href="img/icons-svg/symbol/sprite.svg#plus"></use>
+                                      </svg></span>
+                              </label>
+                            </div>
+                            <div class="form-profile-buer__column">
+                              <label class="form__label"><span class="form__key">Email</span><span class="form__error-message"></span>
+                                <input autocomplete="off" type="text" name="" value="pochta@mail.ru" class="form__input">
+                              </label>
+                              <label class="form__label form__label--password">
+                                <button type="button" class="eye-ico unblind">
+                                      <svg class="icon icon-eye ">
+                                        <use xlink:href="img/icons-svg/symbol/sprite.svg#eye"></use>
+                                      </svg>
+                                      <svg class="icon icon-eye-off ">
+                                        <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-off"></use>
+                                      </svg>
+                                </button><span class="form__key">Старый пароль</span><span class="form__error-message"></span>
+                                <input autocomplete="off" type="text" name="" value="5UimdK5dd" class="form__input">
+                              </label>
+                              <label class="form__label form__label--password">
+                                <button type="button" class="eye-ico">
+                                      <svg class="icon icon-eye ">
+                                        <use xlink:href="img/icons-svg/symbol/sprite.svg#eye"></use>
+                                      </svg>
+                                      <svg class="icon icon-eye-off ">
+                                        <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-off"></use>
+                                      </svg>
+                                </button><span class="form__key">Новый пароль</span><span class="form__error-message"></span>
+                                <input autocomplete="off" type="password" name="" value="5UimdK5dd" class="form__input">
+                              </label>
+                              <label class="form__label form__label--password">
+                                <button type="button" class="eye-ico">
+                                      <svg class="icon icon-eye ">
+                                        <use xlink:href="img/icons-svg/symbol/sprite.svg#eye"></use>
+                                      </svg>
+                                      <svg class="icon icon-eye-off ">
+                                        <use xlink:href="img/icons-svg/symbol/sprite.svg#eye-off"></use>
+                                      </svg>
+                                </button><span class="form__key">Повторить пароль</span><span class="form__error-message"></span>
+                                <input autocomplete="off" type="password" name="" value="5UimdK5dd" class="form__input">
+                              </label>
+                            </div>
+                          </div>
+                          <div class="form__bottom">
+                            <div class="form__line">
+                              <button type="submit" class="btn">Сохранить</button>
+                            </div>
+                            <div class="form__line"><a href="#">Выйти из профиля</a></div>
+                          </div>
+                        </form>
+                      </li>
+                      <li class="tab-content hidden">
+                        <div class="profile-agent-rating">
+                          <div class="info-user-rating__indicators">
+                            <div class="info-user-rating__indicator">Место 12</div>
+                            <div class="info-user-rating__indicator">Бонусы 9 100</div>
+                            <div class="info-user-rating__indicator">Баны 1</div>
+                            <div class="info-user-rating__indicator">Сделки 14</div>
+                          </div>
+                          <ul data-accordion class="accordion">
+                            <li class="accordion__item profile-agent-rating__item active">
+                              <div class="accordion__link profile-agent-rating__tab">Правила сервиса
+                                    <svg class="icon icon-chevron-right ">
+                                      <use xlink:href="img/icons-svg/symbol/sprite.svg#chevron-right"></use>
+                                    </svg>
+                              </div>
+                              <div class="accordion__content">
+                                <p class="profile-agent-rating__prg">Пробный период для продавцов 3 дня.  Дльше все функции заблокируются. Оплата через профиль.</p>
+                                <p class="profile-agent-rating__prg">Если 3  жалобы от клиента за рекламу либо фейк-информацию - бан 3 дня</p>
+                                <p class="profile-agent-rating__prg">Дополнительные 3 жалобы у данного пользователя увеличивается количество блокировки до 9 дней</p>
+                                <p class="profile-agent-rating__prg">За еще 3 жалобы  - бан 1 месяц</p>
+                                <p class="profile-agent-rating__prg">Во время бана пользователю недоступны все функции сервиса кроме профиля и обратной связи</p>
+                              </div>
+                            </li>
+                            <li class="accordion__item profile-agent-rating__item">
+                              <div class="accordion__link profile-agent-rating__tab">Как получить бонусы
+                                    <svg class="icon icon-chevron-right ">
+                                      <use xlink:href="img/icons-svg/symbol/sprite.svg#chevron-right"></use>
+                                    </svg>
+                              </div>
+                              <div class="accordion__content hidden">
+                                <p class="profile-agent-rating__prg">Проведение сделки с подтверждением покупателя через личные сообщения — 1000 бонусов</p>
+                                <p class="profile-agent-rating__prg">Регистрация на сервисе — 500 бонусов</p>
+                                <p class="profile-agent-rating__prg">Предоставление пользователю фейк, рекламу — минус 250 бонусов</p>
+                                <p class="profile-agent-rating__prg">Полностью заполнен профиль — 100 бонусов</p>
+                                <p class="profile-agent-rating__prg">Оценка покупателем за хорошую работу и предоставление информации — 50 бонусов</p>
+                                <p class="profile-agent-rating__prg">Публикация предложения или запроса (ежедневно) - 10 бонусов</p>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li class="tab-content hidden">
+                        <p class="profile-agent-rating__prg">19.01.2024 Проведение сделки + 1000</p>
+                        <p class="profile-agent-rating__prg">16.01.2024 Оценка покупателем — 250</p>
+                        <p class="profile-agent-rating__prg">13.01.2024 Вас оценил покупатель + 50</p>
+                        <p class="profile-agent-rating__prg">11.01.2024 Бонус за публикацию предложения + 10</p>
+                        <p class="profile-agent-rating__prg">06.01.2024 Проведение сделки + 1000</p>
+                        <p class="profile-agent-rating__prg">04.01.2024 Оценка покупателем — 250</p>
+                        <p class="profile-agent-rating__prg">19.01.2024 Проведение сделки + 1000</p>
+                        <p class="profile-agent-rating__prg">16.01.2024 Оценка покупателем — 250</p>
+                        <p class="profile-agent-rating__prg">13.01.2024 Вас оценил покупатель + 50</p>
+                        <p class="profile-agent-rating__prg">11.01.2024 Бонус за публикацию предложения + 10</p>
+                        <p class="profile-agent-rating__prg">06.01.2024 Проведение сделки + 1000</p>
+                        <p class="profile-agent-rating__prg">04.01.2024 Оценка покупателем — 250</p>
+                        <p class="profile-agent-rating__prg">19.01.2024 Проведение сделки + 1000</p>
+                        <p class="profile-agent-rating__prg">16.01.2024 Оценка покупателем — 250</p>
+                        <p class="profile-agent-rating__prg">13.01.2024 Вас оценил покупатель + 50</p>
+                        <p class="profile-agent-rating__prg">11.01.2024 Бонус за публикацию предложения + 10</p>
+                        <p class="profile-agent-rating__prg">06.01.2024 Проведение сделки + 1000</p>
+                        <p class="profile-agent-rating__prg">04.01.2024 Оценка покупателем — 250</p>
+                        <p class="profile-agent-rating__prg">19.01.2024 Проведение сделки + 1000</p>
+                        <p class="profile-agent-rating__prg">16.01.2024 Оценка покупателем — 250</p>
+                        <p class="profile-agent-rating__prg">13.01.2024 Вас оценил покупатель + 50</p>
+                        <p class="profile-agent-rating__prg">11.01.2024 Бонус за публикацию предложения + 10</p>
+                        <p class="profile-agent-rating__prg">06.01.2024 Проведение сделки + 1000</p>
+                        <p class="profile-agent-rating__prg">04.01.2024 Оценка покупателем — 250</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
               </div>
+              <aside class="profile-agent__sidebar">
+                <button type="button" class="btn btn-fw">Пробный период завершён. Оплатить</button>
+                <button type="button" class="btn btn-dark btn-fw">Вы находитесь в бане до 20.02.2024</button>
+                <div class="profile-buer__reg">Зарегистрирован 15.05.2023</div>
+              </aside>
             </div>
           </div>
         </div>

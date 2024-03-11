@@ -1,0 +1,32 @@
+/*--------------------page-error----------------------*/
+.page-error {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	background-image: url(../img/404.jpg);
+	background-position: 0 0;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.page-error__block {
+	text-align: center;
+	
+	.btn {
+		border-radius: rem(100);
+	}
+
+}
+.page-error__title {
+	margin-bottom: rem(27);
+	@include adaptive-value-rem('font-size', 300, 50, $maxWidth, $minWidth, 1);
+	font-weight: 500;
+}
+.page-error__text {
+	@include adaptive-value-rem('font-size', 40, 16, $maxWidth, $minWidth, 1);
+	@include adaptive-value-rem('margin-bottom', 34, 15, $maxWidth, $minWidth, 1);
+	font-weight: 400;
+	line-height: calc(52 / 40);
+}
+/*--------------------END page-error----------------------*/ 
