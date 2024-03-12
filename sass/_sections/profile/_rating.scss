@@ -25,6 +25,9 @@
 	flex: 0 0 auto;
 	h2{
 		margin-bottom: rem(30);
+		@include max-screen($lg){
+			margin-bottom: rem(15);
+		}
 	}
 }
 .user-rating__content {
