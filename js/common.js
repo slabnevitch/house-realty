@@ -259,7 +259,7 @@
 				arrow: false,
 				placement: 'bottom-start',
 				// flipBehavior: ["top", "left"],
-				// trigger: 'click',
+				trigger: 'click',
 			    // placement: 'left-start',
 			    interactive: true
 			});
@@ -269,7 +269,9 @@
 	
 
 		// modals calls
+				// MicroModal.show('reg-regard-modal');
 			//- request/offers modals
+				// MicroModal.show('email-modal');
 				// MicroModal.show('service-rules-modal');
 				// MicroModal.show('city-select-modal');
 				// MicroModal.show('requests-modal');
@@ -283,7 +285,7 @@
 			
 			//- profile modals
 				// MicroModal.show('ban-modal');
-				// MicroModal.show('trial-modal');
+				MicroModal.show('trial-modal');
 				
 		// END modals calls
 	});

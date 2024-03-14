@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Покупатель - чат
+    <title>Агент - чат
     </title>
     <meta name="description" content="">
     <link rel="icon" href="img/favicon.png">
@@ -17,14 +17,17 @@
           <button id="menu-close" class="toggle-mnu on"><span></span></button>
         </div>
         <ul class="expanse-menu">
-          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Запрос</a></li>
-          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Предложения</a></li>
-          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link active">Чат</a></li>
+          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Запрос</a>
+          </li>
+          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link">Предложения</a>
+          </li>
+          <li class="expanse-menu__item"><a href="#" class="expanse-menu__link active"><span>Чат</span><span class="expanse-menu__count">1</span></a>
+          </li>
         </ul>
       </aside>
       <div class="expanse__messenger">
         <div class="messenger">
-          <button type="button" id="menu-open" class="toggle-mnu"><span></span></button>
+          <button type="button" data-da="header-expanse__search,991.98,last" id="menu-open" class="toggle-mnu"><span></span></button>
           <div class="messenger__header">
             <div class="messenger__filter filter-messenger">
               <div class="tiny-carousel">
@@ -42,22 +45,22 @@
                 </div>
                 <div class="tiny-sldr">
                   <label class="filter-messenger__item">
-                    <input autocomplete="off" type="checkbox" name="role" checked class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Все</span>
+                    <input autocomplete="off" type="radio" name="role" checked class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Все</span>
                   </label>
                   <label class="filter-messenger__item">
-                    <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Продавец</span>
+                    <input autocomplete="off" type="radio" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Продавец</span>
                   </label>
                   <label class="filter-messenger__item">
-                    <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Агент</span>
+                    <input autocomplete="off" type="radio" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Агент</span>
                   </label>
                   <label class="filter-messenger__item">
-                    <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Застройщик</span>
+                    <input autocomplete="off" type="radio" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Застройщик</span>
                   </label>
                   <label class="filter-messenger__item">
-                    <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Агенство недвижимости</span>
+                    <input autocomplete="off" type="radio" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Агенство недвижимости</span>
                   </label>
                   <label class="filter-messenger__item">
-                    <input autocomplete="off" type="checkbox" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Инвестор</span>
+                    <input autocomplete="off" type="radio" name="role" class="filter-messenger__input"><span class="btn btn-mini filter-messenger__value">Инвестор</span>
                   </label>
                 </div>
               </div>
@@ -350,7 +353,7 @@
                         <use xlink:href="img/icons-svg/symbol/sprite.svg#watsapp"></use>
                       </svg></a></div>
             </div>
-            <div class="header-expanse__actions"><a href="#" class="btn btn-empty">Рейтинг продавцов</a><a href="#" class="btn">Профиль</a><a href="#" class="header-expanse__profile">
+            <div class="header-expanse__actions"><a href="#" class="btn btn-empty">Рейтинг продавцов</a><a href="#" class="btn header-expanse__profile"><span class="header-expanse__profile-value">Профиль</span><span class="header-expanse__profile-count">1</span>
                     <svg class="icon icon-user ">
                       <use xlink:href="img/icons-svg/symbol/sprite.svg#user"></use>
                     </svg></a></div>
