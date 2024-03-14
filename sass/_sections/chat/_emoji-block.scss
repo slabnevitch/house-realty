@@ -21,7 +21,10 @@
 		padding-bottom: rem(28);
 
 		.simplebar-track{
-			right: rem(5);
+			@include min-screen($lg){
+				
+				right: rem(5);
+			}
 		}
 	}
 	.tab-content {
@@ -29,6 +32,14 @@
 		@include min-screen($mess-mob){
 			padding-right: rem(40);
 			
+		}
+	}
+	.simplebar-vertical{
+		.simplebar-scrollbar{
+			@include min-screen($lg){
+				right: rem(1);
+				
+			}
 		}
 	}
 }

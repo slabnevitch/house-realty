@@ -9,6 +9,7 @@
 	align-items: center;
 	column-gap: rem(10);
 	background-color: #fff;
+	box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
 	// overflow: hidden;
 
 	.btn {
@@ -32,7 +33,6 @@
 	// &:not(.expanse__header--messenger){
 
 	// 	border-radius: 30px 30px 0px 0px;
-	// 	box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04),0px -6px 15px 0px rgba(71, 93, 169, 0.03);
 	// }
 }
 .header-expanse {}
@@ -114,7 +114,7 @@
 	@include but-null();
 	.icon{
 		@include absolute-center-old;
-		font-size: 14px;
+		font-size: rem(22);
 	}
 }
 .header-expanse__button{
@@ -166,20 +166,20 @@
 	border-radius: 50%;
 	background-color: rgb(72, 201, 95);
 
-	@include max-screen($sm){
-		width: rem(20);
-		height: rem(20);
-	}
+	// @include max-screen($sm){
+	// 	width: rem(35);
+	// 	height: rem(35);
+	// }
 }
 .icon-watsapp {
 	@include absolute-center();
 	font-size: rem(21);
 	color: #fff;
 
-	@include max-screen($sm){
-		width: rem(11);
-		height: rem(11);
-	}
+	// @include max-screen($sm){
+	// 	width: rem(15);
+	// 	height: rem(15);
+	// }
 }
 .header-expanse__actions{
 	flex-shrink: 0;

@@ -2195,6 +2195,11 @@
     cursor: pointer;
   }
 }
+@media only screen and (min-width: 81.25em) {
+  .chat-form__smile {
+    display: none;
+  }
+}
 .chat-form__smile .icon {
   font-size: 1.25rem;
   color: #697586;
@@ -2976,8 +2981,8 @@ h2 {
 }
 
 .simplebar-scrollbar {
-  width: 2px;
-  right: 0.125rem;
+  width: 0.0625rem;
+  right: 0;
   left: auto;
   background-color: #3A8BF3;
 }
@@ -3192,12 +3197,14 @@ h2 {
   flex: 0 1 auto;
 }
 
-.page-main__forms-scroll {
-  position: absolute;
-  left: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+@media only screen and (min-width: 61.99875em) {
+  .page-main__forms-scroll {
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .sidebar-form--access .form__bottom {
@@ -3307,6 +3314,7 @@ h2 {
 
 .modal__close:before {
   color: #697586;
+  font-size: 1.5rem;
 }
 
 .modal__content {
@@ -3553,6 +3561,11 @@ h2 {
   position: relative;
   z-index: 1;
 }
+@media only screen and (max-width: 90em) {
+  .page-main__title {
+    font-size: 2.1875rem;
+  }
+}
 
 .page-main__coverage {
   padding: 1.25rem;
@@ -3746,8 +3759,10 @@ h2 {
   padding-top: 1.5rem;
   padding-bottom: 1.75rem;
 }
-.emoji-block .tabs__container .simplebar-track {
-  right: 0.3125rem;
+@media only screen and (min-width: 81.25em) {
+  .emoji-block .tabs__container .simplebar-track {
+    right: 0.3125rem;
+  }
 }
 .emoji-block .tab-content {
   padding-right: 1.875rem;
@@ -3755,6 +3770,11 @@ h2 {
 @media only screen and (min-width: 106.25em) {
   .emoji-block .tab-content {
     padding-right: 2.5rem;
+  }
+}
+@media only screen and (min-width: 81.25em) {
+  .emoji-block .simplebar-vertical .simplebar-scrollbar {
+    right: 0.0625rem;
   }
 }
 
@@ -3843,6 +3863,7 @@ h2 {
 @media only screen and (max-width: 61.99875em) {
   .messenger {
     padding-bottom: 0.9375rem;
+    padding-top: 1.5rem;
     max-width: none;
     -ms-flex: 0 0 auto;
     flex: 0 0 auto;
@@ -3965,7 +3986,7 @@ h2 {
 }
 
 .filter-messenger__value {
-  height: 1.875rem;
+  height: 2rem;
   padding-left: 1.25rem;
   padding-right: 1.875rem;
   background-color: #F1F1F5;
@@ -4370,6 +4391,7 @@ h2 {
   align-items: center;
   column-gap: 0.625rem;
   background-color: #fff;
+  box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
 }
 @media only screen and (max-width: 106.25em) {
   .expanse__header .btn {
@@ -4499,7 +4521,7 @@ h2 {
   bottom: 0;
   margin: auto;
   position: absolute;
-  font-size: 14px;
+  font-size: 1.375rem;
 }
 
 .header-expanse__button {
@@ -4576,12 +4598,6 @@ h2 {
   border-radius: 50%;
   background-color: rgb(72, 201, 95);
 }
-@media only screen and (max-width: 47.99875em) {
-  .header-expanse__wats {
-    width: 1.25rem;
-    height: 1.25rem;
-  }
-}
 
 .icon-watsapp {
   display: block;
@@ -4594,12 +4610,6 @@ h2 {
   transform: translate(-50%, -50%);
   font-size: 1.3125rem;
   color: #fff;
-}
-@media only screen and (max-width: 47.99875em) {
-  .icon-watsapp {
-    width: 0.6875rem;
-    height: 0.6875rem;
-  }
 }
 
 .header-expanse__actions {
@@ -4812,6 +4822,7 @@ h2 {
 .expanse--null .toggle-mnu {
   margin-left: 0;
   margin-bottom: 0;
+  margin-right: 0.9375rem;
 }
 @media only screen and (min-width: 81.25em) {
   .expanse--null .toggle-mnu {
@@ -4870,6 +4881,13 @@ h2 {
 @media only screen and (min-width: 106.25em) {
   .expanse--messenger .toggle-mnu {
     display: none;
+  }
+}
+@media only screen and (max-width: 61.99875em) {
+  .expanse--messenger .header-expanse__search .toggle-mnu {
+    margin-bottom: 0;
+    margin-top: 0.125rem;
+    margin-left: 0.3125rem;
   }
 }
 @media only screen and (max-width: 106.25em) {

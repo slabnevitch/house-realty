@@ -259,7 +259,7 @@
 				arrow: false,
 				placement: 'bottom-start',
 				// flipBehavior: ["top", "left"],
-				// trigger: 'click',
+				trigger: 'click',
 			    // placement: 'left-start',
 			    interactive: true
 			});

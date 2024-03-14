@@ -1,5 +1,5 @@
 .messenger
-	button(type="button")#menu-open.toggle-mnu
+	button(type="button" data-da="header-expanse__search,991.98,last")#menu-open.toggle-mnu
 		span
 		
 	.messenger__header
@@ -16,7 +16,7 @@
 				.tiny-sldr
 					for role,i in roles
 						label.filter-messenger__item
-							input(autocomplete="off" type="checkbox" name="role" class="filter-messenger__input" checked=i==0?true:false)
+							input(autocomplete="off" type="radio" name="role" class="filter-messenger__input" checked=i==0?true:false)
 							span.btn.btn-mini.filter-messenger__value= role
 	.messenger__contacts(data-simplebar)
 			- var conts = [{name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Елена Михайлова (Застройщик)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 1}, {name: 'Евгений Иванович Орлов (Агенство недвижимости)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 2}, {name: 'Евгений Орлов (Инвестор)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 3}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 4}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 4}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: 5}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img:6}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false}, {name: 'Евгений Орлов (Агент)', text: 'Продаётся ЖК новая заря 50 м2, черновая 8 млн...', img: false},];

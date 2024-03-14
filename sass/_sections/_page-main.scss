@@ -75,6 +75,10 @@
 	max-width: rem(442);
 	position: relative;
 	z-index: 1;
+
+	@include max-screen(em(1440)){
+		font-size: rem(35);
+	}
 }
 .page-main__coverage {
 	padding: rem(20);
