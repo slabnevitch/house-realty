@@ -1,20 +1,40 @@
-.page-main__forms(data-da="page-main__content,991,1")
-	if page == "enter"
-		.page-main__form-display
-			button.btn(type="button") Войти 
-	
-	if page == 'enter'
-		include form-enter
-	else if page == 'buyer'
-		include form-buyer
-	else if page == 'agency'
-		include form-agency
-	else if page == 'access-1'
-		include form-access-1
-	else if page == 'access-2'
-		include form-access-2
+if sidebar != 'buyer'
+	.page-main__forms(data-da="page-main__content,991,1")
 
-.main-page__variants._fit
-	img._fit-img(src="img/main-page/2.jpg" alt="alt")
-	.main-page__variants-val 500+
-	.main-page__variants-descr вариантов аппартаментов
+		if page == "enter"
+			.page-main__form-display
+				button.btn(type="button") Войти 
+		
+		if page == 'enter'
+			include form-enter
+		else if page == 'buyer'
+			include form-buyer
+		else if page == 'agency'
+			include form-agency
+		else if page == 'access-1'
+			include form-access-1
+		else if page == 'access-2'
+			include form-access-2
+else
+	.page-main__forms.page-main__forms--buyer(data-da="page-main__content,991,1")
+		.page-main__forms-scroll(data-simplebar)
+			if page == "enter"
+				.page-main__form-display
+					button.btn(type="button") Войти 
+			
+			if page == 'enter'
+				include form-enter
+			else if page == 'buyer'
+				include form-buyer
+			else if page == 'agency'
+				include form-agency
+			else if page == 'access-1'
+				include form-access-1
+			else if page == 'access-2'
+				include form-access-2
+
+if page != 'buyer'
+	.main-page__variants._fit
+		img._fit-img(src="img/main-page/2.jpg" alt="alt")
+		.main-page__variants-val 500+
+		.main-page__variants-descr вариантов аппартаментов

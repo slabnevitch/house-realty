@@ -99,6 +99,17 @@
 
 
 }
+.form__radio-false{
+	position: relative;
+
+	input[type="radio"]{
+		@include checkbox;
+		&:checked + .form__check-value {
+			background-color: $accent;
+			color: #fff;
+		}
+	}
+}
 .form__check {
 	position: relative;
 	display: flex;

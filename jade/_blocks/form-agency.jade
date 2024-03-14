@@ -11,22 +11,22 @@ form(action="#" class="form sidebar-form")
 				label.form__label
 					span.form__key Фамилия Имя Отчество
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="Семашко Захар Владимирович")
+					input(autocomplete="off" type="text" name="" class="form__input" value="Семашко Захар Владимирович" placeholder="Введите ФИО")
 
 				label.form__label
 					span.form__key Email
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru")
+					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru"  placeholder="Введите еmail")
 
 				label.form__label
 					span.form__key Город
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="Сочи")
+					input(autocomplete="off" type="text" name="" class="form__input" value="Сочи" placeholder="Введите город")
 
 				label.form__label
 					span.form__key Телефон
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56")
+					input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56" placeholder="Введите телефон")
 
 				label.form__label.form__label--password
 					button(type="button").eye-ico.unblind
@@ -34,7 +34,7 @@ form(action="#" class="form sidebar-form")
 						+icon('eye-off')
 					span.form__key Пароль
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="5UimdK5dd")
+					input(autocomplete="off" type="text" name="" class="form__input" value="5UimdK5dd" placeholder="Введите пароль")
 
 				label.form__label.form__label--password
 					button(type="button").eye-ico
@@ -42,7 +42,7 @@ form(action="#" class="form sidebar-form")
 						+icon('eye-off')
 					span.form__key Повторить пароль
 					span.form__error-message
-					input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd")
+					input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd" placeholder="Повторите пароль")
 
 				.form__bottom
 					.form__line
@@ -58,23 +58,23 @@ form(action="#" class="form sidebar-form")
 				- var roles = ['Продавец', 'Агент', 'Застройщик', 'Агенство недвижимости', 'Инвестор'];
 				.form__checks
 					each role, ind in roles
-						label.form__check
+						label.form__radio-false
 							input(type="radio" name="salesman-role" checked=ind==3 ? true : false)
 							.form__check-value= role
 				label.form__label
 					span.form__key Название компании
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="ОАО «Строймир»")
+					input(autocomplete="off" type="text" name="" class="form__input" value="ОАО «Строймир»" placeholder="Введите название компании")
 
 				label.form__label
 					span.form__key Телефон
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56")
+					input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56" placeholder="Введите телефон")
 
 				label.form__label
 					span.form__key Email
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru")
+					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru" placeholder="Введите еmail")
 
 				.form__bottom
 					.form__line

@@ -270,7 +270,7 @@
 
 		// modals calls
 			//- request/offers modals
-				MicroModal.show('email-modal');
+				// MicroModal.show('email-modal');
 				// MicroModal.show('service-rules-modal');
 				// MicroModal.show('city-select-modal');
 				// MicroModal.show('requests-modal');
