@@ -269,6 +269,7 @@
 	
 
 		// modals calls
+				// MicroModal.show('reg-regard-modal');
 			//- request/offers modals
 				// MicroModal.show('email-modal');
 				// MicroModal.show('service-rules-modal');
@@ -284,7 +285,7 @@
 			
 			//- profile modals
 				// MicroModal.show('ban-modal');
-				// MicroModal.show('trial-modal');
+				MicroModal.show('trial-modal');
 				
 		// END modals calls
 	});

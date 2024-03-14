@@ -165,6 +165,18 @@
 	height: rem(40);
 	border-radius: 50%;
 	background-color: rgb(72, 201, 95);
+	border: rem(1) solid rgb(72, 201, 95);
+	transition: background-color .1s;
+
+	@media (any-hover: hover) { //только для устройств с ховером
+			cursor: pointer;
+			&:hover{
+				background-color: #fff;
+				.icon{
+					color: rgb(72, 201, 95);
+				}
+			}
+		}
 
 	// @include max-screen($sm){
 	// 	width: rem(35);
@@ -188,26 +200,55 @@
 	justify-content: flex-end;
 	column-gap: rem(16);
 
-	.btn,
-	.btn-empty{
+	.btn:not(.header-expanse__profile){
 		@include max-screen($sm){
 			display: none;
 		}
 	}
 }
 .header-expanse__profile{
-	display: block;
-	width: rem(24);
-	height: rem(24);
+	// width: rem(24);
+	// height: rem(24);
 	position: relative;
+	.header-expanse__profile-value{
+		@include max-screen($sm){
+			display: none;
+		}
+	}
 	.icon{
 		@include absolute-center;
 		color: $accent;
 		font-size: rem(20);
+		@include min-screen($sm){
+			display: none;	
+		}
 	}
-	@include min-screen($sm){
-		display: none;	
+	@include max-screen($sm){
+		background-color: transparent;
 	}
+}
+.header-expanse__profile-count{
+	position: absolute;
+    top: rem(-8);
+    right: rem(-10);
+    max-width: 2.1875rem;
+    padding: 0 rem(5);
+    min-width: rem(20);
+    height: rem(20);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: rem(14);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3.125rem;
+    background-color: #3A8BF3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 .header-expanse__back{
 	@include but-null();

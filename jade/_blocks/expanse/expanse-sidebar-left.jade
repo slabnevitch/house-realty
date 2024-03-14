@@ -10,4 +10,9 @@ aside.expanse__nav.nav-expanse
 	ul.expanse-menu
 		each item, ind in menu
 			li.expanse-menu__item
-				a(href="#" class=ind+1==page ? "expanse-menu__link active" : "expanse-menu__link")= item
+				if item == 'Чат'
+					a(href="#" class=ind+1==page ? "expanse-menu__link active" : "expanse-menu__link")
+						span= item
+						span.expanse-menu__count 1
+				else
+					a(href="#" class=ind+1==page ? "expanse-menu__link active" : "expanse-menu__link")= item

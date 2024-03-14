@@ -59,6 +59,7 @@
 .form__error-message {
 	color: $red;
 	display: none;
+	font-size: rem(14);
 	.form__error &{
 		display: block;
 	}
@@ -71,9 +72,9 @@
 .form__custom {
 	margin-top: rem(3);
 	position: relative;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	// display: flex;
+	// align-items: center;
+	// justify-content: center;
 	flex-shrink: 0;
 	margin-right: rem(12);
 	width: rem(16);
@@ -83,6 +84,7 @@
 
 
 	&:after{
+		@include absolute-center();
 		display: none;
 		content: '';
 		width: rem(9);

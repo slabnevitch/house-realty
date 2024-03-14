@@ -84,6 +84,10 @@
 	flex: 1 1 auto;
 	font-size: rem(14);
 
+	@include max-screen($md){
+		padding: 0 rem(12) rem(8) rem(12);
+	}
+
 	@include min-screen($md){
 		border: 1px solid $line;
 		word-break: break-all;
@@ -159,9 +163,9 @@
 	}
 }
 .user-rating__value{
-	@include max-screen($md){
-		font-size: rem(20);
-	}
+	// @include max-screen($md){
+	// 	font-size: rem(20);
+	// }
 }
 .link {}
 .user-rating__info {
@@ -171,8 +175,12 @@
 		order: -1;
 	}
 	@include min-screen($lg){
+		padding-right: rem(30);
 		text-align: center;
 		flex: 0 0 prc(492, 1588);
+	}
+	@include min-screen(em($maxWidth)){
+		flex: 0 0 prc(592, 1588);
 	}
 }
 .info-user-rating {}

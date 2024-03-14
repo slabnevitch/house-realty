@@ -246,8 +246,8 @@ h2{
 	}
 
 	@include max-screen($sm){
-		top: rem(30);
-		right: rem(30);
+		top: rem(10);
+		right: rem(10);
 	}
 
 	svg{

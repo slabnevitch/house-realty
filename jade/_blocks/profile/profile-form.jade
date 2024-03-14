@@ -4,16 +4,16 @@ form(action="#" class="form profile-buer__form form-profile-buer" )
 			label.form__label
 				span.form__key Фамилия Имя Отчество
 				span.form__error-message
-				input(autocomplete="off" type="text" name="" class="form__input" value="Семашко Захар Михайлович")
+				input(autocomplete="off" type="text" name="" class="form__input" value="Семашко Захар Михайлович" placeholder="Введите ФИО")
 
 			label.form__label.form__error
 				span.form__key Телефон
 				span.form__error-message Обязательное поле
-				input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56")
+				input(autocomplete="off" type="text" name="" class="form__input" value="+7 912 587-36-56" placeholder="Введите телефон")
 
 			label.form__label.form__add
 				span.form__key Фото профиля
-				input(autocomplete="off" type="file" name="" class="form__file" value="+7 912 587-36-56")
+				input(autocomplete="off" type="file" name="" class="form__file")
 				span.form__file-field
 					+icon('plus')
 
@@ -22,11 +22,11 @@ form(action="#" class="form profile-buer__form form-profile-buer" )
 			label.form__label
 				span.form__key Город
 				span.form__error-message
-				input(autocomplete="off" type="text" name="" class="form__input" value="Сочи")
+				input(autocomplete="off" type="text" name="" class="form__input" value="Сочи"   placeholder="Введите город")
 			label.form__label
 					span.form__key Email
 					span.form__error-message
-					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru")
+					input(autocomplete="off" type="text" name="" class="form__input" value="pochta@mail.ru"  placeholder="Введите еmail")
 
 		.form-profile-buer__column
 			label.form__label.form__label--password
@@ -35,7 +35,7 @@ form(action="#" class="form profile-buer__form form-profile-buer" )
 					+icon('eye-off')
 				span.form__key Старый пароль
 				span.form__error-message
-				input(autocomplete="off" type="text" name="" class="form__input" value="5UimdK5dd")
+				input(autocomplete="off" type="text" name="" class="form__input" value="5UimdK5dd" placeholder="Введите старый пароль")
 
 			label.form__label.form__label--password
 				button(type="button").eye-ico
@@ -43,7 +43,7 @@ form(action="#" class="form profile-buer__form form-profile-buer" )
 					+icon('eye-off')
 				span.form__key Новый пароль
 				span.form__error-message
-				input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd")
+				input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd" placeholder="Введите новый пароль")
 
 			label.form__label.form__label--password
 				button(type="button").eye-ico
@@ -51,7 +51,7 @@ form(action="#" class="form profile-buer__form form-profile-buer" )
 					+icon('eye-off')
 				span.form__key Повторить пароль
 				span.form__error-message
-				input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd")
+				input(autocomplete="off" type="password" name="" class="form__input" value="5UimdK5dd" placeholder="Повторите пароль")
 
 	.form__bottom
 		.form__line

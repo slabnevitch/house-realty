@@ -340,6 +340,7 @@
 
 }
 .messenger-post__author {
+	margin-bottom: rem(10);
 	font-weight: 500;
 }
 .messenger-post__gallery {
@@ -355,5 +356,9 @@
 	aspect-ratio: 150/140;
 	border-radius: rem(10);
 	overflow: hidden;
+
+	@include max-screen($xsss){
+		flex-basis: prc(200,784);
+	}
 }
 /*--------------------END messenger----------------------*/ 

@@ -35,11 +35,13 @@
 	}
 
 }
+
 .expanse-menu__link {
 	position: relative;
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
+	column-gap: rem(10);
 	height: rem(48);
 	padding: rem(5) rem(24);
 	background-color: $gray;
@@ -72,5 +74,29 @@
 	}
 
 
+}
+.expanse-menu__count {
+	max-width: 2.1875rem;
+    padding: 0 rem(5);
+    min-width: rem(23);
+    height: rem(23);
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-size: rem(14);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 3.125rem;
+    background-color: #3A8BF3;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    .expanse-menu__link.active &{
+
+    }
 }
 /*--------------------END expanse-sidebar-left----------------------*/ 

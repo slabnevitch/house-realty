@@ -2566,6 +2566,7 @@ textarea {
 .form__error-message {
   color: #ED2525;
   display: none;
+  font-size: 0.875rem;
 }
 .form__error .form__error-message {
   display: block;
@@ -2581,12 +2582,6 @@ textarea {
 .form__custom {
   margin-top: 0.1875rem;
   position: relative;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-align: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 0.75rem;
@@ -2596,6 +2591,14 @@ textarea {
   border-radius: 50%;
 }
 .form__custom:after {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   display: none;
   content: "";
   width: 0.5625rem;
@@ -3061,8 +3064,8 @@ h2 {
 }
 @media only screen and (max-width: 47.99875em) {
   .baguetteBox-button#close-button {
-    top: 1.875rem;
-    right: 1.875rem;
+    top: 0.625rem;
+    right: 0.625rem;
   }
 }
 .baguetteBox-button#close-button svg {
@@ -3288,6 +3291,14 @@ h2 {
 .modal-trial .offers-filter {
   margin-top: 1.5rem;
 }
+@media only screen and (max-width: 23.4375em) {
+  .modal-trial .offers-filter__items {
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+}
 .modal.modal-seller .form, .modal.modal-deal .form {
   padding-top: 2rem;
 }
@@ -3387,6 +3398,15 @@ h2 {
   .modal-trial .modal__container {
     padding-right: clamp( 1.875rem , 1.4375rem  +  2.1875vw , 4.0625rem );
   }
+}
+.modal-reg-regard .modal__container,
+.modal__container .modal-review-regard, .modal-ban .modal__container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .modal-privacy .modal__container {
@@ -4273,6 +4293,7 @@ h2 {
 }
 
 .messenger-post__author {
+  margin-bottom: 0.625rem;
   font-weight: 500;
 }
 
@@ -4294,6 +4315,12 @@ h2 {
   aspect-ratio: 150/140;
   border-radius: 0.625rem;
   overflow: hidden;
+}
+@media only screen and (max-width: 23.4375em) {
+  .messenger-post__image {
+    -ms-flex-preferred-size: 25.5102040816%;
+    flex-basis: 25.5102040816%;
+  }
 }
 
 /*--------------------END messenger----------------------*/
@@ -4597,6 +4624,19 @@ h2 {
   height: 2.5rem;
   border-radius: 50%;
   background-color: rgb(72, 201, 95);
+  border: 0.0625rem solid rgb(72, 201, 95);
+  transition: background-color 0.1s;
+}
+@media (any-hover: hover) {
+  .header-expanse__wats {
+    cursor: pointer;
+  }
+  .header-expanse__wats:hover {
+    background-color: #fff;
+  }
+  .header-expanse__wats:hover .icon {
+    color: rgb(72, 201, 95);
+  }
 }
 
 .icon-watsapp {
@@ -4624,17 +4664,18 @@ h2 {
   column-gap: 1rem;
 }
 @media only screen and (max-width: 47.99875em) {
-  .header-expanse__actions .btn,
-  .header-expanse__actions .btn-empty {
+  .header-expanse__actions .btn:not(.header-expanse__profile) {
     display: none;
   }
 }
 
 .header-expanse__profile {
-  display: block;
-  width: 1.5rem;
-  height: 1.5rem;
   position: relative;
+}
+@media only screen and (max-width: 47.99875em) {
+  .header-expanse__profile .header-expanse__profile-value {
+    display: none;
+  }
 }
 .header-expanse__profile .icon {
   display: block;
@@ -4649,9 +4690,38 @@ h2 {
   font-size: 1.25rem;
 }
 @media only screen and (min-width: 47.99875em) {
-  .header-expanse__profile {
+  .header-expanse__profile .icon {
     display: none;
   }
+}
+@media only screen and (max-width: 47.99875em) {
+  .header-expanse__profile {
+    background-color: transparent;
+  }
+}
+
+.header-expanse__profile-count {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.625rem;
+  max-width: 2.1875rem;
+  padding: 0 0.3125rem;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3.125rem;
+  background-color: #3A8BF3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .header-expanse__back {
@@ -4729,6 +4799,7 @@ h2 {
   align-items: center;
   -ms-flex-pack: center;
   justify-content: center;
+  column-gap: 0.625rem;
   height: 3rem;
   padding: 0.3125rem 1.5rem;
   background-color: #F1F1F5;
@@ -4758,6 +4829,26 @@ h2 {
   border-radius: 2px 5px 5px 2px;
 }
 
+.expanse-menu__count {
+  max-width: 2.1875rem;
+  padding: 0 0.3125rem;
+  min-width: 1.4375rem;
+  height: 1.4375rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3.125rem;
+  background-color: #3A8BF3;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 /*--------------------END expanse-sidebar-left----------------------*/
 /*--------------------expanse-sidebar----------------------*/
 /*--------------------END expanse-sidebar----------------------*/
@@ -5337,7 +5428,7 @@ h2 {
 }
 @media only screen and (min-width: 61.99875em) {
   .profile-buer__header h2 {
-    margin-right: 16.1134163209%;
+    margin-right: 22.4757952974%;
   }
 }
 .profile-buer__header--agent {
@@ -5564,6 +5655,11 @@ h2 {
   flex: 1 1 auto;
   font-size: 0.875rem;
 }
+@media only screen and (max-width: 61.99875em) {
+  .user-rating__col {
+    padding: 0 0.75rem 0.5rem 0.75rem;
+  }
+}
 @media only screen and (min-width: 61.99875em) {
   .user-rating__col {
     border: 1px solid #E1E5ED;
@@ -5631,12 +5727,6 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 61.99875em) {
-  .user-rating__value {
-    font-size: 1.25rem;
-  }
-}
-
 @media only screen and (max-width: 81.25em) {
   .user-rating__info {
     margin-bottom: 1.5rem;
@@ -5646,9 +5736,16 @@ h2 {
 }
 @media only screen and (min-width: 81.25em) {
   .user-rating__info {
+    padding-right: 1.875rem;
     text-align: center;
     -ms-flex: 0 0 30.9823677582%;
     flex: 0 0 30.9823677582%;
+  }
+}
+@media only screen and (min-width: 120em) {
+  .user-rating__info {
+    -ms-flex: 0 0 37.2795969773%;
+    flex: 0 0 37.2795969773%;
   }
 }
 
