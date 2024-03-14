@@ -5285,9 +5285,6 @@ h2 {
   }
 }
 @media only screen and (min-width: 81.25em) {
-  .chat-form__smile {
-    display: none;
-  }
   .emoji-block .tabs__container .simplebar-track {
     right: 0.3125rem;
   }
@@ -5301,6 +5298,9 @@ h2 {
     display: none;
   }
   .expanse--null .toggle-mnu {
+    display: none;
+  }
+  .expanse--null .chat-form__smile {
     display: none;
   }
   .user-rating__info {
@@ -5331,6 +5331,9 @@ h2 {
     display: none;
   }
   .expanse--messenger .toggle-mnu {
+    display: none;
+  }
+  .expanse--messenger .chat-form__smile {
     display: none;
   }
   .profile__back {
