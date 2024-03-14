@@ -285,7 +285,7 @@
 			
 			//- profile modals
 				// MicroModal.show('ban-modal');
-				MicroModal.show('trial-modal');
+				// MicroModal.show('trial-modal');
 				
 		// END modals calls
 	});
