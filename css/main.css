@@ -2195,11 +2195,6 @@
     cursor: pointer;
   }
 }
-@media only screen and (min-width: 81.25em) {
-  .chat-form__smile {
-    display: none;
-  }
-}
 .chat-form__smile .icon {
   font-size: 1.25rem;
   color: #697586;
@@ -4959,6 +4954,11 @@ h2 {
     display: block;
   }
 }
+@media only screen and (min-width: 81.25em) {
+  .expanse--null .chat-form__smile {
+    display: none;
+  }
+}
 .expanse--messenger .expanse__chat {
   border-radius: 0;
   box-shadow: none;
@@ -5013,6 +5013,11 @@ h2 {
 @media only screen and (max-width: 106.25em) {
   .expanse--messenger .expanse__sidebar.opened {
     display: block;
+  }
+}
+@media only screen and (min-width: 106.25em) {
+  .expanse--messenger .chat-form__smile {
+    display: none;
   }
 }
 

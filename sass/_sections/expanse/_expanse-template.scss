@@ -117,6 +117,12 @@
 					display: block;
 				}
 			}
+
+		}
+		.chat-form__smile{
+			 @include min-screen($lg){
+			    display: none;
+			  }
 		}
 	}
 
@@ -182,6 +188,12 @@
 				@include max-screen($mess-mob){
 					display: block;
 				}
+			}
+		}
+
+		.chat-form__smile{
+			@include min-screen($mess-mob){
+				display: none;
 			}
 		}
 	}

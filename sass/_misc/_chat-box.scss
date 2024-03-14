@@ -47,9 +47,6 @@
   top: rem(-1);
   @include but-null();
 
-  @include min-screen($lg){
-    display: none;
-  }
   .icon {
     font-size: rem(20);
     color: $gray-dark;
