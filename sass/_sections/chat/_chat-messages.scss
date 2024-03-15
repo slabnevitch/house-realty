@@ -78,6 +78,10 @@
 	aspect-ratio: 160/140;
 	border-radius: rem(10);
 	overflow: hidden;
+
+	@include max-screen($xs){
+		flex: 0 0  prc(200,784);
+	}
 }
 .chat-message__footer{
 	padding-top: rem(10);

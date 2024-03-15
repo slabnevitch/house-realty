@@ -23,7 +23,7 @@
 .page-main__visual {
 	@include adaptive-value-rem('padding-left', 62, 15, $maxWidth, $minWidth, 1);
 	// @include adaptive-value-rem('padding-top', 52, 0, $maxWidth, $minWidth, 1);
-	padding-top: 62px;
+	padding-top: 42px;
 	// aspect-ratio: 860/700;
 	flex: 1 1 auto;
 	position: relative;
@@ -75,9 +75,10 @@
 	max-width: rem(442);
 	position: relative;
 	z-index: 1;
+	font-size: rem(35);
 
 	@include max-screen(em(1440)){
-		font-size: rem(35);
+		font-size: rem(25);
 	}
 }
 .page-main__coverage {

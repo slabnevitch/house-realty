@@ -3189,10 +3189,13 @@ h2 {
 .page-main__forms--buyer {
   -ms-flex: 1 0 auto;
   flex: 1 0 auto;
+  overflow: hidden;
+  border-radius: 1.25rem;
+  background-color: #F1F1F5;
 }
 .page-main__forms--buyer + .main-page__variants {
-  -ms-flex: 0 1 auto;
-  flex: 0 1 auto;
+  -ms-flex: 0 1 30%;
+  flex: 0 1 30%;
 }
 
 @media only screen and (min-width: 61.99875em) {
@@ -3513,7 +3516,7 @@ h2 {
 
 .page-main__visual {
   padding-left: 3.875rem;
-  padding-top: 62px;
+  padding-top: 42px;
   -ms-flex: 1 1 auto;
   flex: 1 1 auto;
   position: relative;
@@ -3575,10 +3578,11 @@ h2 {
   max-width: 27.625rem;
   position: relative;
   z-index: 1;
+  font-size: 2.1875rem;
 }
 @media only screen and (max-width: 90em) {
   .page-main__title {
-    font-size: 2.1875rem;
+    font-size: 1.5625rem;
   }
 }
 
@@ -3742,6 +3746,12 @@ h2 {
   border-radius: 0.625rem;
   overflow: hidden;
 }
+@media only screen and (max-width: 36em) {
+  .chat-message__image {
+    -ms-flex: 0 0 25.5102040816%;
+    flex: 0 0 25.5102040816%;
+  }
+}
 
 .chat-message__footer {
   padding-top: 0.625rem;
@@ -3814,6 +3824,9 @@ h2 {
   gap: 0.875rem;
   height: 100%;
   overflow-y: auto;
+}
+.emoji-list.hidden {
+  display: none;
 }
 
 .emoji {
@@ -5497,6 +5510,7 @@ h2 {
   width: 100%;
   height: 100%;
   padding-bottom: 1.875rem;
+  padding-right: 0.625rem;
 }
 
 @media only screen and (max-width: 61.99875em) {

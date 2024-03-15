@@ -19,8 +19,11 @@
 
 	&--buyer{
 		flex: 1 0 auto;
+		overflow: hidden;
+		border-radius: rem(20);
+		background-color: $gray;	
 		& + .main-page__variants{
-			flex: 0 1 auto;
+			flex: 0 1 30%;
 		}
 	}
 }
