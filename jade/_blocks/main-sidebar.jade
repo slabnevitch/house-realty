@@ -1,4 +1,4 @@
-if sidebar != 'buyer'
+if page != 'buyer' &&  page != 'agency'
 	.page-main__forms(data-da="page-main__content,991,1")
 
 		if page == "enter"
@@ -33,7 +33,7 @@ else
 			else if page == 'access-2'
 				include form-access-2
 
-if page != 'buyer'
+if page != 'buyer' &&  page != 'agency'
 	.main-page__variants._fit
 		img._fit-img(src="img/main-page/2.jpg" alt="alt")
 		.main-page__variants-val 500+

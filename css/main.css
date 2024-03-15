@@ -3511,7 +3511,7 @@ h2 {
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
-  row-gap: 2.4375rem;
+  row-gap: 1.25rem;
 }
 
 .page-main__visual {
@@ -3594,6 +3594,7 @@ h2 {
   display: flex;
   column-gap: 1.5625rem;
   row-gap: 1.25rem;
+  border-radius: 1.25rem;
   box-shadow: 0px 10px 15px 0px rgba(71, 93, 169, 0.04), 0px -6px 15px 0px rgba(71, 93, 169, 0.03);
 }
 @media only screen and (max-width: 47.99875em) {
