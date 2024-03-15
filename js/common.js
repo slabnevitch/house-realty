@@ -141,6 +141,26 @@
 				}
 			}
 			// END убрать контакты при открытии текущего чата
+
+			// переключение паков эмодзи
+			if(target.closest('.emoji-block__nav') !==null){
+				var targetNav = target.closest('.emoji-block__nav'),
+					targetPack = targetNav.closest('.emoji-block')
+						.querySelector('.tab-content.active')
+						.querySelector('[data-emojipack="'+target.closest('.emoji-block__nav').dataset.emojipack+'"]');
+				
+				targetNav.classList.add('active');
+				targetPack.classList.remove('hidden');
+
+				Array.prototype.slice.call(siblings(targetPack)).forEach(function(pack) {
+					if(pack !== targetPack) pack.classList.add('hidden');
+				});
+				Array.prototype.slice.call(siblings(targetNav)).forEach(function(nav) {
+					if(nav !== targetNav) nav.classList.remove('active');
+				});
+				console.log(targetPack);
+			}
+			// КОНЕЦ переключение паков эмодзи
 		}
 
 		// enter-form toggle
@@ -265,8 +285,6 @@
 			});
 		}
 	//END messenger-contact tooltip
-
-	
 
 		// modals calls
 				// MicroModal.show('reg-regard-modal');
