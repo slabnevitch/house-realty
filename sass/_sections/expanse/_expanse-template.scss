@@ -102,12 +102,22 @@
 			}
 		}
 		.expanse__sidebar{
+			transition: transform .2s;
 			&--filter{
-				position: fixed;
-				left: 0;
-				top: 0;
-				width: 100%;
-				height: 100%;
+				@include max-screen($lg){
+					position: fixed;
+					left: 0;
+					top: rem($chatHeader - 30);
+					width: 100%;
+					height: calc(100% - rem($chatHeader - 30));
+					transform: translateX(110%);
+					z-index: 1;
+					padding-left: rem(20);
+					padding-right: rem(20);
+				}
+				.offers-filter-opened &{
+					transform: translateX(0);
+				}
 			}
 			&:not(.expanse__sidebar--filter){
 				@include max-screen($lg){

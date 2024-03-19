@@ -161,6 +161,12 @@
 				console.log(targetPack);
 			}
 			// КОНЕЦ переключение паков эмодзи
+
+			// offers-filter__toggle
+			if(target.closest('#offers-filter-toggle') !==null){
+				document.documentElement.classList.toggle('offers-filter-opened');
+			}
+			// END offers-filter__toggle
 		}
 
 		// enter-form toggle

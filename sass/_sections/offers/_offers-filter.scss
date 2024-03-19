@@ -35,4 +35,45 @@
 	border-radius: rem(5);
 	font-size: rem(14);
 }
+.offers-filter__toggle{
+	@include but-null();
+	position: fixed;
+	right: rem(20);
+	top: rem(73);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 2;
+	width: rem(40);
+	height: rem(40);
+	border-radius: 50%;
+	background-color: $accent;
+
+	@include min-screen($md){
+		top: rem(100);
+	}
+	@include min-screen($lg){
+		display: none;
+	}
+
+	img{
+		display: block;
+		max-width: rem(16);
+		max-height: rem(16);
+		.offers-filter-opened &{
+			display: none;
+		}
+	}
+
+	.icon{
+		display: none;
+		color: #fff;
+		font-size: rem(12);
+		
+		.offers-filter-opened &{
+			display: block;
+		}
+	}
+
+}
 /*--------------------END offers-filter----------------------*/ 

@@ -63,6 +63,11 @@
         <div class="expanse__container">
           <div class="expanse__main">
             <div class="expanse__field">
+              <button type="button" id="offers-filter-toggle" class="offers-filter__toggle"><img src="img/icons-svg/filter.svg" alt="alt">
+                    <svg class="icon icon-close ">
+                      <use xlink:href="img/icons-svg/symbol/sprite.svg#close"></use>
+                    </svg>
+              </button>
               <div data-simplebar class="chat-messages">
                 <div class="chat-messages__block">
                       <div class="chat-message">
@@ -164,7 +169,7 @@
               </div>
             </div>
           </div>
-          <aside class="expanse__sidebar expanse__sidebar--filter sidebar-expanse">
+          <aside data-simplebar class="expanse__sidebar expanse__sidebar--filter sidebar-expanse">
             <form action="#" class="offers-filter">
               <div class="offers-filter__group">
                 <div class="offers-filter__title">Цена</div>
