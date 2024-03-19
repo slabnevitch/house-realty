@@ -68,6 +68,11 @@
   width: 1.2222222222em;
 }
 
+.icon-filter {
+  font-size: 1.8rem;
+  width: 1em;
+}
+
 .icon-frame {
   font-size: 2.2rem;
   width: 0.6363636364em;
@@ -4294,6 +4299,13 @@ h2 {
   -ms-transform: translateX(0) !important;
   transform: translateX(0) !important;
 }
+.expanse--null .expanse__sidebar {
+  transition: transform 0.2s;
+}
+.offers-filter-opened .expanse--null .expanse__sidebar--filter {
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+}
 .expanse--messenger .expanse__chat {
   border-radius: 0;
   box-shadow: none;
@@ -4454,6 +4466,42 @@ h2 {
   color: #000;
   border-radius: 0.3125rem;
   font-size: 0.875rem;
+}
+
+.offers-filter__toggle {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  position: fixed;
+  right: 1.25rem;
+  top: 4.5625rem;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  z-index: 2;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  background-color: #3A8BF3;
+}
+.offers-filter__toggle img {
+  display: block;
+  max-width: 1rem;
+  max-height: 1rem;
+}
+.offers-filter-opened .offers-filter__toggle img {
+  display: none;
+}
+.offers-filter__toggle .icon {
+  display: none;
+  color: #fff;
+  font-size: 0.75rem;
+}
+.offers-filter-opened .offers-filter__toggle .icon {
+  display: block;
 }
 
 /*--------------------END offers-filter----------------------*/
@@ -4870,12 +4918,24 @@ h2 {
   .expanse--null .expanse__main {
     height: 60%;
   }
-  .expanse--null .expanse__sidebar {
+  .expanse--null .expanse__sidebar--filter {
+    position: fixed;
+    left: 0;
+    top: 3.125rem;
+    width: 100%;
+    height: calc(100% - 3.125rem);
+    -ms-transform: translateX(110%);
+    transform: translateX(110%);
+    z-index: 1;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .expanse--null .expanse__sidebar:not(.expanse__sidebar--filter) {
     display: none;
     height: 40%;
     padding: 0.625rem 1.875rem 0 1.875rem;
   }
-  .expanse--null .expanse__sidebar.opened {
+  .expanse--null .expanse__sidebar:not(.expanse__sidebar--filter).opened {
     display: block;
   }
   .profile {
@@ -5253,6 +5313,9 @@ h2 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
   }
+  .offers-filter__toggle {
+    top: 6.25rem;
+  }
   .profile-agent {
     padding-right: 1.25rem;
   }
@@ -5314,6 +5377,9 @@ h2 {
     display: none;
   }
   .expanse--null .chat-form__smile {
+    display: none;
+  }
+  .offers-filter__toggle {
     display: none;
   }
   .user-rating__info {
@@ -5478,6 +5544,9 @@ h2 {
     color: rgb(72, 201, 95);
   }
   .header-expanse__back {
+    cursor: pointer;
+  }
+  .offers-filter__toggle {
     cursor: pointer;
   }
   .profile-agent-rating__tab {
