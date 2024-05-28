@@ -81,6 +81,35 @@
 
 	document.addEventListener('DOMContentLoaded', function() {
 		console.log('DOMContentLoaded!');
+
+		// mark.js - Поиск текста, введенного в инпут
+		// !!! Работает на страницах: agent-chat.html, buyer-chat.html
+		if(document.querySelector('.header-expanse__search') !== null){
+			var markInstance = new Mark(document.querySelector(".chat-messages")); //получаем элемент, внутри которого проводить поиск слов
+			// Cache DOM elements
+			var keywordInput = document.querySelector(".header-expanse__search input[name='search-input']");// получаем инпут для поискового запроса
+
+			keywordInput.addEventListener("input", performMark);// вещаем событие ввода текста
+
+		  	function performMark() {
+
+			  // Read the keyword
+			  var keyword = keywordInput.value;
+
+			  // Determine selected options
+			  var options = {};
+
+			  // Remove previous marked elements and mark
+			  // the new keyword inside the context
+			  markInstance.unmark({
+			  	done: function(){
+			    	markInstance.mark(keyword);
+			    }
+			  });
+			};
+		}
+
+		// END mark.js
 		
 		// password show
 		if(document.querySelector('.eye-ico') !== null){

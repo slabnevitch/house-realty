@@ -2821,6 +2821,11 @@ textarea {
   }
 }
 
+mark {
+  border-radius: 5px;
+  padding: 4px 3px 3px 3px;
+}
+
 /*--------------------END adjustment----------------------*/
 /*--------------------ui----------------------*/
 .page {
